@@ -15,7 +15,8 @@ $black-color: #000;
 ////////////////////////////////
 
 $xl: 1200px;
-$lg: 992px;
+$lg: 1099px;
+// $lg: 992px;
 $md: 768px;
 $sm: 576px;
 
@@ -147,10 +148,10 @@ body{
 //////// Container style
 /////////////////////////////
 
-.container{
-    // padding: 0 14rem;
-    // background-color: white;
-}
+// .container{
+//     // padding: 0 14rem;
+//     // background-color: white;
+// }
 
 
 
@@ -204,66 +205,7 @@ body{
 //////// MAIN Navigation
 /////////////////////////////
 
-.hamburger-icon{
-    color: $primary-color;
-    font-size: 4rem;
-    display: inline;
-    @media (min-width:$lg){
-        display: none;
-    }
-}
-
-#main-nav{
-    height: 11rem;
-    padding-bottom: 0;
-    display: flex;
-    // justify-content: center;
-   
-
-    ul{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        // margin: 0;
-        width: 100%;
-
-        #logo-list-item{
-            background-color: white;
-            border-radius: 50%;
-            margin-top: 5.7rem;
-            padding: 0 3.5rem 2.8rem 3.5rem;
-            margin-right: 0 3rem;
-
-            img{
-                width: 9.4rem;
-                height: 11.5rem;
-                // @media (max-width:$md) {
-                //     width: 9.4rem;
-                //     height: 11.5rem;
-                // }
-
-            }
-            @media (max-width:$lg) {
-                margin: auto;
-        
-            }
-        }
-
-        li{
-            // display: inline;
-            font-family:  'poppins';
-            font-weight: bold;
-            font-size: 1.8rem;
-            // margin-right: 10rem;
-
-            @media (max-width:$lg){
-                display: none;
-            }
-        }
-        
-    }
-}
+@import 'modules/navigation';
 
 ////////Feature Section
 /////////////////////////////
@@ -336,10 +278,16 @@ body{
 
     .gallery-wrapper{
         margin-top: 10rem;
+        @media (max-width:$sm){
+            margin-top: 6rem;;
+        }
     }
     h2{
         font-size: 4rem;
         text-align: center;
+        @media (max-width:$sm){
+            font-size: 3rem;
+        }
     }
     .green-border{
         width: 20rem;
@@ -414,7 +362,7 @@ body{
         padding-bottom: 10rem;
         @media (max-width:$md){
             height: 100rem;
-            padding-bottom: 14rem;
+            // padding-bottom: 14rem;
         }
     }
     
@@ -516,7 +464,7 @@ body{
                 min-width: 85%;
             }
             @media (max-width:$sm){
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 min-width: 85%;
                 margin-top: 1.8rem;
             }
@@ -542,73 +490,7 @@ body{
 ////////Footer Section
 /////////////////////////////
 
-footer{
-    .bordered-div{
-        border-top: 1.2px solid $primary-shade3;
-        margin: 0 18rem 5rem 20rem;
-        @media (max-width:$md){
-            margin: 0;
-        }
-    }
-    .widget-area{
-        padding: 7rem 10rem 0 10rem;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px -10px 25px #0000001A;
-        display: flex;
-        flex-wrap: wrap;
-        @media (max-width:$sm){
-            padding: 1rem;
-        }
-        .widget{
-            
-            flex: 25%;
-            max-width: 25%;
-            @media (max-width:$md){
-                margin-top: 3rem;
-                flex: 50%;
-                max-width: 50%;
-            }
-            @media (max-width:$sm){
-                // flex: 100%;
-                // max-width: 100%;
-            }
-        }
-        
-        ul{
-            list-style: none;
-            line-height: 3rem;
-        }
-        .square{
-            border: 1px solid $primary-color;
-            width: 2rem;
-            height: 2rem;
-            padding: 1rem;
-            margin-bottom: 3rem;
-            h5{
-                font-size: 2rem;
-                font-weight: bold;
-                // padding-bottom: 3rem;  
-            }
-        }
-        
-        p{
-            font-size: 1.6rem;
-            line-height: 3rem;
-            i{
-                color: $primary-color;
-                margin-right: 1rem;
-            }
-        }
-    }
-    .copyright{
-        p{
-            font-size: 1.6rem;
-            text-align: center;
-        }
-        padding-bottom: 8rem;
-    }
-   
-}
+@import 'modules/footer';
 
 
 
