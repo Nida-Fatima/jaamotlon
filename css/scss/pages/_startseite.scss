@@ -9,61 +9,60 @@
     #last-box{
         margin-right: 0;
     }
-    // .hero-image-box {
-    //     flex: 25%;
-    //     max-width: 25%;
-    //     position: relative;
-    //     margin-right: 2rem;
-    //     @media (max-width:$sm){
-    //         flex: 100%;
-    //         flex: 100%;
-    //     }
-    //     img{
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-    //     .bordered-div{
+    .hero-image-box {
+        flex: 25%;
+        max-width: 25%;
+        position: relative;
+        margin-right: 2rem;
+        @media (max-width:$sm){
+            flex: 100%;
+            flex: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .bordered-div{
             
-    //         height: 83%;
-    //         width: 75%;
-    //         border: 0.9rem solid white;
-    //         position: absolute;
-    //         top: 50%;
-    //         left: 50%;
-    //         transform: translateX(-50%) translateY(-50%);
-    //         h1{
-    //             color: white;
-    //             // font-size: 3rem;
-    //             font-size: 80%;
-    //             line-height: 1.5;
-    //             text-align: center;
-    //             text-shadow: 1px 1px 10px gray;
-    //             position: absolute;
-    //             bottom: 15rem;
-    //             // @media (max-width:$md){
-    //             //     font-size: 2rem;
-    //             // }
-    //             @media (max-width:$lg){
-    //                 font-size: 2rem;
-    //                 bottom: 10rem;
-    //             }
-    //         }
-    //         button{
-    //             position: absolute;
-    //             bottom: -3rem;
-    //             left: 50%;
-    //             transform: translateX(-50%);
-    //             color: white;
-    //             font-size: 1.6rem;
-    //             width: 75%;
-    //             @media (max-width:$sm){
-    //                 font-size: 1rem;
+            height: 83%;
+            width: 75%;
+            border: 0.9rem solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            h1{
+                color: white;
+                font-size: 4rem;
+                line-height: 1.5;
+                text-align: center;
+                text-shadow: 1px 1px 5px gray;
+                position: absolute;
+                bottom: 15rem;
+                // @media (max-width:$md){
+                //     font-size: 2rem;
+                // }
+                @media (max-width:$lg){
+                    font-size: 2rem;
+                    bottom: 10rem;
+                }
+            }
+            button{
+                position: absolute;
+                bottom: -3rem;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-size: 1.6rem;
+                width: 75%;
+                @media (max-width:$sm){
+                    font-size: 1rem;
                     
-    //             }
-    //         }
+                }
+            }
 
-    //     }
-    // }
+        }
+    }
     .hero-image-box::before{
         content: "";
         position: absolute;
@@ -85,11 +84,20 @@
         font-size: 4.3rem;
         text-align: center;
         margin-top: 15%;
+        @media (max-width:$md){
+            font-size: 4.1rem;
+        }
+        @media (max-width:$sm){
+            font-size: 3.3rem;
+        }
     }
     .service-wrapper{
         display: flex;
         flex-wrap: wrap;
         padding: 10%;
+        @media (max-width:$lg){
+            padding: 3%;
+        }
         .service-item{
             flex: 50%;
             max-width: 50%;
@@ -97,14 +105,21 @@
                 flex: 100%;
                 max-width: 100%;
             }
+            
         }
         .image-section{
-            width: 100%;
+            img{
+                width: 100%;
+            }
         }
         
+        
         .service-section{
+            @media (max-width:$md){
+                padding: 5rem;
+            }
             .about-us{
-                margin-bottom: 10rem;
+                margin-bottom: 8rem;
                 h3{
                     font-size: 3.3rem;
                 }
@@ -122,15 +137,18 @@
             .feature{
                 display: flex;
                 margin-top: 3rem;
-                @media (max-width:$md){
-                    // flex-direction: column;
+                @media (max-width:$sm){
+                    flex-direction: column;
                     padding: 1rem;
                 }
-                // width: 55rem;
                 .icon-box{
                     display: flex;
                     align-items: center;
                     margin-right: 3rem;
+                    @media (max-width:$sm){
+                        // justify-content: center;
+                        margin-bottom: 1.2rem;
+                    }
                     img{
                         width: 10rem;
                         height: 10rem;
