@@ -76,5 +76,90 @@
 
 
 
+#services{
+    h1{
+        font-size: 4.3rem;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .service-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+        .service-item{
+            flex: 50%;
+            max-width: 50%;
+            @media (max-width:$md){
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        .image-section{
+            width: 100%;
+        }
+        
+        .service-section{
+            .about-us{
+                margin-bottom: 10rem;
+                h3{
+                    font-size: 3.3rem;
+                }
+                p{
+                    color: $text-color;
+                    font-size: 1.8rem;
+                    margin-top: 3rem;
+                }
+                .green-border{
+                    width: 11.9rem;
+                    border-top: solid 0.6rem $primary-shade3;
+                }
+                
+            }
+            .feature{
+                display: flex;
+                margin-top: 3rem;
+                @media (max-width:$md){
+                    // flex-direction: column;
+                    padding: 1rem;
+                }
+                // width: 55rem;
+                .icon-box{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 3rem;
+                    img{
+                        width: 10rem;
+                        height: 10rem;
+                        border: solid 2px $primary-color;
+                        padding: 2rem 2.5rem;
+                        border-radius: 100%;
+                    }
+                }
+                .feature-content{
+                    
+                    h2{
+                        font-size: 2.2rem;
+                    }
+                    @media (max-width:md){
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        margin-top: 3rem;
+                        font-weight: 200;
+                        color: $text-color;
+                    }
+                    @media (max-width:md){
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        
+        }
+    }
+
+}
+
 
 
