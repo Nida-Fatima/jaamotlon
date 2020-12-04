@@ -24,16 +24,17 @@ $sm: 576px;
     font-family: poppins;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
     font-size: 62.5%;
 
     @media (max-width: $lg){
-        font-size: 60%;
+        font-size: 55%;
     }
     @media (max-width:$md) {
-        font-size: 50%;
+        font-size: 40%;
     }
 }
 
@@ -237,8 +238,8 @@ body{
             justify-content: center;
             margin-right: 3rem;
             img{
-                width: 6rem;
-                height: 6rem;
+                width: 10rem;
+                height: 10rem;
                 border: solid 2px $primary-color;
                 padding: 2rem 2.5rem;
                 border-radius: 100%;
@@ -260,6 +261,7 @@ body{
             }
             @media (max-width:md){
                 font-size: 1.5rem;
+                text-align: center;
             }
         }
     }
@@ -491,6 +493,12 @@ body{
 /////////////////////////////
 
 @import 'modules/footer';
+
+
+
+///****************************************** Startseite Page ******************************************///
+
+@import '../scss/pages/startseite';
 
 
 
