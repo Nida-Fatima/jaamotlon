@@ -1,0 +1,169 @@
+
+#hero-section{
+    display: flex;
+    // flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
+    // justify-content: space-between;
+
+    #last-box{
+        margin-right: 0;
+    }
+    // .hero-image-box {
+    //     flex: 25%;
+    //     max-width: 25%;
+    //     position: relative;
+    //     margin-right: 2rem;
+    //     @media (max-width:$sm){
+    //         flex: 100%;
+    //         flex: 100%;
+    //     }
+    //     img{
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    //     .bordered-div{
+            
+    //         height: 83%;
+    //         width: 75%;
+    //         border: 0.9rem solid white;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translateX(-50%) translateY(-50%);
+    //         h1{
+    //             color: white;
+    //             // font-size: 3rem;
+    //             font-size: 80%;
+    //             line-height: 1.5;
+    //             text-align: center;
+    //             text-shadow: 1px 1px 10px gray;
+    //             position: absolute;
+    //             bottom: 15rem;
+    //             // @media (max-width:$md){
+    //             //     font-size: 2rem;
+    //             // }
+    //             @media (max-width:$lg){
+    //                 font-size: 2rem;
+    //                 bottom: 10rem;
+    //             }
+    //         }
+    //         button{
+    //             position: absolute;
+    //             bottom: -3rem;
+    //             left: 50%;
+    //             transform: translateX(-50%);
+    //             color: white;
+    //             font-size: 1.6rem;
+    //             width: 75%;
+    //             @media (max-width:$sm){
+    //                 font-size: 1rem;
+                    
+    //             }
+    //         }
+
+    //     }
+    // }
+    .hero-image-box::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        // border-top: 5rem solid black;
+        
+        opacity: 0.1;
+    }
+}
+
+
+
+#services{
+    h1{
+        font-size: 4.3rem;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .service-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+        .service-item{
+            flex: 50%;
+            max-width: 50%;
+            @media (max-width:$md){
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        .image-section{
+            width: 100%;
+        }
+        
+        .service-section{
+            .about-us{
+                margin-bottom: 10rem;
+                h3{
+                    font-size: 3.3rem;
+                }
+                p{
+                    color: $text-color;
+                    font-size: 1.8rem;
+                    margin-top: 3rem;
+                }
+                .green-border{
+                    width: 11.9rem;
+                    border-top: solid 0.6rem $primary-shade3;
+                }
+                
+            }
+            .feature{
+                display: flex;
+                margin-top: 3rem;
+                @media (max-width:$md){
+                    // flex-direction: column;
+                    padding: 1rem;
+                }
+                // width: 55rem;
+                .icon-box{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 3rem;
+                    img{
+                        width: 10rem;
+                        height: 10rem;
+                        border: solid 2px $primary-color;
+                        padding: 2rem 2.5rem;
+                        border-radius: 100%;
+                    }
+                }
+                .feature-content{
+                    
+                    h2{
+                        font-size: 2.2rem;
+                    }
+                    @media (max-width:md){
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        margin-top: 3rem;
+                        font-weight: 200;
+                        color: $text-color;
+                    }
+                    @media (max-width:md){
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        
+        }
+    }
+
+}
+
+
+
