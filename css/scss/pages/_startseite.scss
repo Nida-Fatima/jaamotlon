@@ -33,15 +33,19 @@
             transform: translateX(-50%) translateY(-50%);
             h1{
                 color: white;
-                font-size: 4rem;
+                // font-size: 3rem;
+                font-size: 80%;
                 line-height: 1.5;
                 text-align: center;
                 text-shadow: 1px 1px 10px gray;
                 position: absolute;
                 bottom: 15rem;
-                @media (max-width:$sm){
+                // @media (max-width:$md){
+                //     font-size: 2rem;
+                // }
+                @media (max-width:$lg){
                     font-size: 2rem;
-                    bottom: 8rem;
+                    bottom: 10rem;
                 }
             }
             button{
