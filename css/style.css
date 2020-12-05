@@ -947,8 +947,28 @@ footer .copyright p {
   }
 }
 
-#services .service-wrapper .image-section img {
+#services .service-wrapper .image-section .man-image {
+  position: relative;
+}
+
+#services .service-wrapper .image-section .man-image img {
   width: 100%;
+}
+
+#services .service-wrapper .image-section .man-image .arrow-div {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-8%, 77%) scale(0.9, 0.9);
+          transform: translate(-8%, 77%) scale(0.9, 0.9);
+  z-index: 1;
+}
+
+#services .service-wrapper .image-section .man-image .man-leg {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-2%, 45%) scale(0.39);
+          transform: translate(-2%, 45%) scale(0.39);
+  z-index: inherit 1;
 }
 
 @media (max-width: 768px) {

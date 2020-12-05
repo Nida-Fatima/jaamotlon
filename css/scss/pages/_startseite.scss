@@ -108,9 +108,29 @@
             
         }
         .image-section{
-            img{
-                width: 100%;
+            .man-image{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .arrow-div{
+                    position: absolute;
+                    top: 0;
+                    transform: translate(-8%, 77%) scale(0.9, 0.9);
+                    z-index: 1;
+                }
+                .man-leg{
+                    position: absolute;
+                    top: 0;
+                    transform: translate(-2%, 45%) scale(0.39);
+                    z-index: inherit 1;
+                    // img{
+                    //     width:27%
+                    // }
+                }
             }
+           
+           
         }
         
         
