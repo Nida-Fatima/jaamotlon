@@ -112,6 +112,20 @@
                 position: relative;
                 img{
                     width: 100%;
+                    position: relative;
+                }
+                .man-leg{
+                        
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-66% ,-25%) scale(0.3);
+                    z-index: 2;
+                    // img{
+                    //     transform:  scale(0.6);
+                    //     // position: absolute;
+                    //     // top: 0;
+                    // }
                 }
                 .arrow-div{
                     position: absolute;
@@ -119,15 +133,7 @@
                     transform: translate(-8%, 77%) scale(0.9, 0.9);
                     z-index: 1;
                 }
-                .man-leg{
-                    position: absolute;
-                    top: 0;
-                    transform: translate(-2%, 45%) scale(0.39);
-                    z-index: inherit 1;
-                    // img{
-                    //     width:27%
-                    // }
-                }
+               
             }
            
            
@@ -204,4 +210,69 @@
 }
 
 
+#benefits{
+    .heading-wrapper{
+        h3{
+            font-size: 3rem;
+            text-align: center;
+        }
+        p{
+            font-size: 2rem;
+            color: $text-color;
+            text-align: center;
+        }
+    }
+    .content-wrapper{
+        padding: 5rem 15rem;
+        .content-block{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+            .inner-content-wrapper{
+                flex: 50%;
+                max-width: 50%;
+                background-image: url('../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                // position: relative;
+                // margin-right: 4rem;;
+                
+                .content-border{
+                    border: 0.8rem solid $primary-color;
+                    // position: relative;
+                    // position: absolute;
+                    // top: 50%;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
+                    
+                    .content{
+
+                    //
+                        
+                        ul{
+                            list-style: none;
+                            li{
+                                i{
+                                    color: $primary-color;
+                                    font-size: 2rem;
+                                    
+                                }
+
+                            }  
+                        }
+                    }
+                    
+                }
+               
+               
+
+            }
+            
+           
+           
+        }
+
+    }
+}
 

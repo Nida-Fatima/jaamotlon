@@ -18,6 +18,13 @@ body {
   padding: 0;
 }
 
+.green-border {
+  width: 20rem;
+  border-top: solid 0.6rem #99C73A;
+  text-align: center;
+  margin: 0 auto;
+}
+
 #hero-banner {
   background: url(../img/w24-team.png) no-repeat center center;
   background-size: cover;
@@ -953,6 +960,16 @@ footer .copyright p {
 
 #services .service-wrapper .image-section .man-image img {
   width: 100%;
+  position: relative;
+}
+
+#services .service-wrapper .image-section .man-image .man-leg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-66%, -25%) scale(0.3);
+          transform: translate(-66%, -25%) scale(0.3);
+  z-index: 2;
 }
 
 #services .service-wrapper .image-section .man-image .arrow-div {
@@ -961,14 +978,6 @@ footer .copyright p {
   -webkit-transform: translate(-8%, 77%) scale(0.9, 0.9);
           transform: translate(-8%, 77%) scale(0.9, 0.9);
   z-index: 1;
-}
-
-#services .service-wrapper .image-section .man-image .man-leg {
-  position: absolute;
-  top: 0;
-  -webkit-transform: translate(-2%, 45%) scale(0.39);
-          transform: translate(-2%, 45%) scale(0.39);
-  z-index: inherit 1;
 }
 
 @media (max-width: 768px) {
@@ -1059,4 +1068,53 @@ footer .copyright p {
     font-size: 1.5rem;
     text-align: center;
   }
+}
+
+#benefits .heading-wrapper h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#benefits .heading-wrapper p {
+  font-size: 2rem;
+  color: #7A839E;
+  text-align: center;
+}
+
+#benefits .content-wrapper {
+  padding: 5rem 15rem;
+}
+
+#benefits .content-wrapper .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  background-image: url("../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border {
+  border: 0.8rem solid #8EC125;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul {
+  list-style: none;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li i {
+  color: #8EC125;
+  font-size: 2rem;
 }
