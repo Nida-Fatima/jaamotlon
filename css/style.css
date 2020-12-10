@@ -824,11 +824,29 @@ footer .copyright p {
   margin: 1rem 0;
 }
 
+@media (max-width: 576px) {
+  .heading-wrapper h3 {
+    font-size: 2.5rem;
+  }
+}
+
 .heading-wrapper p {
   font-size: 2rem;
   color: #7A839E;
   text-align: center;
   margin: 2rem 0;
+}
+
+@media (max-width: 576px) {
+  .heading-wrapper p {
+    font-size: 1.5rem;
+  }
+}
+
+.green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 0 auto;
 }
 
 #hero-section {
@@ -1020,6 +1038,7 @@ footer .copyright p {
 #services .service-wrapper .service-section .about-us .green-border {
   width: 11.9rem;
   border-top: solid 0.6rem #99C73A;
+  margin: 0;
 }
 
 #services .service-wrapper .service-section .feature {
@@ -1237,18 +1256,49 @@ footer .copyright p {
 }
 
 #testimonial {
-  margin-top: 15rem;
+  margin: 15rem 0;
   padding: 0 10rem;
 }
 
+@media (max-width: 1024px) {
+  #testimonial {
+    padding: 0 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonial {
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #testimonial {
+    padding: 0 5rem;
+  }
+}
+
 #testimonial .heading-wrapper .green-border {
-  width: 50rem;
+  width: 30%;
 }
 
 #testimonial .testimonial-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #testimonial .testimonial-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #testimonial .testimonial-wrapper .last-block {
@@ -1256,12 +1306,28 @@ footer .copyright p {
 }
 
 #testimonial .testimonial-wrapper .testimonial-block {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  max-width: 30%;
   position: relative;
   border: 0.3rem solid #707070;
   border-radius: 1rem;
-  padding: 2.8rem 5rem;
+  padding: 2.8rem 2rem;
   margin-top: 10rem;
-  margin-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  #testimonial .testimonial-wrapper .testimonial-block {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #testimonial .testimonial-wrapper .testimonial-block .avatar {
@@ -1296,6 +1362,10 @@ footer .copyright p {
   font-weight: 500;
 }
 
+#testimonial .testimonial-wrapper .last-block {
+  margin-right: 0;
+}
+
 #testimonial .arrow-block {
   padding: 5rem;
   display: -webkit-box;
@@ -1310,4 +1380,83 @@ footer .copyright p {
   font-size: 5rem;
   margin-left: 8rem;
   color: #8EC125;
+}
+
+@media (max-width: 768px) {
+  #testimonial .arrow-block i {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonial .arrow-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#FAQ {
+  margin: 10rem 0;
+}
+
+#FAQ .gray-border {
+  padding: 5rem 0;
+  border: 2rem solid #F5F5F5;
+  max-width: 75%;
+  margin: 8rem auto;
+}
+
+@media (max-width: 576px) {
+  #FAQ .gray-border {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+#FAQ .gray-border .inner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#FAQ .gray-border .inner-content img {
+  width: 60%;
+}
+
+@media (max-width: 576px) {
+  #FAQ .gray-border .inner-content img {
+    width: 100%;
+  }
+}
+
+#FAQ .gray-border .inner-content button {
+  width: 40%;
+  height: 6rem;
+  margin-top: 5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  #FAQ .gray-border .inner-content button {
+    font-size: 1.5rem;
+    width: 60%;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #FAQ .gray-border .inner-content button {
+    font-size: 1.3rem;
+    width: 80%;
+  }
 }

@@ -5,13 +5,24 @@
         font-size: 3rem;
         text-align: center;
         margin: 1rem 0;
+        @media (max-width:$sm){
+            font-size: 2.5rem;
+        }
     }
     p{
         font-size: 2rem;
         color: $text-color;
         text-align: center;
         margin: 2rem 0;
+        @media (max-width:$sm){
+            font-size: 1.5rem;
+        }
     }
+}
+.green-border{
+    width: 11.9rem;
+    border-top: solid 0.6rem $primary-shade3;
+    margin: 0 auto;
 }
 
 #hero-section{
@@ -172,6 +183,7 @@
                 .green-border{
                     width: 11.9rem;
                     border-top: solid 0.6rem $primary-shade3;
+                    margin: 0;
                 }
                 
             }
@@ -357,28 +369,53 @@
 
 
 #testimonial{
-    margin-top: 15rem;
+    margin: 15rem 0;
     padding: 0 10rem;
+
+    @media (max-width:$lg){
+        padding: 0 7rem;
+    }
+    @media (max-width:$md) {
+        padding: 0 10rem;
+        
+    }
+    @media (max-width:$sm){
+        padding: 0 5rem;
+    }
     .heading-wrapper{
         .green-border{
-            width: 50rem;
+            width: 30%;
         }
     }
 
     .testimonial-wrapper{
         
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width:$md){
+            justify-content: center;
+        }
+       
         .last-block{
             margin-right: 0;
         }
 
         .testimonial-block{
+            flex: 30%;
+            max-width: 30%;
             position: relative;
             border: 0.3rem solid #707070;
             border-radius: 1rem;
-            padding: 2.8rem 5rem;
+            padding: 2.8rem 2rem;
             margin-top: 10rem;
-            margin-right: 5rem;
+            
+            @media (max-width:$md){
+                flex: 100%;
+                max-width: 100%;
+                margin-right: 0;
+                justify-content: center;
+            }
             .avatar{
                 position: absolute;
                 top: -6rem;
@@ -406,6 +443,9 @@
                 font-weight: 500;
             }
         }
+        .last-block{
+            margin-right: 0;
+        }
     }
     
     .arrow-block{
@@ -416,7 +456,70 @@
             font-size: 5rem;
             margin-left: 8rem;
             color: $primary-color;
+            @media (max-width:$md){
+                margin-left: 0;
+            }
+        }
+        @media (max-width:$md){
+            justify-content: space-between;
+
         }
     }
     
+}
+
+
+#FAQ{
+
+    margin: 10rem 0;
+    .gray-border{
+        padding: 5rem 0;
+        border: 2rem solid #F5F5F5;
+        max-width: 75%;
+        margin: 8rem auto;
+        @media (max-width:$sm){
+                    
+            max-width: 100%;
+            margin: 0;
+            
+        }
+        .inner-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            img{
+                width: 60%;
+                @media (max-width:$sm){
+                    
+                    width: 100%;
+                    
+                }
+            }
+            button{
+                width: 40%;
+                height: 6rem;
+                margin-top: 5rem;
+                color: white;
+                font-size: 2rem;
+                font-weight: 600;
+                @media (max-width:$lg){
+                    font-size: 1.5rem;
+                    width: 60%;
+                    height: 4rem;
+                }
+                @media (max-width:$sm){
+                    font-size: 1.3rem;
+                    width: 80%;
+                   
+                }
+                
+            }
+
+        }
+
+
+    }
+    
+
 }
