@@ -212,6 +212,7 @@
 
 #benefits{
     .heading-wrapper{
+        margin-bottom: 1rem;
         h3{
             font-size: 3rem;
             text-align: center;
@@ -223,46 +224,120 @@
         }
     }
     .content-wrapper{
-        padding: 5rem 15rem;
+        padding: 5rem 10rem;
+        @media (max-width:$lg){
+            padding: 5rem 8rem;    
+        }
+        @media (max-width:$sm){
+            padding: 5rem 0rem;    
+        }
         .content-block{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            margin-bottom: 8rem;
+            #block1{
+                background-image: url('../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png');
+                
+            }
+            #block2{
+                background-image: url('../../../img/startseite-imgs/aelterer-ehemann-der-seiner-frau-hilft-position-des-yoga-zu-tun_23-2148097430.png');
+            }
+            #block3{
+                background-image: url('../../../img/startseite-imgs/portraet-eines-laechelnden-aelteren-paares-in-tragenden-yogamatten-der-sportkleidung_23-2148097403.png');    
+            }
+            #block4{
+                background-image: url('../../../img/startseite-imgs/glueckliche-aeltere-frau-zu-hause-die-pensionaeren-hilft-verbinden-um-korrekte-position-einzunehmen_23-2148097405.png');
+            }
+            @media (max-width:$md){
+                margin-bottom: 0.5rem;
+            }
+           
             
             .inner-content-wrapper{
-                flex: 50%;
-                max-width: 50%;
-                background-image: url('../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png');
+                flex: 45%;
+                max-width: 45%;
+                // height: 25rem;
+                padding: 1.5rem;
                 background-repeat: no-repeat;
                 background-size: cover;
-                // position: relative;
-                // margin-right: 4rem;;
+                position: relative;
+                z-index: 1;
+
+                @media (max-width:$md)
+                {
+                    flex: 95%;
+                    max-width: 95%;
+                    margin-bottom: 4.5rem;
+                }
+                
+                
                 
                 .content-border{
                     border: 0.8rem solid $primary-color;
-                    // position: relative;
-                    // position: absolute;
-                    // top: 50%;
-                    // left: 50%;
-                    // transform: translate(-50%, -50%);
+                    width: 90%;
+                    height: 120%;
+                    margin: -2.5rem auto;
+                    padding: 3rem;
+                    position: relative;
+                    z-index: 3;
                     
                     .content{
 
-                    //
+                    z-index: 2;
+                    h2{
+                        font-size: 3rem;
+                        margin-bottom: 2rem;
+                        @media (max-width:$lg){
+                            font-size: 2.5rem;
+                        }
+                    }
                         
                         ul{
                             list-style: none;
+                            margin-bottom: 2rem;
+                            
                             li{
+                                font-size: 1.5rem;
+                                line-height: 2;
+                                @media (max-width:$lg){
+                                    font-size: 1.3rem;
+                                }
+                                
                                 i{
                                     color: $primary-color;
                                     font-size: 2rem;
+                                    margin-right: 1.5rem;
                                     
                                 }
-
                             }  
+                        }
+                        button{
+                            font-size: 1.4rem;
+                            color: white;
+                            @media (max-width:$lg){
+                                width: 18rem;
+                                font-size: 1.3rem;
+                            }
+                            @media (max-width:$md){
+                                width: 22rem;
+                                font-size: 1.3rem;
+                            }
                         }
                     }
                     
+                }
+                .content-border::before{
+                    content: "";
+                    width: 0.8rem;
+                    background-color: white;
+                   
+                    height: 50%;
+                    
+                    position: absolute;
+                    top: 25%;
+                    left: -0.8rem;
+                    z-index: 2;
                 }
                
                

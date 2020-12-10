@@ -1070,6 +1070,10 @@ footer .copyright p {
   }
 }
 
+#benefits .heading-wrapper {
+  margin-bottom: 1rem;
+}
+
 #benefits .heading-wrapper h3 {
   font-size: 3rem;
   text-align: center;
@@ -1082,7 +1086,19 @@ footer .copyright p {
 }
 
 #benefits .content-wrapper {
-  padding: 5rem 15rem;
+  padding: 5rem 10rem;
+}
+
+@media (max-width: 1024px) {
+  #benefits .content-wrapper {
+    padding: 5rem 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #benefits .content-wrapper {
+    padding: 5rem 0rem;
+  }
 }
 
 #benefits .content-wrapper .content-block {
@@ -1094,27 +1110,126 @@ footer .copyright p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+#benefits .content-wrapper .content-block #block1 {
+  background-image: url("../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png");
+}
+
+#benefits .content-wrapper .content-block #block2 {
+  background-image: url("../../../img/startseite-imgs/aelterer-ehemann-der-seiner-frau-hilft-position-des-yoga-zu-tun_23-2148097430.png");
+}
+
+#benefits .content-wrapper .content-block #block3 {
+  background-image: url("../../../img/startseite-imgs/portraet-eines-laechelnden-aelteren-paares-in-tragenden-yogamatten-der-sportkleidung_23-2148097403.png");
+}
+
+#benefits .content-wrapper .content-block #block4 {
+  background-image: url("../../../img/startseite-imgs/glueckliche-aeltere-frau-zu-hause-die-pensionaeren-hilft-verbinden-um-korrekte-position-einzunehmen_23-2148097405.png");
+}
+
+@media (max-width: 768px) {
+  #benefits .content-wrapper .content-block {
+    margin-bottom: 0.5rem;
+  }
 }
 
 #benefits .content-wrapper .content-block .inner-content-wrapper {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  max-width: 50%;
-  background-image: url("../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png");
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  padding: 1.5rem;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #benefits .content-wrapper .content-block .inner-content-wrapper {
+    -webkit-box-flex: 95%;
+        -ms-flex: 95%;
+            flex: 95%;
+    max-width: 95%;
+    margin-bottom: 4.5rem;
+  }
 }
 
 #benefits .content-wrapper .content-block .inner-content-wrapper .content-border {
   border: 0.8rem solid #8EC125;
+  width: 90%;
+  height: 120%;
+  margin: -2.5rem auto;
+  padding: 3rem;
+  position: relative;
+  z-index: 3;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content {
+  z-index: 2;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content h2 {
+    font-size: 2.5rem;
+  }
 }
 
 #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul {
   list-style: none;
+  margin-bottom: 2rem;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li {
+    font-size: 1.3rem;
+  }
 }
 
 #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li i {
   color: #8EC125;
   font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+  font-size: 1.4rem;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+    width: 18rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+    width: 22rem;
+    font-size: 1.3rem;
+  }
+}
+
+#benefits .content-wrapper .content-block .inner-content-wrapper .content-border::before {
+  content: "";
+  width: 0.8rem;
+  background-color: white;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: -0.8rem;
+  z-index: 2;
 }
