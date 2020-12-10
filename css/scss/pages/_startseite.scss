@@ -1,4 +1,19 @@
 
+.heading-wrapper{
+    margin-bottom: 1rem;
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    p{
+        font-size: 2rem;
+        color: $text-color;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
 #hero-section{
     display: flex;
     // flex-wrap: wrap;
@@ -211,18 +226,7 @@
 
 
 #benefits{
-    .heading-wrapper{
-        margin-bottom: 1rem;
-        h3{
-            font-size: 3rem;
-            text-align: center;
-        }
-        p{
-            font-size: 2rem;
-            color: $text-color;
-            text-align: center;
-        }
-    }
+    
     .content-wrapper{
         padding: 5rem 10rem;
         @media (max-width:$lg){
@@ -351,3 +355,68 @@
     }
 }
 
+
+#testimonial{
+    margin-top: 15rem;
+    padding: 0 10rem;
+    .heading-wrapper{
+        .green-border{
+            width: 50rem;
+        }
+    }
+
+    .testimonial-wrapper{
+        
+        display: flex;
+        .last-block{
+            margin-right: 0;
+        }
+
+        .testimonial-block{
+            position: relative;
+            border: 0.3rem solid #707070;
+            border-radius: 1rem;
+            padding: 2.8rem 5rem;
+            margin-top: 10rem;
+            margin-right: 5rem;
+            .avatar{
+                position: absolute;
+                top: -6rem;
+                left: 8%;
+                margin-bottom: 10rem;
+            }
+            .star-rating{
+                margin: 3rem 0;
+                i{
+                    color: #FFD500;
+                    font-size: 1.5rem;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                color: $text-color;
+                margin-bottom: 3rem;
+            }
+            .name{
+                font-size: 1.8rem;
+            }
+            .designation{
+                font-size: 1.6rem;
+                color: $text-color;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .arrow-block{
+        padding: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        i{
+            font-size: 5rem;
+            margin-left: 8rem;
+            color: $primary-color;
+        }
+    }
+    
+}

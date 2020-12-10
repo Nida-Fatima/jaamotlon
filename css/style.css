@@ -814,6 +814,23 @@ footer .copyright p {
   text-align: center;
 }
 
+.heading-wrapper {
+  margin-bottom: 1rem;
+}
+
+.heading-wrapper h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.heading-wrapper p {
+  font-size: 2rem;
+  color: #7A839E;
+  text-align: center;
+  margin: 2rem 0;
+}
+
 #hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1070,21 +1087,6 @@ footer .copyright p {
   }
 }
 
-#benefits .heading-wrapper {
-  margin-bottom: 1rem;
-}
-
-#benefits .heading-wrapper h3 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-#benefits .heading-wrapper p {
-  font-size: 2rem;
-  color: #7A839E;
-  text-align: center;
-}
-
 #benefits .content-wrapper {
   padding: 5rem 10rem;
 }
@@ -1232,4 +1234,80 @@ footer .copyright p {
   top: 25%;
   left: -0.8rem;
   z-index: 2;
+}
+
+#testimonial {
+  margin-top: 15rem;
+  padding: 0 10rem;
+}
+
+#testimonial .heading-wrapper .green-border {
+  width: 50rem;
+}
+
+#testimonial .testimonial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#testimonial .testimonial-wrapper .last-block {
+  margin-right: 0;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block {
+  position: relative;
+  border: 0.3rem solid #707070;
+  border-radius: 1rem;
+  padding: 2.8rem 5rem;
+  margin-top: 10rem;
+  margin-right: 5rem;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block .avatar {
+  position: absolute;
+  top: -6rem;
+  left: 8%;
+  margin-bottom: 10rem;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block .star-rating {
+  margin: 3rem 0;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block .star-rating i {
+  color: #FFD500;
+  font-size: 1.5rem;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block p {
+  font-size: 1.5rem;
+  color: #7A839E;
+  margin-bottom: 3rem;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block .name {
+  font-size: 1.8rem;
+}
+
+#testimonial .testimonial-wrapper .testimonial-block .designation {
+  font-size: 1.6rem;
+  color: #7A839E;
+  font-weight: 500;
+}
+
+#testimonial .arrow-block {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#testimonial .arrow-block i {
+  font-size: 5rem;
+  margin-left: 8rem;
+  color: #8EC125;
 }
