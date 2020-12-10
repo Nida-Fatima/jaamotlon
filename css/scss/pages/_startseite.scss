@@ -1,4 +1,6 @@
 
+//////////////// COMMON COMPONENT STYLING /////////////////
+
 .heading-wrapper{
     margin-bottom: 1rem;
     h3{
@@ -24,6 +26,10 @@
     border-top: solid 0.6rem $primary-shade3;
     margin: 0 auto;
 }
+
+//////////////////////////////////////////////////////
+//////////////// 1st SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
 
 #hero-section{
     display: flex;
@@ -103,6 +109,10 @@
     }
 }
 
+
+//////////////////////////////////////////////////////
+//////////////// 2ND SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
 
 
 #services{
@@ -236,6 +246,9 @@
 
 }
 
+//////////////////////////////////////////////////////
+//////////////// 3RD SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
 
 #benefits{
     
@@ -368,6 +381,10 @@
 }
 
 
+//////////////////////////////////////////////////////
+//////////////// 4TH SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
+
 #testimonial{
     margin: 15rem 0;
     padding: 0 10rem;
@@ -468,11 +485,15 @@
     
 }
 
+//////////////////////////////////////////////////////
+//////////////// 5TH SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
 
 #FAQ{
 
     margin: 10rem 0;
     .gray-border{
+        position: relative;
         padding: 5rem 0;
         border: 2rem solid #F5F5F5;
         max-width: 75%;
@@ -487,6 +508,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             
             img{
                 width: 60%;
@@ -497,11 +519,13 @@
                 }
             }
             button{
+                position: absolute;
+                bottom: -3.1rem;
                 width: 40%;
-                height: 6rem;
+                height: 5rem;
                 margin-top: 5rem;
                 color: white;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-weight: 600;
                 @media (max-width:$lg){
                     font-size: 1.5rem;
@@ -521,5 +545,216 @@
 
     }
     
+
+}
+
+//////////////////////////////////////////////////////
+//////////////// 6TH SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
+
+#cta{
+    .wrapper{
+        height: 110rem;
+        @media (max-width:$sm){
+            height: 80rem;
+        }
+        .bordered-div{
+            top: 45rem;
+            width: 70%;
+            height: 50rem;
+
+            @media (max-width:$lg){
+                width: 80%;
+            }
+            @media (max-width:$md){
+                top: 18rem;
+                height: 80rem;
+            }
+            @media (max-width:$sm){
+                top: 18rem;
+                height: 55rem;
+            }
+            .flex-item-1{
+                flex: 45%;
+                max-width: 45%;
+                @media (max-width:$md){
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                img{
+                    width: 60%;
+                    left: -15rem;
+                    @media (max-width:$md){
+                        width: 100%;
+                    }
+                    @media (max-width:$lg){
+                        left: -7rem;
+                    }
+                }
+            }
+            .flex-item-2{
+                flex: 55%;
+                max-width: 55%;
+                @media (max-width:$md){
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                h1{
+                    font-size: 7.5rem;
+                    text-shadow: 1px 1px 10px gray;
+                    letter-spacing: 0.4rem;
+                    font-weight: 700;
+                    @media (max-width:$lg){
+                        font-size: 4.8rem;
+                        text-shadow: 1px 1px 10px gray;
+                        letter-spacing: 0.2rem;
+                    }
+                    @media (max-width:$md){
+                        font-size: 4rem;
+                        text-shadow: 1px 1px 10px gray;
+                        letter-spacing: 0.2rem;
+                    }
+                    @media (max-width:$sm){
+                        font-size: 3rem;
+                        text-shadow: 1px 1px 10px gray; 
+                    }
+                }
+                h2{
+                    font-size: 4rem;
+                    font-weight: 800;
+                    @media (max-width:$lg){
+                        font-size: 3.3rem;
+                    }
+                    @media (max-width:$md){
+                        font-size: 2rem;
+                       
+                        
+                    }
+                    @media (max-width:$sm){
+                        font-size: 1.7rem;
+                       
+                    }
+                }
+                button{
+                    font-size: 2rem;
+                    @media (max-width:$lg){
+                        font-size: 1.4rem;
+                    }
+                    @media (max-width:$md){
+                        font-size: 1.5rem;
+                    }
+                    @media (max-width:$sm){
+                        font-size: 1.1rem;
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////
+//////////////// 7TH SECTION STYLING /////////////////
+//////////////////////////////////////////////////////
+
+#question-answer{
+   
+    margin-bottom: 20rem;
+    .faq-wrapper{
+        padding: 5rem 8rem;
+        margin-top: 10rem;
+        @media (max-width:$md){
+            padding: 2rem;
+        }
+        .faq-block-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .faq-block{
+                flex: 45%;
+                max-width: 45%;
+                @media (max-width:$lg){
+                    max-height: 10rem;
+                    padding: 1.3rem;
+                    // border: 0.6rem solid $primary-color;
+                }
+                @media (max-width:$md){
+                    max-height: 12rem;
+                    padding: 1.5rem;
+                    border: 0.6rem solid $primary-color;
+                }
+                @media (max-width:$sm){
+                    flex: 100%;
+                    max-width: 100%;
+                    max-height: 10rem;
+                    padding: 1rem;
+                }
+                max-height: 13rem;
+                border: 0.8rem solid $primary-color;
+                padding: 4rem 3rem;
+                margin-bottom: 3rem;
+                display: flex;
+                position: relative;
+                h6{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    @media (max-width:$lg){
+                        font-size: 1.7rem;
+                    }
+                    @media (max-width:$md){
+                        font-size: 1.5rem;
+                    }
+                }
+                button{
+                    background-color: white;
+                    height: 75%;
+                    border: none;
+                    position: absolute;
+                    top: 50%;
+                    right: -2rem;
+                    transform: translateY(-50%);
+                    @media (max-width:$lg){
+                        right: -1.5rem;
+                    }
+                    @media (max-width:$md){
+                        right: -1.3rem;
+                    }
+                    i{
+                        font-size: 5rem;
+                        color: $primary-color;
+                        @media (max-width:$lg){
+                            font-size: 4rem;
+                        }
+                        @media (max-width:$md){
+                            font-size: 3rem;
+                        }
+                    }
+                }
+                button:active{
+                    border: none;
+                }
+
+            }
+            .active-faq{
+                flex-direction: column;
+                max-height: 25rem;
+                p{
+                    font-weight: lighter;
+                    font-size: 1.8rem;
+                    margin-top: 3rem;
+                    @media (max-width:$md){
+                        font-size: 1.5rem;
+                    }
+                }
+                button{
+                    top: 30%;
+                    height: 50%;
+                }
+            }
+        }
+    }
 
 }
