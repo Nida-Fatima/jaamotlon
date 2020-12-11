@@ -1871,3 +1871,266 @@ footer .copyright p {
   color: blue;
   margin-top: 1rem;
 }
+
+#abnehmen-hero-section {
+  background: url(../img/w24-team.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 87rem;
+  z-index: -1;
+}
+
+#abnehmen-hero-section .bordered-div {
+  border: 2rem solid white;
+  position: relative;
+  top: 15rem;
+  width: 75%;
+  height: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #abnehmen-hero-section .bordered-div {
+    top: 15rem;
+    width: 100%;
+  }
+}
+
+#abnehmen-hero-section .bordered-div #hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40vw;
+  height: 75%;
+  padding: 4rem 6rem;
+  background-color: white;
+  position: relative;
+  left: -15rem;
+}
+
+@media (max-width: 1024px) {
+  #abnehmen-hero-section .bordered-div #hero-text {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #abnehmen-hero-section .bordered-div #hero-text {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #abnehmen-hero-section .bordered-div #hero-text {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#abnehmen-hero-section .bordered-div #hero-text h3 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  #abnehmen-hero-section .bordered-div #hero-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #abnehmen-hero-section .bordered-div #hero-text h3 {
+    font-size: 2rem;
+  }
+}
+
+#abnehmen-hero-section .bordered-div #hero-text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #abnehmen-hero-section .bordered-div #hero-text h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #abnehmen-hero-section .bordered-div #hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+#abnehmen-hero-section .bordered-div #hero-text p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #abnehmen-hero-section .bordered-div #hero-text p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+#abnehmen-hero-section .bordered-div #hero-text .green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 1rem 0;
+}
+
+#detailed-service-section {
+  padding: 20rem 0;
+}
+
+#detailed-service-section .service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#detailed-service-section .service-wrapper img {
+  width: 45rem;
+  height: 55rem;
+}
+
+#detailed-service-section .service-wrapper .service-description {
+  margin-left: 10rem;
+  width: 65%;
+}
+
+#detailed-service-section .service-wrapper .service-description h3 {
+  font-size: 4rem;
+}
+
+#detailed-service-section .service-wrapper .service-description p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-top: 3rem;
+}
+
+#detailed-service-section .service-wrapper .flex-service-item {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+}
+
+#detailed-service-section .service-2 {
+  margin-top: 30rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#detailed-service-section .service-2 .service-description {
+  margin-left: 0;
+}
+
+#detailed-service-section .service-2 img {
+  margin-left: 10rem;
+}
+
+#vacu-styler {
+  background-image: url(../../../img/w24-team.png);
+  padding: 8rem 0;
+  min-height: 65rem;
+  position: relative;
+}
+
+#vacu-styler #vacu-styler-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35%;
+  padding: 2rem 6rem 2rem 4rem;
+  background-color: white;
+  position: absolute;
+  right: 15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) {
+  #vacu-styler #vacu-styler-content {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #vacu-styler #vacu-styler-content {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #vacu-styler #vacu-styler-content {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#vacu-styler #vacu-styler-content h3 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  #vacu-styler #vacu-styler-content h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #vacu-styler #vacu-styler-content h3 {
+    font-size: 2rem;
+  }
+}
+
+#vacu-styler #vacu-styler-content p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #vacu-styler #vacu-styler-content p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
