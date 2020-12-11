@@ -164,7 +164,7 @@ body {
 
 .nav-wrapper {
   background-color: white;
-  padding: 0 14rem;
+  padding: 0 5rem 0 14rem;
 }
 
 @media (max-width: 1024px) {
@@ -1134,26 +1134,60 @@ footer .copyright p {
   margin-bottom: 8rem;
 }
 
-#benefits .content-wrapper .content-block #block1 {
-  background-image: url("../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png");
-}
-
-#benefits .content-wrapper .content-block #block2 {
-  background-image: url("../../../img/startseite-imgs/aelterer-ehemann-der-seiner-frau-hilft-position-des-yoga-zu-tun_23-2148097430.png");
-}
-
-#benefits .content-wrapper .content-block #block3 {
-  background-image: url("../../../img/startseite-imgs/portraet-eines-laechelnden-aelteren-paares-in-tragenden-yogamatten-der-sportkleidung_23-2148097403.png");
-}
-
-#benefits .content-wrapper .content-block #block4 {
-  background-image: url("../../../img/startseite-imgs/glueckliche-aeltere-frau-zu-hause-die-pensionaeren-hilft-verbinden-um-korrekte-position-einzunehmen_23-2148097405.png");
-}
-
 @media (max-width: 768px) {
   #benefits .content-wrapper .content-block {
     margin-bottom: 0.5rem;
   }
+}
+
+#benefits .content-wrapper .content-block #block1 {
+  background-image: url("../../../img/startseite-imgs/ehemann-der-seiner-frau-mit-yoga-hilft-werfen-auf-uebungsmatte-auf_23-2148097390.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#benefits .content-wrapper .content-block #block2 {
+  background-image: url("../../../img/startseite-imgs/aelterer-ehemann-der-seiner-frau-hilft-position-des-yoga-zu-tun_23-2148097430.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#benefits .content-wrapper .content-block #block3 {
+  background-image: url("../../../img/startseite-imgs/portraet-eines-laechelnden-aelteren-paares-in-tragenden-yogamatten-der-sportkleidung_23-2148097403.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#benefits .content-wrapper .content-block #block4 {
+  background-image: url("../../../img/startseite-imgs/glueckliche-aeltere-frau-zu-hause-die-pensionaeren-hilft-verbinden-um-korrekte-position-einzunehmen_23-2148097405.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#benefits .content-wrapper .content-block .content-border {
+  border: 0.8rem solid #8EC125;
+  width: 85%;
+  height: 110%;
+  padding: 3rem 3rem 3rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#benefits .content-wrapper .content-block .content-border-2 {
+  border-right: 0.8rem solid #8EC125;
+  width: 85%;
+  height: 110%;
+  padding: 3rem 3rem 3rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 #benefits .content-wrapper .content-block .inner-content-wrapper {
@@ -1164,8 +1198,8 @@ footer .copyright p {
   padding: 1.5rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
   position: relative;
-  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -1178,81 +1212,60 @@ footer .copyright p {
   }
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border {
-  border: 0.8rem solid #8EC125;
-  width: 90%;
-  height: 120%;
-  margin: -2.5rem auto;
-  padding: 3rem;
-  position: relative;
-  z-index: 3;
+#benefits .content-wrapper .content-block .inner-content-wrapper .content {
+  padding: 3rem 4rem;
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content {
-  z-index: 2;
-}
-
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content h2 {
+#benefits .content-wrapper .content-block .inner-content-wrapper .content h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
-  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content h2 {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content h2 {
     font-size: 2.5rem;
   }
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul {
+#benefits .content-wrapper .content-block .inner-content-wrapper .content ul {
   list-style: none;
   margin-bottom: 2rem;
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li {
+#benefits .content-wrapper .content-block .inner-content-wrapper .content ul li {
   font-size: 1.5rem;
   line-height: 2;
 }
 
 @media (max-width: 1024px) {
-  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content ul li {
     font-size: 1.3rem;
   }
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content ul li i {
+#benefits .content-wrapper .content-block .inner-content-wrapper .content ul li i {
   color: #8EC125;
   font-size: 2rem;
   margin-right: 1.5rem;
 }
 
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+#benefits .content-wrapper .content-block .inner-content-wrapper .content button {
   font-size: 1.4rem;
   color: white;
 }
 
 @media (max-width: 1024px) {
-  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content button {
     width: 18rem;
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 768px) {
-  #benefits .content-wrapper .content-block .inner-content-wrapper .content-border .content button {
+  #benefits .content-wrapper .content-block .inner-content-wrapper .content button {
     width: 22rem;
     font-size: 1.3rem;
   }
-}
-
-#benefits .content-wrapper .content-block .inner-content-wrapper .content-border::before {
-  content: "";
-  width: 0.8rem;
-  background-color: white;
-  height: 50%;
-  position: absolute;
-  top: 25%;
-  left: -0.8rem;
-  z-index: 2;
 }
 
 #testimonial {
@@ -1655,9 +1668,9 @@ footer .copyright p {
       -ms-flex: 45%;
           flex: 45%;
   max-width: 45%;
-  max-height: 13rem;
+  max-height: 11rem;
   border: 0.8rem solid #8EC125;
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1692,19 +1705,19 @@ footer .copyright p {
 }
 
 #question-answer .faq-wrapper .faq-block-container .faq-block h6 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 @media (max-width: 1024px) {
   #question-answer .faq-wrapper .faq-block-container .faq-block h6 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   #question-answer .faq-wrapper .faq-block-container .faq-block h6 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 

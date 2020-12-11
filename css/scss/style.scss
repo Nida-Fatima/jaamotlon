@@ -167,7 +167,7 @@ body{
 
 .nav-wrapper{
     background-color: white;
-    padding: 0 14rem;
+    padding: 0 5rem 0 14rem;
     @media (max-width:$lg){
         padding: 2rem 5rem 0rem 5rem;
 
@@ -538,6 +538,9 @@ body{
 
 @import '../scss/pages/startseite';
 
+///****************************************** NewsPage ******************************************///
+
+@import '../scss/pages/news'
 
 
 
