@@ -1,11 +1,14 @@
 
 #abnehmen-hero-section{
-    background: url(../img/w24-team.png) no-repeat center center;
+    background: url(../../../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png) no-repeat center center;
     background-size: cover;
+    background-position: center;
     position: relative;
     width: 100%;
     height: 87rem;
     z-index: -1;
+
+    margin-bottom: 30rem;
 
     .bordered-div{
         border: 2rem solid white;
@@ -26,7 +29,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 40vw;
+            width: 35vw;
             height: 75%;
             padding: 4rem 6rem;
             background-color: white;
@@ -47,8 +50,8 @@
             
 
             h3{
-                font-size: 3rem;
-                font-weight: lighter;
+                font-size: 3.2rem;
+                font-weight: 500 ;
                 @media (max-width:$md){
                     font-size: 2.5rem;
                 }
@@ -88,68 +91,114 @@
 }
 
 
-#detailed-service-section{
-    padding: 20rem 0;
-    
+.detailed-service-section{
     
     .service-wrapper{
         display: flex;
-        width: 60%;
-        margin: 0 auto;
+        width: 65%;
+        margin: 20rem auto;
 
-        img{
-            width: 45rem;
-            height: 55rem;
+        @media (max-width:$lg){
+            width: 70%;
+        }
+        @media (max-width:$md){
+            width: 85%;
+        }
+        @media (max-width:$sm){
+            width: 85%;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .service-description{
             margin-left: 10rem;
             width: 65%;
+            @media (max-width:$sm){
+                margin-left: 0;
+                margin-top: 5rem;
+                width: 100%;
+            }
+
             h3{
                 font-size: 4rem;
             }
             p{
                 font-size: 1.8rem;
                 line-height: 1.4;
-                margin-top: 3rem;
-                
+                margin-top: 3rem; 
             }
-
-        }
-
-        .flex-service-item{
-            flex: 50%;
-            max-width: 50%;
         }
     }
 
-    .service-2{
-        margin-top: 30rem;
+    .left-content-service{
+        
         flex-direction: row-reverse;
 
         .service-description{
             margin-left: 0;
-            // margin-right: 10rem;
         }
         img{
             margin-left: 10rem;
+            width: 85%;
+            @media (max-width:$sm){
+                width: 100%;
+                margin: 0;
+            }
+            
         }
+        
+    }
+
+    .right-content-service{
+        img{
+            width: 100%;
+           
+        }
+       
     }
 }
 
 #vacu-styler{
-    background-image: url(../../../img/w24-team.png);
+    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_VacuStyler.png);
+    background-position: center;
+}
+#slide-styler{
+    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_SlideStyler.png);
+    background-position: center;
+}
+
+#Individueller-styler{
+    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_Ernaehrungsplan.png);
+    background-position: center;
+    .middle-styler-content{
+        padding: 5rem;
+        width: 40%;
+        @media (max-width:$sm){
+            width: 60%;
+            padding: 2rem;
+        }
+    }
+    h3{
+        font-size: 3.5rem;
+    }
+
+    p{
+        margin-top: 3rem;
+    }
+}
+
+.middle-section{
     padding: 8rem 0;
+    margin: 10rem 0;
     min-height: 65rem;
     position: relative;
-    #vacu-styler-content{
+    .middle-styler-content{
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 35%;
-        // height: 90%;
-        padding: 2rem 6rem 2rem 4rem;
+        padding: 2.2rem 7rem 2.2rem 4rem;
         background-color: white;
         position: absolute;
         right: 15rem;
@@ -163,9 +212,12 @@
             width: 60vw;
         }
         @media (max-width:$sm){
-            width: 90%;
-            left: 0;
-            margin: 0 auto;
+            width: 60%;
+            height: 60%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 4rem;
         }
 
         h3{
@@ -189,5 +241,156 @@
                 line-height: 1.3 ;
             }
         }
+    }
+}
+
+
+#abnehmen-cta{
+  
+    .wrapper{
+        margin: 30rem 0;
+    
+    }
+    
+    .abnehmen-bordered-div{
+        border: 2rem solid #F5F5F5;
+        position: relative;
+        height: auto;
+        width: 80%;
+        padding: 7rem 0 10rem 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @media (max-width:$lg){
+            padding: 5rem; 
+        }
+        @media (max-width:$md){
+            top: 8rem;
+            padding: 3rem;
+        }
+        
+        @media (max-width:$sm){
+            padding: 0;
+        }
+
+        .flex-item-1{
+            flex: 45%;
+            max-width: 45%;
+            @media (max-width:$md){
+                text-align: center;
+            }
+
+            
+            img{
+                position: absolute;
+                left: -6rem;
+                bottom: 0;
+                width: 50%;
+                @media (max-width:$md){
+                    position: static;
+                    margin-top: -15rem;
+                }
+                @media (max-width:$sm){
+                    width: 80%;
+                    
+                }
+            }
+            
+            
+            /* Responsive layout - makes a one column-layout instead of two columns */
+            @media screen and (max-width: $md) {
+                flex: 100%;
+                max-width: 100%;
+                
+            }
+            /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: $sm) {
+                flex: 100%;
+                max-width: 100%;
+                
+            }
+        }
+        .flex-item-2{
+            flex: 55%;
+            max-width: 55%;
+            margin: 0 auto;
+            @media screen and (max-width: $md) {
+                flex: 100%;
+                max-width: 100%;
+                text-align: center;
+                padding: 2rem;
+            }
+            
+        }
+        h1{
+            font-size: 9rem;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1;
+
+            @media (max-width:$lg){
+                font-size: 4rem;
+            }
+            @media (max-width:$md){
+                font-size: 5rem;
+
+            }
+            @media (max-width:$sm){
+                font-size: 3.2rem;
+                margin: 1.5rem 0
+            }
+        }
+
+        h2{
+            font-size: 4.5rem;
+            color: $black-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 3rem;
+            margin-right: 5rem;
+            
+            @media (max-width:$lg){
+                font-size: 2.5rem;
+                margin: 1.8rem 0;
+            }
+            @media (max-width:$md){
+                font-size: 3rem;
+
+            }
+            @media (max-width:$sm){
+                font-size: 2.5rem;
+                margin: 1.5rem 0
+            }
+        }
+        .cta-btn{
+            background-color: $primary-color;
+            color: $white-color;
+            font-size: 1.9rem;
+            min-width: 65%;
+            height: 6rem;
+            text-align: center;
+            margin-top: 5rem;
+            padding: 1rem;
+
+            @media (max-width:$lg){
+                font-size: 1.6rem;
+                min-width: 90%;
+            }
+            @media (max-width:$md){
+                font-size: 2rem;
+                margin-top: 2.5rem;
+                min-width: 65%;
+
+            }
+            @media (max-width:$sm){
+                font-size: 1.8rem;
+                min-width: 85%;
+                margin-top: 1.8rem;
+            }
+
+        }
+        
     }
 }
