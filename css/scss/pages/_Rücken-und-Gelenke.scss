@@ -2,9 +2,9 @@
 //////// Hero Section style
 /////////////////////////////
 
-#abnehmen-hero-section{
-    background: url(../../../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png) no-repeat center center;
-    background-size: cover;
+#rucken-hero-section{
+    background: url(../../../img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke.png) no-repeat center center;
+    // background-size: cover;
     background-position: center;
     position: relative;
     width: 100%;
@@ -32,9 +32,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 35vw;
+            width: 40vw;
             height: 75%;
-            padding: 4rem 6rem;
+            padding: 4rem 10rem;
             background-color: white;
             position: relative;
             left: -15rem;
