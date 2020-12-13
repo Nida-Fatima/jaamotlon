@@ -2085,7 +2085,7 @@ footer .copyright p {
 
 .detailed-service-section .service-wrapper .service-description p {
   font-size: 1.8rem;
-  line-height: 1.4;
+  line-height: 1.7;
   margin-top: 3rem;
 }
 
@@ -2872,4 +2872,944 @@ footer .copyright p {
     font-size: 2.5rem;
     margin: 1.5rem 0;
   }
+}
+
+#fitness-hero-section {
+  background: url(../../../img/fitness/Workout24_fit_werden.png) no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 87rem;
+  z-index: -1;
+  margin-bottom: 30rem;
+}
+
+#fitness-hero-section .bordered-div {
+  border: 2rem solid white;
+  position: relative;
+  top: 15rem;
+  width: 75%;
+  height: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #fitness-hero-section .bordered-div {
+    top: 15rem;
+    width: 100%;
+  }
+}
+
+#fitness-hero-section .bordered-div #hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+  height: 75%;
+  padding: 4rem 6rem;
+  background-color: white;
+  position: relative;
+  left: -15rem;
+}
+
+@media (max-width: 1024px) {
+  #fitness-hero-section .bordered-div #hero-text {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #fitness-hero-section .bordered-div #hero-text {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-hero-section .bordered-div #hero-text {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#fitness-hero-section .bordered-div #hero-text h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #fitness-hero-section .bordered-div #hero-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-hero-section .bordered-div #hero-text h3 {
+    font-size: 2rem;
+  }
+}
+
+#fitness-hero-section .bordered-div #hero-text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #fitness-hero-section .bordered-div #hero-text h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-hero-section .bordered-div #hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+#fitness-hero-section .bordered-div #hero-text p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #fitness-hero-section .bordered-div #hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+#fitness-hero-section .bordered-div #hero-text .green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 1rem 0;
+}
+
+#personal-training {
+  background-image: url(../../../img/fitness/Workout24_Fitness_Personal_Training_Hero.png);
+  background-position: center;
+}
+
+.middle-section {
+  padding: 8rem 0;
+  margin: 10rem 0;
+  min-height: 65rem;
+  position: relative;
+}
+
+.middle-section .middle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35%;
+  padding: 8rem 8rem 8rem 5rem;
+  background-color: white;
+  position: absolute;
+  right: 15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) {
+  .middle-section .middle-content {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .middle-section .middle-content {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .middle-section .middle-content {
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .middle-section .middle-content {
+    width: 80%;
+  }
+}
+
+.middle-section .middle-content h3 {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .middle-section .middle-content h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .middle-section .middle-content h3 {
+    font-size: 2rem;
+  }
+}
+
+.middle-section .middle-content p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #000;
+  line-height: 1.3;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .middle-section .middle-content p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+#fitness-cta .wrapper {
+  margin: 50rem 0 30rem 0;
+}
+
+#fitness-cta .fitness-bordered-div {
+  border: 2rem solid #F5F5F5;
+  position: relative;
+  height: auto;
+  width: 80%;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  #fitness-cta .fitness-bordered-div {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div {
+    top: 8rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-cta .fitness-bordered-div {
+    padding: 0;
+  }
+}
+
+#fitness-cta .fitness-bordered-div .flex-item-1 {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  /* Responsive layout - makes a one column-layout instead of two columns */
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+}
+
+@media (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div .flex-item-1 {
+    text-align: center;
+  }
+}
+
+#fitness-cta .fitness-bordered-div .flex-item-1 img {
+  position: absolute;
+  left: -6rem;
+  bottom: 0;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div .flex-item-1 img {
+    position: static;
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-cta .fitness-bordered-div .flex-item-1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #fitness-cta .fitness-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#fitness-cta .fitness-bordered-div .flex-item-2 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div .flex-item-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+#fitness-cta .fitness-bordered-div h1 {
+  font-size: 9rem;
+  color: #8EC125;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  #fitness-cta .fitness-bordered-div h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-cta .fitness-bordered-div h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#fitness-cta .fitness-bordered-div h2 {
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+  #fitness-cta .fitness-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #fitness-cta .fitness-bordered-div h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #fitness-cta .fitness-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-hero-section {
+  background: url(../../../img/betriebliches/Workout24_Firmenfitness_Arbeitgeber_Header.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 87rem;
+  z-index: -1;
+  margin-bottom: 30rem;
+}
+
+#betriebliches-hero-section .bordered-div {
+  border: 2rem solid white;
+  position: relative;
+  top: 15rem;
+  width: 75%;
+  height: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #betriebliches-hero-section .bordered-div {
+    top: 15rem;
+    width: 100%;
+  }
+}
+
+#betriebliches-hero-section .bordered-div #hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+  height: 75%;
+  padding: 4rem 6rem;
+  background-color: white;
+  position: relative;
+  left: -15rem;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-hero-section .bordered-div #hero-text {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-hero-section .bordered-div #hero-text {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-hero-section .bordered-div #hero-text {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#betriebliches-hero-section .bordered-div #hero-text h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-hero-section .bordered-div #hero-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-hero-section .bordered-div #hero-text h3 {
+    font-size: 2rem;
+  }
+}
+
+#betriebliches-hero-section .bordered-div #hero-text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-hero-section .bordered-div #hero-text h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-hero-section .bordered-div #hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+#betriebliches-hero-section .bordered-div #hero-text p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-hero-section .bordered-div #hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+#betriebliches-hero-section .bordered-div #hero-text .green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 1rem 0;
+}
+
+#betriebliches-cta .wrapper {
+  margin: 50rem 0 30rem 0;
+}
+
+#betriebliches-cta .betriebliches-bordered-div {
+  border: 2rem solid #F5F5F5;
+  position: relative;
+  height: auto;
+  width: 80%;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    top: 8rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  /* Responsive layout - makes a one column-layout instead of two columns */
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    text-align: center;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+  position: absolute;
+  left: -6rem;
+  bottom: 0;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    position: static;
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h1 {
+  font-size: 9rem;
+  color: #8EC125;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h2 {
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .betriebliches-btn {
+  min-width: 80%;
+}
+
+#Firmenfitness-content .content-wrapper {
+  text-align: center;
+}
+
+#Firmenfitness-content .content-wrapper h3 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+#Firmenfitness-content .content-wrapper .green-border {
+  width: 25%;
+  margin-bottom: 3rem;
+}
+
+#Firmenfitness-content .content-wrapper p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+
+#Firmenfitness-content .content-wrapper .btn-container {
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Firmenfitness-content .content-wrapper .btn-container {
+    width: 90%;
+  }
+}
+
+#Firmenfitness-content .content-wrapper .btn-container button {
+  width: 30%;
+  color: white;
+  height: 5rem;
+  font-size: 2rem;
+  height: 7rem;
+}
+
+@media (max-width: 768px) {
+  #Firmenfitness-content .content-wrapper .btn-container button {
+    width: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  #Firmenfitness-content .content-wrapper .btn-container button {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    font-size: 2.2rem;
+    margin: 2rem 10rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #Firmenfitness-content .content-wrapper .btn-container button {
+    font-size: 2rem;
+    margin: 2rem 5rem;
+  }
+}
+
+#betriebliches-cta .wrapper {
+  margin: 20rem 0;
+}
+
+#betriebliches-cta .betriebliches-bordered-div {
+  border: 2rem solid #F5F5F5;
+  position: relative;
+  height: auto;
+  width: 80%;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    top: 8rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  /* Responsive layout - makes a one column-layout instead of two columns */
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    text-align: center;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+  position: absolute;
+  left: -6rem;
+  bottom: 0;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    position: static;
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h1 {
+  font-size: 9rem;
+  color: #8EC125;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h2 {
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div button {
+  font-size: 2.2rem;
 }
