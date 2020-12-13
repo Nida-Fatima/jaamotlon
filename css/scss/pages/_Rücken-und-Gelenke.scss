@@ -49,6 +49,7 @@
                 width: 90%;
                 left: 0;
                 margin: 0 auto;
+                padding: 5rem;
             }
             
 
@@ -102,7 +103,7 @@
     .service-wrapper{
         display: flex;
         width: 65%;
-        margin: 20rem auto;
+        margin: 30rem auto;
 
         @media (max-width:$lg){
             width: 70%;
@@ -131,7 +132,7 @@
             p{
                 font-size: 1.8rem;
                 line-height: 1.4;
-                margin-top: 3rem; 
+                margin-top: 2rem; 
             }
         }
     }
@@ -164,85 +165,79 @@
     }
 }
 
-#vacu-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_VacuStyler.png);
-    background-position: center;
-}
-#slide-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_SlideStyler.png);
-    background-position: center;
-}
 
-#Individueller-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_Ernaehrungsplan.png);
-    background-position: center;
-    .middle-styler-content{
-        padding: 5rem;
-        width: 40%;
+
+
+//////// Quote div  style
+/////////////////////////////
+
+.quote-div{
+    text-align: center;
+
+    h4{
+        font-size: 3.8rem;
         @media (max-width:$sm){
-            width: 60%;
-            padding: 2rem;
+            font-size: 3.5rem;
+            
         }
     }
-    h3{
+    h5{
         font-size: 3.5rem;
     }
-
     p{
-        margin-top: 3rem;
+        font-size: 2rem;
+        max-width: 70%;
+        margin: 3rem auto;
     }
 }
 
 //////// Middle section style
 /////////////////////////////
 
+#Rückenvermessung-div{
+    background-image: url(../../../img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_idiag-Rückencenter.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .middle-section{
     padding: 8rem 0;
     margin: 10rem 0;
     min-height: 65rem;
     position: relative;
-    .middle-styler-content{
+    .middle-content{
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 35%;
-        padding: 2.2rem 7rem 2.2rem 4rem;
+        width: 70%;
+        padding: 2.8rem 3.8rem;
         background-color: white;
         position: absolute;
-        right: 15rem;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%,-50%);
         @media (max-width:$lg){
-            width: 55vw;
-            height: 75%; 
+           
         }
         @media (max-width:$md){
-            width: 60vw;
+           
         }
         @media (max-width:$sm){
-            width: 60%;
-            height: 60%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 4rem;
-        }
-        @media (max-width:$xs) {
-            width: 80%;
+           width: 80%;
         }
 
         h3{
-            font-size: 4rem;
+            font-size: 5.5rem;
             font-weight: bolder;
+            text-align: center;
             @media (max-width:$md){
-                font-size: 2.5rem;
+                
             }
             @media (max-width:$sm){
-                font-size: 2rem;
+                font-size: 4.3rem;
+            }
+            @media (max-width:$xs){
+                font-size: 3rem;
             }
         }
-        
         p{
             font-size: 1.8rem;
             font-weight: lighter;
@@ -259,14 +254,14 @@
 //////// Call to Action style
 /////////////////////////////
 
-#abnehmen-cta{
+#rucken-cta{
   
     .wrapper{
         margin: 30rem 0;
     
     }
     
-    .abnehmen-bordered-div{
+    .rucken-bordered-div{
         border: 2rem solid #F5F5F5;
         position: relative;
         height: auto;
@@ -377,33 +372,6 @@
                 font-size: 2.5rem;
                 margin: 1.5rem 0
             }
-        }
-        .cta-btn{
-            background-color: $primary-color;
-            color: $white-color;
-            font-size: 1.9rem;
-            min-width: 65%;
-            height: 6rem;
-            text-align: center;
-            margin-top: 5rem;
-            padding: 1rem;
-
-            @media (max-width:$lg){
-                font-size: 1.6rem;
-                min-width: 90%;
-            }
-            @media (max-width:$md){
-                font-size: 2rem;
-                margin-top: 2.5rem;
-                min-width: 65%;
-
-            }
-            @media (max-width:$sm){
-                font-size: 1.8rem;
-                min-width: 85%;
-                margin-top: 1.8rem;
-            }
-
         }
         
     }

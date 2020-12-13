@@ -377,34 +377,6 @@
                 font-size: 2.5rem;
                 margin: 1.5rem 0
             }
-        }
-        .cta-btn{
-            background-color: $primary-color;
-            color: $white-color;
-            font-size: 1.9rem;
-            min-width: 65%;
-            height: 6rem;
-            text-align: center;
-            margin-top: 5rem;
-            padding: 1rem;
-
-            @media (max-width:$lg){
-                font-size: 1.6rem;
-                min-width: 90%;
-            }
-            @media (max-width:$md){
-                font-size: 2rem;
-                margin-top: 2.5rem;
-                min-width: 65%;
-
-            }
-            @media (max-width:$sm){
-                font-size: 1.8rem;
-                min-width: 85%;
-                margin-top: 1.8rem;
-            }
-
-        }
-        
+        } 
     }
 }
