@@ -2,9 +2,10 @@
 //////// Hero Section style
 /////////////////////////////
 
-#betriebliches-hero-section{
-    background: url(../../../img/betriebliches/Workout24_Firmenfitness_Arbeitgeber_Header.png) no-repeat center center;
+#arbeitgeber-hero-section{
+    background-image: url('../../../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Header.png');
     background-size: cover;
+    background-position: center;
     position: relative;
     width: 100%;
     height: 87rem;
@@ -223,7 +224,7 @@
 //////// firmfitness content style
 /////////////////////////////
 
-#Firmenfitness-content{
+#arbeitgeber-content{
 
     .content-wrapper{
         text-align: center;
@@ -236,50 +237,75 @@
             margin-bottom: 3rem;
         }
         p{
-            width: 60%;
+            width: 45%;
             margin: 0 auto;
             font-size: 1.8rem;
         }
-        .btn-container{
+        .p-container{
             padding: 10rem 0;
             display: flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
+            text-align: left;
             width: 80%;
             margin: 0 auto;
             @media (max-width:$md){
                 
                 width: 90%;
             }
-
-            button{
-                width: 30%;
-                color: white;
-                height: 5rem;
-                font-size: 2rem;
-                height: 5rem;
-
-                @media (max-width:$md){
-                    width: 35%;
-                   
-                }
-                @media (max-width:$sm){
-                    flex: 100%;
-                    // margin-bottom: 5rem;
-                    font-size: 2.2rem;
-                    margin: 2rem 10rem;
-                    height: 8rem;  
-                }
-                @media (max-width:$xs){
-                    
-                    font-size: 2rem;
-                    margin: 2rem 5rem;
-                     
-                }
-                
-            }
         }
     }
+}
+
+//////// Graph section style
+/////////////////////////////
+
+#graph-section{
+
+    margin-top: 30rem;
+    .heading-wrapper{
+        text-align: center;
+        margin: 3rem;
+        h4{
+           font-size: 3.8rem;
+        }
+        h5{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }   
+    .graph-wrapper{
+        background-color: $primary-color;
+        padding: 2.5rem 0;
+        margin: 5rem 0;
+        .graph-row{
+            width: 60%;
+            margin: 3rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .graph-bar{
+                background-color: white;
+                width: 40%;
+                height: 3.8rem;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 0.8rem;
+                span{
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    color: $primary-shade3;
+                }
+            }
+            p{
+                color: black;
+                font-size: 2.2rem;
+                margin-right: 3rem;
+            }
+        }
+
+    }
+    
 }
 
 
