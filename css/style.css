@@ -4141,6 +4141,8 @@ footer .copyright p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -4151,7 +4153,15 @@ footer .copyright p {
 
 @media (max-width: 768px) {
   #arbeitgeber-content .content-wrapper .p-container {
-    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    padding: 3rem 0;
+  }
+  #arbeitgeber-content .content-wrapper .p-container p {
+    width: 100%;
   }
 }
 
@@ -4161,16 +4171,29 @@ footer .copyright p {
 
 #graph-section .heading-wrapper {
   text-align: center;
-  margin: 3rem;
+  margin: 4rem 4rem 20rem 4rem;
 }
 
 #graph-section .heading-wrapper h4 {
   font-size: 3.8rem;
 }
 
+@media (max-width: 768px) {
+  #graph-section .heading-wrapper h4 {
+    font-size: 3.1rem;
+    margin: 3rem 0;
+  }
+}
+
 #graph-section .heading-wrapper h5 {
   font-size: 3rem;
   font-weight: 500;
+}
+
+#graph-section .heading-wrapper p {
+  color: black;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #graph-section .graph-wrapper {
@@ -4181,7 +4204,7 @@ footer .copyright p {
 
 #graph-section .graph-wrapper .graph-row {
   width: 60%;
-  margin: 3rem auto;
+  margin: 4.5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4191,12 +4214,43 @@ footer .copyright p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+#graph-section .graph-wrapper .graph-row .span-container {
+  position: absolute;
+  left: 40%;
+}
+
+@media (max-width: 768px) {
+  #graph-section .graph-wrapper .graph-row .span-container {
+    left: 0;
+    margin: 3rem 0;
+  }
+}
+
+#graph-section .graph-wrapper .graph-row .span-container span {
+  font-size: 2.2rem;
+  margin-left: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  #graph-section .graph-wrapper .graph-row .span-container span {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #graph-section .graph-wrapper .graph-row .span-container span {
+    margin-left: 0;
+  }
 }
 
 #graph-section .graph-wrapper .graph-row .graph-bar {
   background-color: white;
   width: 40%;
-  height: 3.8rem;
+  height: 3.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4204,18 +4258,352 @@ footer .copyright p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 0.8rem;
+  position: absolute;
+  left: 50%;
 }
 
 #graph-section .graph-wrapper .graph-row .graph-bar span {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: #99C73A;
 }
 
+@media (max-width: 768px) {
+  #graph-section .graph-wrapper .graph-row .graph-bar span {
+    font-size: 1.8rem;
+  }
+}
+
 #graph-section .graph-wrapper .graph-row p {
   color: black;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-right: 3rem;
+  text-align: right;
+  position: absolute;
+  right: 50%;
+}
+
+#graph-section .graph-wrapper .graph-row .last-row-content {
+  color: black;
+  font-size: 2.3rem;
+  margin-right: 3rem;
+  text-align: right;
+  position: absolute;
+  right: 40%;
+}
+
+@media (max-width: 768px) {
+  #graph-section .graph-wrapper .graph-row .last-row-content {
+    font-size: 2rem;
+    right: 0;
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+
+#pillar-section {
+  text-align: center;
+  padding: 20rem 15rem;
+  margin: 10rem 0;
+  background: url("../../../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Saeulen.png") no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  #pillar-section {
+    padding: 15rem 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #pillar-section {
+    padding: 15rem 4rem;
+  }
+}
+
+#pillar-section h3 {
+  font-size: 3.6rem;
+  text-shadow: 0 2px 5px black;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  #pillar-section h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+#pillar-section .block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10rem 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#pillar-section .block-wrapper .block {
+  background-color: white;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  max-width: 30%;
+  padding: 1.8rem 1rem;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  #pillar-section .block-wrapper .block {
+    -webkit-box-flex: 60%;
+        -ms-flex: 60%;
+            flex: 60%;
+    max-width: 60%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #pillar-section .block-wrapper .block {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+#pillar-section .block-wrapper .block h6 {
+  font-size: 2rem;
+}
+
+#pillar-section .block-wrapper .block p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+#offer-section {
+  margin: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  #offer-section {
+    margin: 10rem 0;
+  }
+}
+
+#offer-section .content-wrapper {
+  padding: 5rem 10rem;
+}
+
+@media (max-width: 1024px) {
+  #offer-section .content-wrapper {
+    padding: 5rem 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #offer-section .content-wrapper {
+    padding: 5rem 0rem;
+  }
+}
+
+#offer-section .content-wrapper .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  #offer-section .content-wrapper .content-block {
+    margin-bottom: 0.5rem;
+  }
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper {
+  width: 60%;
+  border: 0.8rem solid #8EC125;
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #offer-section .content-wrapper .content-block .inner-content-wrapper {
+    -webkit-box-flex: 95%;
+        -ms-flex: 95%;
+            flex: 95%;
+    max-width: 95%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper .content {
+  padding: 1rem 4rem;
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper .content h2 {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+  color: #8EC125;
+}
+
+@media (max-width: 1024px) {
+  #offer-section .content-wrapper .content-block .inner-content-wrapper .content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper .content ul {
+  margin-left: 1%;
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper .content ul li {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1024px) {
+  #offer-section .content-wrapper .content-block .inner-content-wrapper .content ul li {
+    font-size: 1.3rem;
+  }
+}
+
+#offer-section .content-wrapper .content-block .inner-content-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  border-left: 0.8rem solid white;
+  position: absolute;
+  top: 50%;
+  left: -0.8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#advantage-section {
+  padding: 0 10rem;
+  margin: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  #advantage-section {
+    padding: 10rem 0;
+    margin: 10rem 0;
+  }
+}
+
+#advantage-section .advantage-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  #advantage-section .advantage-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  #advantage-section .advantage-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#advantage-section .advantage-wrapper .advantage-block {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 7rem 0;
+}
+
+@media (max-width: 1024px) {
+  #advantage-section .advantage-wrapper .advantage-block {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  #advantage-section .advantage-wrapper .advantage-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#advantage-section .advantage-wrapper .advantage-block .img {
+  margin-right: 10rem;
+}
+
+@media (max-width: 576px) {
+  #advantage-section .advantage-wrapper .advantage-block .img {
+    margin-bottom: 1rem;
+  }
+}
+
+#advantage-section .advantage-wrapper .advantage-block h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+#advantage-section .advantage-wrapper .advantage-block .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#advantage-section .advantage-wrapper .advantage-block .list-container i {
+  margin-right: 2rem;
+  font-size: 3rem;
+  color: #8EC125;
+}
+
+#advantage-section .advantage-wrapper .advantage-block .list-container p {
+  font-size: 1.8rem;
+}
+
+#simple-content {
+  margin: 10rem 0;
+}
+
+#simple-content .content-container {
+  width: 70%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
 }
 
 #betriebliches-cta .wrapper {
@@ -4388,4 +4776,11 @@ footer .copyright p {
 
 #betriebliches-cta .betriebliches-bordered-div button {
   font-size: 2.2rem;
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div button {
+    font-size: 1.8rem;
+    width: 100%;
+  }
 }
