@@ -19,7 +19,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // margin: 0;
         width: 100%;
 
         #logo-list-item{
@@ -28,16 +27,14 @@
             margin-top: 5.7rem;
             padding: 0 3.5rem 2.8rem 3.5rem;
             margin-right: 0 3rem;
-            // box-shadow:  -10px 0px 25px grey;
 
             img{
                 width: 9.4rem;
                 height: 11.5rem;
-                // @media (max-width:$md) {
-                //     width: 9.4rem;
-                //     height: 11.5rem;
-                // }
-
+            }
+            img:hover{
+                transform: scale(0.8);
+                transition: all 1s;
             }
             @media (max-width:$lg) {
                 margin: auto;

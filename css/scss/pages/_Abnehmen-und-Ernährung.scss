@@ -3,94 +3,11 @@
 /////////////////////////////
 
 #abnehmen-hero-section{
-    background: url(../../../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png) no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-    height: 87rem;
-    z-index: -1;
-
-    margin-bottom: 30rem;
-
-    .bordered-div{
-        border: 2rem solid white;
-        position: relative;
-        top: 15rem;
-        width: 75%;
-        height: 70%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-        @media (max-width:$sm){
-            top: 15rem;
-            width: 100%;
-        }
-        #hero-text{
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35vw;
-            height: 75%;
-            padding: 4rem 6rem;
-            background-color: white;
-            position: relative;
-            left: -15rem;
-            @media (max-width:$lg){
-                width: 55vw;
-                height: 75%; 
-            }
-            @media (max-width:$md){
-                width: 60vw;
-            }
-            @media (max-width:$sm){
-                width: 90%;
-                left: 0;
-                margin: 0 auto;
-            }
-            
-
-            h3{
-                font-size: 3.2rem;
-                font-weight: 500 ;
-                @media (max-width:$md){
-                    font-size: 2.5rem;
-                }
-                @media (max-width:$sm){
-                    font-size: 2rem;
-                }
-            }
-            h2{
-                font-size: 5rem;
-                font-weight: bold;
-                @media (max-width:$md){
-                    font-size: 4.5rem;
-                }
-                @media (max-width:$sm){
-                    font-size: 3rem;
-                }
-            }
-            p{
-                font-size: 1.8rem;
-                font-weight: lighter;
-                margin-top: 3rem;
-                color: $black-color;
-                line-height: 1.3;
-                @media (max-width:$md){
-                    font-size: 1.8rem;
-                    line-height: 1.3 ;
-                }
-            }
-            .green-border{
-                width: 11.9rem;
-                border-top: solid 0.6rem $primary-shade3;
-                margin: 1rem 0;
-            }
-        }
-    }
     
+    background-image: url(../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
 }
 
 
@@ -165,16 +82,16 @@
 }
 
 #vacu-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_VacuStyler.png);
+    background-image: url(../img/abhenmend/Workout24_Abnehmen_VacuStyler.png);
     background-position: center;
 }
 #slide-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_SlideStyler.png);
+    background-image: url(../img/abhenmend/Workout24_Abnehmen_SlideStyler.png);
     background-position: center;
 }
 
 #Individueller-styler{
-    background-image: url(../../../img/abhenmend/Workout24_Abnehmen_Ernaehrungsplan.png);
+    background-image: url(../img/abhenmend/Workout24_Abnehmen_Ernaehrungsplan.png);
     background-position: center;
     .middle-styler-content{
         padding: 5rem;
