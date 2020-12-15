@@ -43,7 +43,8 @@ body {
   background-size: cover;
   width: 100%;
   height: 87rem;
-  z-index: -100;
+  position: relative;
+  z-index: -1;
 }
 
 #hero-banner .bordered-div {
@@ -322,16 +323,72 @@ body {
   }
 }
 
-#main-nav ul li {
+#main-nav ul li a {
   font-family: 'poppins';
   font-weight: bold;
   font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 1024px) {
-  #main-nav ul li {
+  #main-nav ul li a {
     display: none;
   }
+}
+
+#main-nav ul li .dropdown-content ul {
+  display: none;
+  position: absolute;
+  background-color: #8EC125;
+  width: 30rem;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+#main-nav ul li .dropdown-content ul .active {
+  color: #8EC125;
+}
+
+#main-nav ul li .dropdown-content ul li {
+  padding: 2rem 3rem;
+  border-bottom: 0.2rem solid white;
+  width: 100%;
+}
+
+#main-nav ul li .dropdown-content ul li a {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+#main-nav ul li .dropdown-content ul .black-hover:hover {
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 0.2rem solid black;
+}
+
+#main-nav ul .drop-down:hover .dropdown-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#main-nav ul .hover-effect:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #features {

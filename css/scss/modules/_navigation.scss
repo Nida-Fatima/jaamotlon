@@ -46,15 +46,67 @@
         }
 
         li{
-            // display: inline;
-            font-family:  'poppins';
-            font-weight: bold;
-            font-size: 1.8rem;
-            // margin-right: 10rem;
-
-            @media (max-width:$lg){
-                display: none;
+            a{
+                font-family:  'poppins';
+                font-weight: bold;
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+                @media (max-width:$lg){
+                    display: none;
+                }
+            } 
+            .dropdown-content {
+                ul{
+                    display: none;
+                    // display: flex;
+                    // flex-direction: column;
+                    position: absolute;
+                    background-color: $primary-color;
+                    width: 30rem;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    text-align: center;
+                    .active{
+                        color: $primary-color;
+                    }
+                    li{
+                        padding: 2rem 3rem;
+                        border-bottom: 0.2rem solid white;
+                        width: 100%;
+                        a{
+                            text-align: center;
+                            // padding: 2rem 3rem;
+                            color: white;
+                            font-size: 1.8rem;
+                        
+                        }
+                    } 
+                    .black-hover:hover{
+                        background-color: black;
+                        transition: all 0.5s;
+                        border-bottom: 0.2rem solid black;;
+                    } 
+                }
+              }
+        }
+        .drop-down:hover{
+            .dropdown-content{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    transition: all 0.5s;
+                }
+             
             }
+         
+        }
+
+        .hover-effect:hover{
+        
+            transition: all 0.5s;
+            transform: scale(1.2);
         }
         
     }
