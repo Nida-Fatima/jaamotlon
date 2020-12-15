@@ -1,0 +1,230 @@
+//////// Hero Section style
+/////////////////////////////
+
+#kursplan-hero-section{
+    background-image: url('../../../img/kursplan/Workout24_Kursplan_Header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 87rem;
+    z-index: -1;
+
+    margin-bottom: 30rem;
+
+    .bordered-div{
+        border: 2rem solid white;
+        position: relative;
+        top: 15rem;
+        width: 75%;
+        height: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        @media (max-width:$sm){
+            top: 15rem;
+            width: 100%;
+        }
+        #hero-text{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 35vw;
+            height: 75%;
+            padding: 4rem 6rem;
+            background-color: white;
+            position: relative;
+            left: -15rem;
+            @media (max-width:$lg){
+                width: 55vw;
+                height: 75%; 
+            }
+            @media (max-width:$md){
+                width: 60vw;
+            }
+            @media (max-width:$sm){
+                width: 90%;
+                left: 0;
+                margin: 0 auto;
+            }
+            
+
+            h3{
+                font-size: 3.2rem;
+                font-weight: 500 ;
+                @media (max-width:$md){
+                    font-size: 2.5rem;
+                }
+                @media (max-width:$sm){
+                    font-size: 2rem;
+                }
+            }
+            h2{
+                font-size: 5rem;
+                font-weight: bold;
+                @media (max-width:$md){
+                    font-size: 4.5rem;
+                }
+                @media (max-width:$sm){
+                    font-size: 3rem;
+                }
+            }
+            p{
+                font-size: 1.8rem;
+                font-weight: lighter;
+                margin-top: 3rem;
+                color: $black-color;
+                line-height: 1.3;
+                @media (max-width:$md){
+                    font-size: 1.8rem;
+                    line-height: 1.3 ;
+                }
+            }
+            .green-border{
+                width: 11.9rem;
+                border-top: solid 0.6rem $primary-shade3;
+                margin: 1rem 0;
+            }
+        }
+    }
+    
+}
+
+
+//////// Time table section style
+/////////////////////////////
+
+#time-table{
+    .time-table-wrapper{
+        .btn-wrapper{
+            width: 60%;
+            margin: 0 auto;
+            // padding: 1rem 3rem;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10rem;
+            .table-btn{
+                padding: 1.5rem 3.6rem;
+                border: 1px solid #ccc;
+                margin-left: 2rem;
+                background-color: white;
+            }
+
+        }
+        margin: 0 auto;
+        table{
+            width: 80%;
+            margin: 0 auto;
+            th{
+                color: $primary-color;
+                font-size: 2rem;
+                border-right: 0.3rem solid #7B7B7B;
+                padding: 1rem 3rem;
+            }
+            tbody{
+                color: #707070;
+            }
+            td{
+                border-right: 0.3rem solid #7B7B7B;
+                height: 5rem;
+                font-size: 1.6rem;
+                text-align: center;
+                padding: 1rem 3rem;
+                width: 16%;
+            }
+            .odd-row{
+                background-color: #EFEFEF;
+            }
+        }
+
+    }
+}
+
+
+
+//////// Offer section style
+/////////////////////////////
+
+#kursen-offer-section{
+
+    margin: 10rem 0;
+    @media (max-width:$md){
+        margin: 10rem 0;
+    }
+    .content-wrapper{
+        padding: 5rem 10rem;
+        @media (max-width:$lg){
+            padding: 5rem 8rem;    
+        }
+        @media (max-width:$sm){
+            padding: 5rem 0rem;    
+        }
+        .content-block{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 8rem;
+            @media (max-width:$md){
+                margin-bottom: 0.5rem;
+            }
+            .inner-content-wrapper{
+                width: 60%;
+                border: 0.8rem solid $primary-color;
+                padding: 1.5rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: white;
+                position: relative;
+    
+                @media (max-width:$md)
+                {
+                    flex: 95%;
+                    max-width: 95%;
+                    margin-bottom: 4.5rem;
+                }
+                
+                .content{
+                    padding: 5rem 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    h2{
+                        text-align: center;
+                        font-size: 4rem;
+                        margin-bottom: 2rem;
+                        color: black;
+                        @media (max-width:$lg){
+                            font-size: 2.5rem;
+                        }
+                    }
+                    button{
+                        margin-top: 3rem;
+                    }
+                }
+            }
+            .inner-content-wrapper::before{
+                content: "";
+                width: 100%;
+                height: 80%;
+               border-right: 0.8rem solid white;
+            // border: 0.8rem solid yellow;
+    
+                position: absolute;
+                top: 50%;
+                
+                left: 0;
+                transform: translateY(-50%);
+            }
+            
+           
+           
+        }
+    
+    }
+}
+
+

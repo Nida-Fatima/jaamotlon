@@ -4784,3 +4784,783 @@ footer .copyright p {
     width: 100%;
   }
 }
+
+#arbeitnehmer-hero-section {
+  background-image: url("../../../img/Arbeitnehmer/firmenfitness_arbeitnehmer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 87rem;
+  z-index: -1;
+  margin-bottom: 30rem;
+}
+
+#arbeitnehmer-hero-section .bordered-div {
+  border: 2rem solid white;
+  position: relative;
+  top: 15rem;
+  width: 75%;
+  height: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #arbeitnehmer-hero-section .bordered-div {
+    top: 15rem;
+    width: 100%;
+  }
+}
+
+#arbeitnehmer-hero-section .bordered-div #hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+  height: 75%;
+  padding: 4rem 6rem;
+  background-color: white;
+  position: relative;
+  left: -15rem;
+}
+
+@media (max-width: 1024px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#arbeitnehmer-hero-section .bordered-div #hero-text h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text h3 {
+    font-size: 2rem;
+  }
+}
+
+#arbeitnehmer-hero-section .bordered-div #hero-text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+#arbeitnehmer-hero-section .bordered-div #hero-text p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #arbeitnehmer-hero-section .bordered-div #hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+#arbeitnehmer-hero-section .bordered-div #hero-text .green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 1rem 0;
+}
+
+#simple-content {
+  margin: 10rem 0;
+}
+
+#simple-content .content-container {
+  width: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #simple-content .content-container {
+    width: 80%;
+  }
+}
+
+#simple-content .content-container p {
+  margin-top: 3rem;
+}
+
+#simple-content .content-container .green-border {
+  width: 40%;
+}
+
+#simple-content .content-container h2 {
+  font-size: 3.4rem;
+}
+
+#betriebliches-cta .wrapper {
+  margin: 20rem 0;
+}
+
+#betriebliches-cta .betriebliches-bordered-div {
+  border: 2rem solid #F5F5F5;
+  position: relative;
+  height: auto;
+  width: 80%;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    top: 8rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div {
+    padding: 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  /* Responsive layout - makes a one column-layout instead of two columns */
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    text-align: center;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+  position: absolute;
+  left: -6rem;
+  bottom: 0;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    position: static;
+    margin-top: -15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h1 {
+  font-size: 9rem;
+  color: #8EC125;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div h2 {
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+#betriebliches-cta .betriebliches-bordered-div button {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 576px) {
+  #betriebliches-cta .betriebliches-bordered-div button {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+
+#kursplan-hero-section {
+  background-image: url("../../../img/kursplan/Workout24_Kursplan_Header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 87rem;
+  z-index: -1;
+  margin-bottom: 30rem;
+}
+
+#kursplan-hero-section .bordered-div {
+  border: 2rem solid white;
+  position: relative;
+  top: 15rem;
+  width: 75%;
+  height: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #kursplan-hero-section .bordered-div {
+    top: 15rem;
+    width: 100%;
+  }
+}
+
+#kursplan-hero-section .bordered-div #hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35vw;
+  height: 75%;
+  padding: 4rem 6rem;
+  background-color: white;
+  position: relative;
+  left: -15rem;
+}
+
+@media (max-width: 1024px) {
+  #kursplan-hero-section .bordered-div #hero-text {
+    width: 55vw;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #kursplan-hero-section .bordered-div #hero-text {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #kursplan-hero-section .bordered-div #hero-text {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+#kursplan-hero-section .bordered-div #hero-text h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #kursplan-hero-section .bordered-div #hero-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #kursplan-hero-section .bordered-div #hero-text h3 {
+    font-size: 2rem;
+  }
+}
+
+#kursplan-hero-section .bordered-div #hero-text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #kursplan-hero-section .bordered-div #hero-text h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #kursplan-hero-section .bordered-div #hero-text h2 {
+    font-size: 3rem;
+  }
+}
+
+#kursplan-hero-section .bordered-div #hero-text p {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #kursplan-hero-section .bordered-div #hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+}
+
+#kursplan-hero-section .bordered-div #hero-text .green-border {
+  width: 11.9rem;
+  border-top: solid 0.6rem #99C73A;
+  margin: 1rem 0;
+}
+
+#time-table .time-table-wrapper {
+  margin: 0 auto;
+}
+
+#time-table .time-table-wrapper .btn-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 10rem;
+}
+
+#time-table .time-table-wrapper .btn-wrapper .table-btn {
+  padding: 1.5rem 3.6rem;
+  border: 1px solid #ccc;
+  margin-left: 2rem;
+  background-color: white;
+}
+
+#time-table .time-table-wrapper table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#time-table .time-table-wrapper table th {
+  color: #8EC125;
+  font-size: 2rem;
+  border-right: 0.3rem solid #7B7B7B;
+  padding: 1rem 3rem;
+}
+
+#time-table .time-table-wrapper table tbody {
+  color: #707070;
+}
+
+#time-table .time-table-wrapper table td {
+  border-right: 0.3rem solid #7B7B7B;
+  height: 5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem 3rem;
+  width: 16%;
+}
+
+#time-table .time-table-wrapper table .odd-row {
+  background-color: #EFEFEF;
+}
+
+#kursen-offer-section {
+  margin: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  #kursen-offer-section {
+    margin: 10rem 0;
+  }
+}
+
+#kursen-offer-section .content-wrapper {
+  padding: 5rem 10rem;
+}
+
+@media (max-width: 1024px) {
+  #kursen-offer-section .content-wrapper {
+    padding: 5rem 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #kursen-offer-section .content-wrapper {
+    padding: 5rem 0rem;
+  }
+}
+
+#kursen-offer-section .content-wrapper .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  #kursen-offer-section .content-wrapper .content-block {
+    margin-bottom: 0.5rem;
+  }
+}
+
+#kursen-offer-section .content-wrapper .content-block .inner-content-wrapper {
+  width: 60%;
+  border: 0.8rem solid #8EC125;
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #kursen-offer-section .content-wrapper .content-block .inner-content-wrapper {
+    -webkit-box-flex: 95%;
+        -ms-flex: 95%;
+            flex: 95%;
+    max-width: 95%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+#kursen-offer-section .content-wrapper .content-block .inner-content-wrapper .content {
+  padding: 5rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#kursen-offer-section .content-wrapper .content-block .inner-content-wrapper .content h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  #kursen-offer-section .content-wrapper .content-block .inner-content-wrapper .content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+#kursen-offer-section .content-wrapper .content-block .inner-content-wrapper .content button {
+  margin-top: 3rem;
+}
+
+#kursen-offer-section .content-wrapper .content-block .inner-content-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  border-right: 0.8rem solid white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#contact-section {
+  background-image: url("../../../img/snazzy-image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100rem;
+  position: relative;
+  z-index: -1;
+}
+
+#contact-section .contact-wrapper {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  #contact-section .contact-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#contact-section .contact-wrapper h3 {
+  color: #8EC125;
+  font-size: 2.5rem;
+}
+
+#contact-section .contact-wrapper .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+#contact-section .contact-wrapper .form-wrapper input {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border: none;
+  border-bottom: 0.3rem solid #0000001A;
+  width: 80%;
+}
+
+#contact-section .contact-wrapper .form-wrapper button {
+  color: white;
+  margin-top: 1rem;
+}
+
+#contact-section .contact-wrapper .address-block {
+  position: relative;
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper {
+  margin-top: 5rem;
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  #contact-section .contact-wrapper .address-block .content-wrapper .content-block {
+    margin-bottom: 0.5rem;
+  }
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper {
+  width: 80%;
+  border: 0.8rem solid #8EC125;
+  background-color: white;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper {
+    -webkit-box-flex: 95%;
+        -ms-flex: 95%;
+            flex: 95%;
+    max-width: 95%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper .content {
+  padding: 5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper .content h3 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  #contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper .content h3 {
+    font-size: 2rem;
+  }
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper .content p {
+  font-size: 1.8rem;
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper .content a {
+  font-size: 2rem;
+  color: #8EC125;
+}
+
+#contact-section .contact-wrapper .address-block .content-wrapper .content-block .inner-content-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  border-left: 0.8rem solid white;
+  position: absolute;
+  top: 50%;
+  left: -0.8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
