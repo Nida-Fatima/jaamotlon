@@ -165,14 +165,16 @@ body {
 }
 
 .btn {
-  width: 22.2rem;
-  height: 4.6rem;
+  width: 15.2rem;
+  height: 4rem;
   background: #8EC125 0% 0% no-repeat padding-box;
   border-radius: 25px;
   opacity: 1;
   border: solid 2px #8EC125;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.1rem;
 }
 
 .cta-btn {
@@ -210,6 +212,8 @@ body {
 .nav-wrapper {
   background-color: white;
   padding: 0 5rem 0 14rem;
+  -webkit-box-shadow: 0 16px 25px #a5a5a5;
+          box-shadow: 0 16px 25px #a5a5a5;
 }
 
 @media (max-width: 1024px) {
@@ -242,17 +246,22 @@ body {
   }
 }
 
-#top-nav ul {
+#top-nav .top-nav-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#top-nav .top-nav-wrapper ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#top-nav ul li {
+#top-nav .top-nav-wrapper ul li {
   text-align: left;
   font-family: 'poppins';
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
   letter-spacing: 0.03rem;
   color: #FFFFFF;
@@ -260,7 +269,7 @@ body {
   margin-right: 6.1rem;
 }
 
-#top-nav ul li i {
+#top-nav .top-nav-wrapper ul li i {
   margin-right: 0.3rem;
 }
 
@@ -276,17 +285,70 @@ body {
   }
 }
 
-.nav-wrapper {
-  -webkit-box-shadow: 0 10px 25px #cccccc;
-          box-shadow: 0 10px 25px #cccccc;
-}
-
 #main-nav {
-  height: 11rem;
+  height: 9rem;
+  width: 80%;
+  margin: 0 auto;
   padding-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-nav .left-nav {
+  width: 36%;
+}
+
+#main-nav .right-nav {
+  width: 40%;
+}
+
+#main-nav .logo-div {
+  width: 20%;
+  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+}
+
+#main-nav .logo-div #logo-list-item {
+  position: relative;
+  z-index: 1;
+}
+
+#main-nav .logo-div #logo-list-item img {
+  width: 30%;
+}
+
+#main-nav .logo-div #logo-list-item img:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 1024px) {
+  #main-nav .logo-div #logo-list-item {
+    margin: auto;
+  }
+}
+
+#main-nav .logo-div #logo-list-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 10px 10px -6px #a5a5a5;
+          box-shadow: 0 10px 10px -6px #a5a5a5;
+  border-radius: 100%;
+  padding: 4.3rem 3rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: -1;
 }
 
 #main-nav ul {
@@ -303,37 +365,11 @@ body {
   width: 100%;
 }
 
-#main-nav ul #logo-list-item {
-  background-color: white;
-  border-radius: 50%;
-  margin-top: 5.7rem;
-  padding: 0 3.5rem 2.8rem 3.5rem;
-  margin-right: 0 3rem;
-}
-
-#main-nav ul #logo-list-item img {
-  width: 9.4rem;
-  height: 11.5rem;
-}
-
-#main-nav ul #logo-list-item img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-@media (max-width: 1024px) {
-  #main-nav ul #logo-list-item {
-    margin: auto;
-  }
-}
-
 #main-nav ul li a {
   font-family: 'poppins';
   font-weight: bold;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
   color: black;
 }
@@ -368,7 +404,7 @@ body {
 #main-nav ul li .dropdown-content ul li a {
   text-align: center;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 #main-nav ul li .dropdown-content ul .black-hover:hover {
@@ -963,10 +999,31 @@ footer .copyright p {
   display: flex;
   position: relative;
   z-index: -1;
+  height: 80vh;
 }
 
 #hero-section #last-box {
   margin-right: 0;
+}
+
+#hero-section .img-1 {
+  background-image: url(../img/startseite-imgs/Workou24_Homepage_Fitness_Gesundheit.png);
+  background-size: cover;
+}
+
+#hero-section .img-2 {
+  background-image: url(../img/startseite-imgs/Workout24_Homepage_Abnehmen_Ernaehrung.png);
+  background-size: cover;
+}
+
+#hero-section .img-3 {
+  background-image: url(../img/startseite-imgs/Workout24_Homepage_Rücken_Gelenke.png);
+  background-size: cover;
+}
+
+#hero-section .img-4 {
+  background-image: url(../img/startseite-imgs/Workout24__Homepage_BGM.png);
+  background-size: cover;
 }
 
 #hero-section .hero-image-box {
@@ -993,8 +1050,8 @@ footer .copyright p {
 }
 
 #hero-section .hero-image-box .bordered-div {
-  height: 83%;
-  width: 75%;
+  height: 80%;
+  width: 85%;
   border: 0.9rem solid white;
   position: absolute;
   top: 50%;
@@ -1006,7 +1063,8 @@ footer .copyright p {
 #hero-section .hero-image-box .bordered-div h1 {
   color: white;
   font-size: 4rem;
-  line-height: 1.5;
+  line-height: 1.3;
+  letter-spacing: 0.5rem;
   text-align: center;
   text-shadow: 1px 1px 5px gray;
   position: absolute;
@@ -1022,19 +1080,25 @@ footer .copyright p {
 
 #hero-section .hero-image-box .bordered-div button {
   position: absolute;
-  bottom: -3rem;
+  bottom: -2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: white;
-  font-size: 1.6rem;
-  width: 75%;
+  font-size: 2rem;
+  width: 60%;
 }
 
 @media (max-width: 576px) {
   #hero-section .hero-image-box .bordered-div button {
     font-size: 1rem;
   }
+}
+
+#hero-section .hero-image-box .bordered-div:hover {
+  height: 90%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #hero-section .hero-image-box::before {
@@ -1072,7 +1136,7 @@ footer .copyright p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10%;
+  padding: 6% 10%;
 }
 
 @media (max-width: 1024px) {
@@ -1099,6 +1163,10 @@ footer .copyright p {
 
 #services .service-wrapper .image-section .man-image {
   position: relative;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #services .service-wrapper .image-section .man-image img {
@@ -1116,11 +1184,22 @@ footer .copyright p {
 }
 
 #services .service-wrapper .image-section .man-image .arrow-div {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   position: absolute;
   top: 0;
   -webkit-transform: translate(-8%, 77%) scale(0.9, 0.9);
           transform: translate(-8%, 77%) scale(0.9, 0.9);
   z-index: 1;
+}
+
+#services .service-wrapper .service-section {
+  -webkit-animation: slideInRight;
+          animation: slideInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @media (max-width: 768px) {

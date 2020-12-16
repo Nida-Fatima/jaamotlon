@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="css/animate.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/aos.css" rel="stylesheet" media="screen">
   <!-- <link href="color/default.css" rel="stylesheet" media="screen"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -20,16 +21,17 @@
 
   <!-- Navigation -->
   <div id="top-nav">
-    <ul>
-      <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
-      <li><i class="fa fa-envelope"></i> info@workout-24.de</li>
-      <li> <i class="far fa-clock"></i>24/7 für PREMIUM-Mitglieder</li>
-    </ul>
-
+    <div class="top-nav-wrapper">
+      <ul>
+        <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
+        <li><i class="fa fa-envelope"></i> info@workout-24.de</li>
+        <li> <i class="far fa-clock"></i>24/7 für PREMIUM-Mitglieder</li>
+      </ul>
+    </div>
   </div>
 
   <!-- Main Container -->
-  <div class="nav-wrapper">
+  <!-- <div class="nav-wrapper">
     <nav id="main-nav">
       
       <ul>
@@ -61,15 +63,52 @@
         </li>
       </ul>
     </nav>
-  </div>
+  </div> -->
    
+
+  <div class="nav-wrapper">
+    <nav id="main-nav">
+      <div class="left-nav">
+        <ul>
+          <li class="hover-effect"> <a href="news.html"> NEWS </a></li>
+          <li class="drop-down"><a class="hover-effect" href="">LEISTUNGEN <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <ul>
+                <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
+                <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
+                <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
+                <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
+                <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
+                <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hover-effect"><a href="Kursplan.html">KURSPLAN</a></li>
+        </ul>
+      </div>
+      <div class="logo-div">
+        <a href="startseite.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li class="hover-effect"><a href="index.html">STUDIO</a></li>
+          <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
+          <li class="hover-effect">
+            <button class="btn">PROBETRAINING</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 <!---------------------------------------  Hero section ------------------------------------------->
 
   <section class="container">
     <div id="hero-section">
         <div class="hero-image-box img-1">
-            <img src="img/startseite-imgs/Workou24_Homepage_Fitness_Gesundheit.png" alt="fitness-image-1">
+        
             <div class="bordered-div">
                 <h1 class="image-text">
                     FITNESS & GESUNDHEIT
@@ -77,8 +116,8 @@
                 <button class="btn">mehr dazu</button>
             </div>
         </div>
-        <div class="hero-image-box">
-            <img src="img/startseite-imgs/Workout24_Homepage_Abnehmen_Ernaehrung.png" alt="fitness-image-2">
+        <div class="hero-image-box img-2">
+            
             <div class="bordered-div">
                 <h1 class="image-text">
                     RÜCKEN & GELENKE
@@ -87,8 +126,8 @@
             </div>
         </div>
        
-        <div  class="hero-image-box">
-            <img src="img/startseite-imgs/Workout24_Homepage_Rücken_Gelenke.png" alt="fitness-image-3">
+        <div  class="hero-image-box img-3">
+           
             <div class="bordered-div">
                 <h1 class="image-text">
                     FIRMEN FITNESS
@@ -96,8 +135,8 @@
                 <button class="btn">mehr dazu</button>
             </div>
         </div>
-        <div id="last-box" class="hero-image-box">
-            <img src="img/startseite-imgs/Workout24__Homepage_BGM.png" alt="fitness-image-4">
+        <div id="last-box" class="hero-image-box img-4">
+            
             <div class="bordered-div">
                 <h1 class="image-text">
                     ABNEHMEN & ERNÄHRUNG
@@ -112,28 +151,22 @@
   <!---------------------------------------  Services section ------------------------------------------->
 
 <section id="services">
-    <h1>Ihr Gesundheitszentrum in Bad Säckigen</h1>
+    <h1  data-aos="zoom-out">Ihr Gesundheitszentrum in Bad Säckigen</h1>
     <div class="service-wrapper">      
         <div class="image-section service-item">
-          <div class="man-image"> 
+          <div data-aos="fade-up" class="man-image"> 
             <img class="main-img" src="img/startseite-imgs/Workout24_Homepage_ueber_uns_happy_man.png" alt="Happy man">
             <img class="man-leg" src="img/man's leg.png" alt="">
             <!-- <div class="man-leg">
               
             </div> -->
-            <div class="arrow-div">
-              <img src="img/gree-arrow.png" alt="green arrow">
+            <div class="arrow-div animate_animated animate__fadeIn">
+              <img data-aos="fade" data-aos-delay="1500" data-aos-duration="1500" src="img/gree-arrow.png" alt="green arrow">
             </div>
-           
           </div>
-          
-          
-           
         </div>
-        
-        
-        <div class="service-section service-item">
-            <div class="about-us">
+        <div data-aos="slide-left" class="service-section service-item animate__animated animate__slideInRight">
+            <div  class="about-us">
                 <h3>Über Uns</h3>
                 <div class="green-border"></div>
                 <p>Der Mensch steht bei uns im Fokus. Wir helfen Ihnen, Ihre Ziele zu erreichen 
@@ -493,5 +526,12 @@
 </footer>
 
   <script src="js/custom.js"></script>
+
+  <!-- aos plugin -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({duration: 1000, });
+
+  </script>
 </body>
 </html>

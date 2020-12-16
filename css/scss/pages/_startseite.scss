@@ -33,15 +33,31 @@
 
 #hero-section{
     display: flex;
-    // flex-wrap: wrap;
     position: relative;
     z-index: -1;
-    // justify-content: space-between;
+    height: 80vh;
 
     #last-box{
         margin-right: 0;
     }
+    .img-1{
+        background-image: url(../img/startseite-imgs/Workou24_Homepage_Fitness_Gesundheit.png); 
+        background-size: cover;  
+    }
+    .img-2{
+        background-image: url(../img/startseite-imgs/Workout24_Homepage_Abnehmen_Ernaehrung.png);  
+        background-size: cover; 
+    }
+    .img-3{
+        background-image: url(../img/startseite-imgs/Workout24_Homepage_Rücken_Gelenke.png);  
+        background-size: cover; 
+    }
+    .img-4{
+        background-image: url(../img/startseite-imgs/Workout24__Homepage_BGM.png); 
+        background-size: cover;  
+    }
     .hero-image-box {
+        
         flex: 25%;
         max-width: 25%;
         position: relative;
@@ -55,9 +71,8 @@
             height: 100%;
         }
         .bordered-div{
-            
-            height: 83%;
-            width: 75%;
+            height: 80%;
+            width: 85%;
             border: 0.9rem solid white;
             position: absolute;
             top: 50%;
@@ -66,7 +81,8 @@
             h1{
                 color: white;
                 font-size: 4rem;
-                line-height: 1.5;
+                line-height: 1.3;
+                letter-spacing: 0.5rem;
                 text-align: center;
                 text-shadow: 1px 1px 5px gray;
                 position: absolute;
@@ -81,18 +97,22 @@
             }
             button{
                 position: absolute;
-                bottom: -3rem;
+                bottom: -2rem;
                 left: 50%;
                 transform: translateX(-50%);
                 color: white;
-                font-size: 1.6rem;
-                width: 75%;
+                font-size: 2rem;
+                width: 60%;
                 @media (max-width:$sm){
                     font-size: 1rem;
                     
                 }
             }
 
+        }
+        .bordered-div:hover{
+            height: 90%;
+            transition: all 0.5s;
         }
     }
     .hero-image-box::before{
@@ -130,7 +150,7 @@
     .service-wrapper{
         display: flex;
         flex-wrap: wrap;
-        padding: 10%;
+        padding: 6% 10%;
         @media (max-width:$lg){
             padding: 3%;
         }
@@ -146,6 +166,8 @@
         .image-section{
             .man-image{
                 position: relative;
+                animation: fadeInUp;
+                animation-duration: 2s;
                 img{
                     width: 100%;
                     position: relative;
@@ -164,6 +186,8 @@
                     // }
                 }
                 .arrow-div{
+                    animation: fadeIn;
+                    animation-delay: 5s;
                     position: absolute;
                     top: 0;
                     transform: translate(-8%, 77%) scale(0.9, 0.9);
@@ -177,6 +201,8 @@
         
         
         .service-section{
+            animation: slideInRight; 
+            animation-duration: 2s;
             @media (max-width:$md){
                 padding: 5rem;
             }
