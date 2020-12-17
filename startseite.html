@@ -29,44 +29,9 @@
       </ul>
     </div>
   </div>
-
-  <!-- Main Container -->
-  <!-- <div class="nav-wrapper">
-    <nav id="main-nav">
-      
-      <ul>
-        <a aria-hidden="true" class = "hamburger-icon" href="">
-          <i class="fa fa-bars"></i>
-        </a>
-        <li class="hover-effect"> <a href="news.html"> NEWS </a></li>
-        <li class="drop-down"><a class="hover-effect" href="">LEISTUNGEN <i class="fa fa-caret-down"></i></a>
-          <div class="dropdown-content">
-            <ul>
-              <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
-              <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
-              <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
-              <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
-              <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
-              <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
-            </ul>
-          </div>
-        </li>
-        
-        <li class="hover-effect"><a href="Kursplan.html">KURSPLAN</a></li>
-          <a href="startseite.html" id="logo-list-item">
-            <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
-          </a>
-        <li class="hover-effect"><a href="index.html">STUDIO</a></li>
-        <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
-        <li class="hover-effect">
-          <button class="btn">PROBETRAINING</button>
-        </li>
-      </ul>
-    </nav>
-  </div> -->
    
 
-  <div class="nav-wrapper">
+  <div id="navbar" class="nav-wrapper">
     <nav id="main-nav">
       <div class="left-nav">
         <ul>
@@ -151,7 +116,7 @@
   <!---------------------------------------  Services section ------------------------------------------->
 
 <section id="services">
-    <h1  data-aos="zoom-out">Ihr Gesundheitszentrum in Bad Säckigen</h1>
+    <h1 id="service-header" data-aos="zoom-out" >Ihr Gesundheitszentrum in Bad Säckigen</h1>
     <div class="service-wrapper">      
         <div class="image-section service-item">
           <div data-aos="fade-up" class="man-image"> 
@@ -160,12 +125,12 @@
             <!-- <div class="man-leg">
               
             </div> -->
-            <div class="arrow-div animate_animated animate__fadeIn">
+            <div class="arrow-div animate__animated animate__fadeIn">
               <img data-aos="fade" data-aos-delay="1500" data-aos-duration="1500" src="img/gree-arrow.png" alt="green arrow">
             </div>
           </div>
         </div>
-        <div data-aos="slide-left" class="service-section service-item animate__animated animate__slideInRight">
+        <div class="service-section service-item" data-aos="fade-up-left">
             <div  class="about-us">
                 <h3>Über Uns</h3>
                 <div class="green-border"></div>
@@ -220,14 +185,14 @@
 <!---------------------------------------  Benifits section ------------------------------------------->
 
 <section id="benefits">
-  <div class="heading-wrapper">
-    <h3>Was Sie erwartet</h3>
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
+    <h3 >Was Sie erwartet</h3>
     <div class="green-border"></div>
     <p>Wir bieten Ihnen ein breites Spektrum an Leistungen 
       und Kursen an, welche zu Ihren individuellen Wünschen und Zielen passen.</p>
   </div>  <!-- Heading Wrapper-->
   <div class="content-wrapper">
-    <div class="content-block">
+    <div class="content-block" data-aos="fade-up" data-aos-duration="5s">
       <div id="block1" class="inner-content-wrapper">
         <div class="content-border"></div>
         <div class="content-border-2"></div>
@@ -263,7 +228,7 @@
       </div>
     </div> <!-- First row of content block -->
     
-   <div class="content-block">
+   <div class="content-block" data-aos="fade-up" data-aos-duration="3s" data-aos-delay="1s">
       <div id="block3" class="inner-content-wrapper ">
         <div class="content-border"> </div>
         <div class="content-border-2"> </div>
@@ -304,12 +269,12 @@
 <!---------------------------------------  Testimonial section ------------------------------------------->
 
 <section id="testimonial">
-  <div class="heading-wrapper">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
     <h3>Das sagen unsere Mitglieder</h3>
     <div class="green-border"></div>
     <p>Überzeugen Sie sich selbst von unseren Kundenbewertungen.</p>
   </div>
-  <div class="testimonial-wrapper">
+  <div class="testimonial-wrapper" data-aos="fade-up" data-aos-duration="3s">
     <div class="testimonial-block">
       <img class="avatar" src="img/startseite-imgs/303030.png" alt="client-picture">
       <div class="star-rating">
@@ -364,13 +329,13 @@
 <!---------------------------------------  FAQ section ------------------------------------------->
 
 <section id="FAQ">
-  <div class="heading-wrapper">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
     <h3>Was sind Ihre Ziele?</h3>
     <div class="green-border"></div>
     <p>Starten Sie jetzt Ihre kostenlose und unverbindliche Online-Analyse</p>
   </div>
   <div class="gray-border">
-    <div class="inner-content">
+    <div class="inner-content" data-aos="zoom-in" data-aos-duration="3s">
       <img src="img/startseite-imgs/laptop-mockup.png" alt="Laptop-mockup">
       <button class="btn">Online-Analyse starten</button>
     </div>
@@ -388,8 +353,8 @@
       <img src="img/startseite-imgs/Workout24_Homepage_Probetraininge.png" alt="">
     </div>
     <div class="flex-item-2">
-      <h1>Schluss mit surfen</h1>
-      <h2>Lassen sie uns starten</h2>
+      <h1 data-aos="fade-down" data-aos-duration="3s">Schluss mit surfen</h1>
+      <h2 data-aos="fade-up" data-aos-duration="3s">Lassen sie uns starten</h2>
       <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
     </div>
   </div> 
@@ -400,13 +365,13 @@
 
 
 <section id="question-answer">
-  <div class="heading-wrapper">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
     <h3>
       Häufig gestellte Fragen
     </h3>
     <p>Auf jede Frage eine Antwort.</p>
   </div>
-  <div class="faq-wrapper">
+  <div class="faq-wrapper" data-aos="fade-up" data-aos-duration="3s">
     <div class="faq-block-container">
       <div class="faq-block">
         <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
