@@ -91,6 +91,7 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
+            z-index: 100;
             h1{
                 color: white;
                 font-size: 4rem;
@@ -123,7 +124,8 @@
             
         }
         .bordered-div:hover{
-            height: 90%;
+           
+            height: 90%;;
             transition: all 0.5s;
         }
     }
@@ -596,106 +598,18 @@
 //////////////////////////////////////////////////////
 
 #cta{
-    .wrapper{
-        height: 110rem;
-        @media (max-width:$sm){
-            height: 80rem;
-        }
-        .bordered-div{
-            top: 45rem;
-            width: 70%;
-            height: 50rem;
 
-            @media (max-width:$lg){
-                width: 80%;
-            }
-            @media (max-width:$md){
-                top: 18rem;
-                height: 80rem;
-            }
-            @media (max-width:$sm){
-                top: 18rem;
-                height: 55rem;
-            }
-            .flex-item-1{
-                flex: 45%;
-                max-width: 45%;
-                @media (max-width:$md){
-                    flex: 100%;
-                    max-width: 100%;
-                }
-                img{
-                    width: 60%;
-                    left: -15rem;
-                    @media (max-width:$md){
-                        width: 100%;
-                    }
-                    @media (max-width:$lg){
-                        left: -7rem;
-                    }
-                }
-            }
-            .flex-item-2{
-                flex: 55%;
-                max-width: 55%;
-                @media (max-width:$md){
-                    flex: 100%;
-                    max-width: 100%;
-                }
-                h1{
-                    font-size: 7rem;
-                    text-shadow: 1px 1px 10px gray;
-                    letter-spacing: 0.4rem;
-                    font-weight: 700;
-                    @media (max-width:$lg){
-                        font-size: 4.8rem;
-                        text-shadow: 1px 1px 10px gray;
-                        letter-spacing: 0.2rem;
-                    }
-                    @media (max-width:$md){
-                        font-size: 4rem;
-                        text-shadow: 1px 1px 10px gray;
-                        letter-spacing: 0.2rem;
-                    }
-                    @media (max-width:$sm){
-                        font-size: 3rem;
-                        text-shadow: 1px 1px 10px gray; 
-                    }
-                }
-                h2{
-                    font-size: 3.5rem;
-                    font-weight: 800;
-                    @media (max-width:$lg){
-                        font-size: 3.3rem;
-                    }
-                    @media (max-width:$md){
-                        font-size: 2rem;
-                       
-                        
-                    }
-                    @media (max-width:$sm){
-                        font-size: 1.7rem;
-                       
-                    }
-                }
-                button{
-                    font-size: 1.8rem;
-                    min-width: 70%;
-                    @media (max-width:$lg){
-                        font-size: 1.4rem;
-                    }
-                    @media (max-width:$md){
-                        font-size: 1.5rem;
-                    }
-                    @media (max-width:$sm){
-                        font-size: 1.1rem;
-                        width: 100%;
-                    }
-                }
-                
-            }
-        }
+    .starseite-cta-img{
+        position: absolute;
+        bottom: 0;
+        left: -20rem;
+        width: 70%;
     }
+    .flex-item-1{
+        flex: 55%;
+        max-width: 55%;
+    }
+    
 }
 
 

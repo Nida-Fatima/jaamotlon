@@ -28,7 +28,7 @@
 // }
 
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickNav()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -37,10 +37,29 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function stickNav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+function showDropDown(){
+  var drop_down = document.getElementById('drop-down-list');
+  if (drop_down.style.display === 'none'){
+    drop_down.style.display = 'block';
+  }
+  else if(drop_down.style.display === 'block'){
+    drop_down.style.display = 'none';
+  }
+}
+
+// document.getElementById('bar-icon').addEventListener('click', function(){
+
+//   document.getElementById('mobile-navigation').classList.add('show');
+// });
+
+function showMobileNav(){
+  document.getElementById('mobile-navigation').classList.add('show');
 }

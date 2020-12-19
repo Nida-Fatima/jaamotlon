@@ -1,0 +1,41 @@
+////// VIEW-PORTS BREAKPOINTS
+////////////////////////////////
+
+$xl: 1200px;
+$lg: 1024px;
+$md: 768px;
+$sm: 576px;
+$xs: 320px;
+
+
+
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+    @media (max-width: $lg){
+        font-size: 55%;
+    }
+    @media (max-width:$md) {
+        font-size: 40%;
+    }
+}
+
+body{
+    font-family: 'Poppins' sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin: 0rem;
+    padding: 0;
+
+}
+h2{
+    font-size: 3rem;
+
+}

@@ -2,15 +2,16 @@
 <html>
 
 <head>
-  <title>Workout-24</title>
+  <title>Starseite</title>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="css/animate.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/aos.css" rel="stylesheet" media="screen">
   <!-- <link href="color/default.css" rel="stylesheet" media="screen"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -18,24 +19,38 @@
 
 <body>
 
+
+  
   <!-- Navigation -->
   <div id="top-nav">
-    <ul>
-      <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
-      <li><i class="fa fa-envelope"></i> info@workout-24.de</li>
-      <li> <i class="far fa-clock"></i>24/7 für PREMIUM-Mitglieder</li>
-    </ul>
-
+    <div class="top-nav-wrapper">
+      <ul>
+        <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
+        <li><i class="fa fa-envelope"></i> info@workout-24.de</li>
+        <li> <i class="far fa-clock"></i>24/7 für PREMIUM-Mitglieder</li>
+      </ul>
+    </div>
   </div>
+   
 
-  <!-- Main Container -->
-    <div class="nav-wrapper">
-      <nav id="main-nav">
-        
+  <div id="navbar" class="nav-wrapper">
+   
+    <div class="mobile-navbar">
+      <div class="hamburger-div">
+        <a id="bar-icon" onclick="showMobileNav()" aria-hidden="true" class = "hamburger-icon" href="" >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="logo-div">
+        <a href="index.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
+
+    </div>
+    <nav id="main-nav">
+      <div class="left-nav">
         <ul>
-          <a aria-hidden="true" class = "hamburger-icon" href="">
-            <i class="fa fa-bars"></i>
-          </a>
           <li class="hover-effect"> <a href="news.html"> NEWS </a></li>
           <li class="drop-down"><a class="hover-effect" href="">LEISTUNGEN <i class="fa fa-caret-down"></i></a>
             <div class="dropdown-content">
@@ -49,200 +64,440 @@
               </ul>
             </div>
           </li>
-          
-
           <li class="hover-effect"><a href="Kursplan.html">KURSPLAN</a></li>
-            <a href="startseite.html" id="logo-list-item">
-              <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
-            </a>
-          <li class="active hover-effect"><a href="index.html">STUDIO</a></li>
+        </ul>
+      </div>
+      <div class="logo-div">
+        <a href="index.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li class="hover-effect"><a href="studio.html">STUDIO</a></li>
           <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
           <li class="hover-effect">
             <button class="btn">PROBETRAINING</button>
           </li>
         </ul>
-      </nav>
-    </div>
-   
-  <section class="container ">
-    <div id="hero-banner" class="hero-banner-section">
-      <div class="bordered-div">
-        <div id="hero-text">
-          <h3>Wir sind das Gesundheitszentrum </h3>
-          <h2>Workout24</h2>
-          <div class="green-border"></div>
-          <p>Von Cardio zu Schönheit - wir haben Angebote für jedermann.
-             Egal ob Sie Abnehmen wollen oder Muskeln aufbauen möchten, 
-             wir stehen Ihnen mit Rat und Tat zur Seite und begleiten Sie sehr gerne 
-             auf den Weg zu einem aktiven und gesünderen Leben.</p>
-        </div>
-      </div> 
-    </div>
-  </section> 
-
-  <!-------------------------------------- hero section end ----------------------------->
-
-<section id="features">
-  <div class="feature-section">
-    <div class="feature">
-      <div class="icon-box">
-        <img src="img/dog.svg" alt="">
       </div>
-      <div class="feature-content">
-        <h2>24 Stunden für Sie da</h2>
-        <p>Zeitdruck war gestern. Unser Gesundheitszentrum steht für Sie rund um die Uhr zur Verfügung.</p>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="icon-box">
-        <img src="img/hantel.svg" alt="">
-      </div>
-      <div class="feature-content">
-        <h2>Für jeden was dabei</h2>
-        <p>Wir bieten Ihnen zahlreiche Leistungen, die zum Wohle und der Gesundheit beitragen.</p>
-      </div>
-    </div>
+    </nav>
   </div>
-  <div class="feature-section">
-    <div class="feature">
-      <div class="icon-box">
-        <img src="img/gymnast-control-of-heart-beats.svg" alt="">
-      </div>
-      <div class="feature-content">
-        <h2>Gesundheits-Check</h2>
-        <p>Mit unserem Körperanalysegerät messen wir Ihre Werte und erstellen 
-        Ihnen einen individuellen Trainingsplan, so dass Sie Ihre Ziele 
-        auf dem schnellsten Weg erreichen können.</p>
-      </div>
+
+  <!----------Mobile Navigation------->
+  
+  <div id="mobile-navigation" class="mobile-nav-wrapper" >
+    <div class="close">
+      <a href=""><i class="fa fa-times"></i></a>
     </div>
-    <div class="feature">
-      <div class="icon-box">
-        <img src="img/exercise (5).svg" alt="">
-      </div>
-      <div class="feature-content">
-        <h2>Personal Training</h2>
-        <p>Unsere bestens ausgebildeten Coaches helfen Ihnen, Ihre Individuellen 
-          Wünsche umzusetzen. Mit Hilfsbereitschaft und Motivation stehen
-          wir Ihnen jederzeit zur Verfügung.</p>
+    <div class="link-section">
+      <ul>
+        <li class=" active hover-effect"> <a href="index.html"> Start </a></li>
+        <li onclick="showDropDown()" class="drop-down"><a class="hover-effect" href="">Leistungen<i class="fa fa-caret-down"></i></a>
+        </ul>  
+        <div style="display: none;" id="drop-down-list" >
+          <ul class="mobile-dropdown-content">
+            <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
+            <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
+            <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
+            <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
+            <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
+            <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
+          </ul>
         </div>
+        <ul> 
+          <li class="hover-effect"><a href="Kursplan.html">Kursplan</a></li>
+          <li class="hover-effect"><a href="studio.html">Studio</a></li>
+          <li class="hover-effect"> <a href="news.html"> News </a></li>
+          <li class="hover-effect"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="mobile-img-section">
+      <img src="img/mobile/frau-sport.jpg" alt="">
+      <h2>Starte noch heute!</h2>
+      <button class="btn">Probetraining vereinbaren</button>
     </div>
   </div>
 
-</section>
-<section id="gallery">
-  <h2>Ihr Workou24 Studio in Bad Säckigen</h2>
-  <div class="green-border"></div>
-  <div class="gallery-wrapper">
-    <div class="row">
-      <div class="column">
-        <div class="image-box">
-          <img src="img/Workout24_gallery_14.jpg">
-          <div class="image-overlay"></div>
+<!---------------------------------------  Hero section ------------------------------------------->
+
+  <section class="container">
+    <div id="hero-section" data-aos="fade" data-aos-duration="5s">
+        <div class="hero-image-box img-1">
+        
+            <div class="bordered-div">
+                <h1 class="image-text">
+                    FITNESS & GESUNDHEIT
+                </h1>
+                <button class="btn">mehr dazu</button>
+            </div>
         </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_16.jpg">
-          <div class="image-overlay"></div>
+        <div class="hero-image-box img-2">
+            
+            <div class="bordered-div">
+                <h1 class="image-text">
+                    RÜCKEN & GELENKE
+                </h1>
+                <button class="btn">mehr dazu</button>
+            </div>
         </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_17.jpg">
-          <div class="image-overlay"></div>
+       
+        <div  class="hero-image-box img-3">
+           
+            <div class="bordered-div">
+                <h1 class="image-text">
+                    FIRMEN FITNESS
+                </h1>
+                <button class="btn">mehr dazu</button>
+            </div>
         </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_19.jpg">
-          <div class="image-overlay"></div>
+        <div id="last-box" class="hero-image-box img-4">
+            
+            <div class="bordered-div">
+                <h1 class="image-text">
+                    ABNEHMEN & ERNÄHRUNG
+                </h1>
+                <button class="btn">mehr dazu</button>
+            </div>
         </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_19.jpg">
-          <div class="image-overlay"></div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="image-box">
-          <img src="img/Workout24_gallery_20.jpg">
-          <div class="image-overlay"></div>
-        </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_23.jpg">
-          <div class="image-overlay"></div>
-        </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_17.jpg">
-          <div class="image-overlay"></div>
-        </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_19.jpg">
-          <div class="image-overlay"></div>
-        </div>
-        <div class="image-box">
-          <img src="img/Workout24_gallery_19.jpg">
-          <div class="image-overlay"></div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="image-box">
-          <img src="img/Workout24_gallery_14.jpg">
-          <div class="image-overlay"></div>
-        </div> 
-        <div class="image-box">
-          <img src="img/Workout24_gallery_16.jpg">
-          <div class="image-overlay"></div>
-        </div> 
-        <div class="image-box">
-          <img src="img/Workout24_gallery_17.jpg">
-          <div class="image-overlay"></div>
-        </div> 
-        <div class="image-box">
-          <img src="img/Workout24_gallery_14.jpg">
-          <div class="image-overlay"></div>
-        </div> 
-        <div class="image-box">
-          <img src="img/Workout24_gallery_20.jpg">
-          <div class="image-overlay"></div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="image-box">
-          <img src="img/Workout24_gallery_20.jpg">
-          <div class="image-overlay"></div>
-        </div> <div class="image-box">
-          <img src="img/Workout24_gallery_23.jpg">
-          <div class="image-overlay"></div>
-        </div> <div class="image-box">
-          <img src="img/Workout24_gallery_17.jpg">
-          <div class="image-overlay"></div>
-        </div> <div class="image-box">
-          <img src="img/Workout24_gallery_19.jpg">
-          <div class="image-overlay"></div>
-        </div> <div class="image-box">
-          <img src="img/Workout24_gallery_23.jpg">
-          <div class="image-overlay"></div>
-        </div>
-      </div>
       
     </div>
+  </section> <!--  hero section end -->
+
+  <!---------------------------------------  Services section ------------------------------------------->
+
+<section id="services">
+    <h1 id="service-header" data-aos="zoom-in" >Ihr Gesundheitszentrum in Bad Säckigen</h1>
+    <div class="service-wrapper">      
+        <div class="image-section service-item">
+          <div data-aos="fade-up" class="man-image"> 
+            <img class="main-img" src="img/startseite-imgs/Workout24_Homepage_ueber_uns_happy_man.png" alt="Happy man">
+            <img class="man-leg" src="img/man's leg.png" alt="">
+            <!-- <div class="man-leg">
+              
+            </div> -->
+            <div class="arrow-div animate__animated animate__fadeIn">
+              <img data-aos="fade" data-aos-delay="800" data-aos-duration="1500" src="img/gree-arrow.png" alt="green arrow">
+            </div>
+          </div>
+        </div>
+        <div class="service-section service-item" data-aos="fade-up">
+            <div  class="about-us">
+                <h3>Über Uns</h3>
+                <div class="green-border"></div>
+                <p>Der Mensch steht bei uns im Fokus. Wir helfen Ihnen, Ihre Ziele zu erreichen 
+                    und mehr Lebensqualität zu erzielen. Egal ob Muskelaufbau, Gewichtsabnahme oder Stärkung des Rückens 
+                    - wir stehen Ihnen mit professioneller Beratung und high-tech Geräten zur Seite.</p>
+            </div>
+            <div class="feature">
+            <div class="icon-box">
+                <img src="img/dog.svg" alt="">
+            </div>
+            <div class="feature-content">
+                <h2>24 Stunden für Sie da</h2>
+                <p>Zeitdruck war gestern. Unser Gesundheitszentrum steht für Sie rund um die Uhr zur Verfügung.</p>
+            </div>
+            </div>
+            <div class="feature">
+            <div class="icon-box">
+                <img src="img/hantel.svg" alt="">
+            </div>
+            <div class="feature-content">
+                <h2>Für jeden was dabei</h2>
+                <p>Wir bieten Ihnen zahlreiche Leistungen, die zum Wohle und der Gesundheit beitragen.</p>
+            </div>
+            </div>
+            <div class="feature">
+                <div class="icon-box">
+                <img src="img/gymnast-control-of-heart-beats.svg" alt="">
+                </div>
+                <div class="feature-content">
+                <h2>Gesundheits-Check</h2>
+                <p>Mit unserem Körperanalysegerät messen wir Ihre Werte und erstellen 
+                Ihnen einen individuellen Trainingsplan, so dass Sie Ihre Ziele 
+                auf dem schnellsten Weg erreichen können.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon-box">
+                <img src="img/exercise (5).svg" alt="">
+                </div>
+                <div class="feature-content">
+                <h2>Personal Training</h2>
+                <p>Unsere bestens ausgebildeten Coaches helfen Ihnen, Ihre Individuellen 
+                    Wünsche umzusetzen. Mit Hilfsbereitschaft und Motivation stehen
+                    wir Ihnen jederzeit zur Verfügung.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--  Service section end -->
+
+<!---------------------------------------  Benifits section ------------------------------------------->
+
+<section id="benefits">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
+    <h3 >Was Sie erwartet</h3>
+    <div class="green-border"></div>
+    <p>Wir bieten Ihnen ein breites Spektrum an Leistungen 
+      und Kursen an, welche zu Ihren individuellen Wünschen und Zielen passen.</p>
+  </div>  <!-- Heading Wrapper-->
+  <div class="content-wrapper">
+    <div class="content-block" data-aos="fade-up" data-aos-duration="5s">
+      <div id="block1" class="inner-content-wrapper">
+        <div class="content-border"></div>
+        <div class="content-border-2"></div>
+        <div class="content">
+          <h2>Fitness & Gesundheit</h2>
+          <ul>
+            <li><i class="fas fa-check"></i> Cardio-Training</li>
+            <li><i class="fas fa-check"></i> Muskelaufbautraining</li>
+            <li><i class="fas fa-check"></i> Health Care – Zirkeltraining</li>
+            <li><i class="fas fa-check"></i> Rückenschule</li>
+            <li><i class="fas fa-check"></i> Gesundheitskurse</li>
+          </ul>
+          <button class="btn">Alle Fitness Leistungen</button>
+        </div>
+        
+      </div>
+      
+      
+      <div id="block2" class="inner-content-wrapper ">
+        <div class="content-border"></div>
+        <div class="content-border-2"></div>
+        <div class="content">
+          <h2>Fitness & Gesundheit</h2>
+          <ul>
+            <li><i class="fa fa-check"></i> Cardio-Training</li>
+            <li><i class="fa fa-check"></i> Muskelaufbautraining</li>
+            <li><i class="fa fa-check"></i> Health Care – Zirkeltraining</li>
+            <li><i class="fa fa-check"></i> Rückenschule</li>
+            <li><i class="fa fa-check"></i> Gesundheitskurse</li>
+          </ul>
+          <button class="btn">Alle Fitness Leistungen</button>
+        </div>
+      </div>
+    </div> <!-- First row of content block -->
+    
+   <div class="content-block" data-aos="fade-up" data-aos-duration="3s" data-aos-delay="1s">
+      <div id="block3" class="inner-content-wrapper ">
+        <div class="content-border"> </div>
+        <div class="content-border-2"> </div>
+        <div class="content">
+          <h2>Fitness & Gesundheit</h2>
+          <ul>
+            <li><i class="fa fa-check"></i> Cardio-Training</li>
+            <li><i class="fa fa-check"></i> Muskelaufbautraining</li>
+            <li><i class="fa fa-check"></i> Health Care – Zirkeltraining</li>
+            <li><i class="fa fa-check"></i> Rückenschule</li>
+            <li><i class="fa fa-check"></i> Gesundheitskurse</li>
+          </ul>
+          <button class="btn">Alle Fitness Leistungen</button>
+        </div>
+      </div>
+
+      <div id="block4" class="inner-content-wrapper ">
+        <div class="content-border"></div>
+        <div class="content-border-2"></div>
+        <div class="content">
+          <h2>Fitness & Gesundheit</h2>
+          <ul>
+            <li><i class="fa fa-check"></i> Cardio-Training</li>
+            <li><i class="fa fa-check"></i> Muskelaufbautraining</li>
+            <li><i class="fa fa-check"></i> Health Care – Zirkeltraining</li>
+            <li><i class="fa fa-check"></i> Rückenschule</li>
+            <li><i class="fa fa-check"></i> Gesundheitskurse</li>
+          </ul>
+          <button class="btn">Alle Fitness Leistungen</button>
+        </div>
+      </div>
+  </div> <!-- Second row of content block -->
+
+  </div> <!-- Content Wrapper -->
+
+</section> <!--  Benifit section end -->
+
+<!---------------------------------------  Testimonial section ------------------------------------------->
+
+<section id="testimonial">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
+    <h3>Das sagen unsere Mitglieder</h3>
+    <div class="green-border"></div>
+    <p>Überzeugen Sie sich selbst von unseren Kundenbewertungen.</p>
   </div>
-</section> <!---Gallery section end -->
+  <div class="testimonial-wrapper" data-aos="fade-up" data-aos-duration="3s">
+    <div class="testimonial-block">
+      <img class="avatar" src="img/startseite-imgs/303030.png" alt="client-picture">
+      <div class="star-rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit 
+        volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+        <h5 class="name">Chris Muster</h5>
+        <h6 class="designation">Baden-Württemberg</h6>
+    </div>
+    <div class="testimonial-block">
+      <img class="avatar" src="img/startseite-imgs/202020.png" alt="client-picture">
+      <div class="star-rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit 
+        volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+        <h5 class="name">Chris Muster</h5>
+        <h6 class="designation">Baden-Württemberg</h6>
+    </div>
+    <div class="testimonial-block last-block">
+      <img class="avatar" src="img/startseite-imgs/coaches1-1.png" alt="client-picture">
+      <div class="star-rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit 
+        volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+        <h5 class="name">Chris Muster</h5>
+        <h6 class="designation">Baden-Württemberg</h6>
+    </div>
+  </div>
+  <div class="arrow-block">
+    <i class="fa fa-angle-left"></i>
+    <i class="fa fa-angle-right"></i>
+  </div>
+  
+</section> <!--  Testimonial section end -->
 
 
+<!---------------------------------------  FAQ section ------------------------------------------->
 
-<section id="cta">
-  <!-- <div class="empty-section">
-  </div> -->
+<section id="FAQ">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
+    <h3>Was sind Ihre Ziele?</h3>
+    <div class="green-border"></div>
+    <p>Starten Sie jetzt Ihre kostenlose und unverbindliche Online-Analyse</p>
+  </div>
+  <div class="gray-border">
+    <div class="inner-content" data-aos="zoom-in" data-aos-duration="3s">
+      <img src="img/startseite-imgs/laptop-mockup.png" alt="Laptop-mockup">
+      <button class="btn">Online-Analyse starten</button>
+    </div>
+  </div>
+</section>  <!--  FAQ section end -->
+
+
+<!---------------------------------------  Call to action section ------------------------------------------->
+
+
+<section id="cta" class="cta-section-with-curve">
 <div class="wrapper">
   <div class="bordered-div">
     <div class="flex-item-1">
-      <img src="img/Workout24_Studio_Probetraining.png" alt="">
+      <img class="starseite-cta-img" data-aos="zoom-in" data-aos-duration="5s" data-aos-delay="500" src="img/startseite-imgs/Workout24_Homepage_Probetraininge.png" alt="">
     </div>
     <div class="flex-item-2">
-      <h1>ihre experten für fitness</h1>
-      <h2>schauen sie noch heute bei uns vorbei!</h2>
+      <h1 data-aos="fade-down" data-aos-duration="3s">Schluss mit surfen</h1>
+      <h2 data-aos="fade-up" data-aos-duration="3s">Lassen sie uns starten</h2>
       <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
     </div>
   </div> 
-
 </div>  
 </section> <!--Call to action section-->
 
+<!---------------------------------------  Question $ answer section ------------------------------------------->
+
+
+<section id="question-answer">
+  <div class="heading-wrapper" data-aos="fade-down" data-aos-duration="3s">
+    <h3>
+      Häufig gestellte Fragen
+    </h3>
+    <p>Auf jede Frage eine Antwort.</p>
+  </div>
+  <div class="faq-wrapper" data-aos="fade-up" data-aos-duration="3s">
+    <div class="faq-block-container">
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="active-faq faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <p>Selbstverständlich! Sie sind herzlich Willkommen,bei uns für ein Probetraining 
+          vorbeizuschauen.Sie können eine zusätzliche Beratung beantragen.</p>
+        <button><i class="fa fa-angle-up"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+      <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div>
+    </div>
+    <!-- <div class="faq-block-container"> -->
+      <!-- <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div> -->
+      <!-- <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div> -->
+    <!-- </div> -->
+    <!-- <div class="faq-block-container"> -->
+      <!-- <div class="active-faq faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <p>Selbstverständlich! Sie sind herzlich Willkommen,bei uns für ein Probetraining 
+          vorbeizuschauen.Sie können eine zusätzliche Beratung beantragen.</p>
+        <button><i class="fa fa-angle-up"></i></button>
+      </div> -->
+      <!-- <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div> -->
+    <!-- </div> -->
+    <!-- <div class="faq-block-container"> -->
+      <!-- <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div> -->
+      <!-- <div class="faq-block">
+        <h6>Wie sind die Öffnungszeiten im Gesundheitszentrum?</h6>
+        <button><i class="fa fa-angle-down"></i></button>
+      </div> -->
+    <!-- </div> -->
+  </div>
+
+</section>
+
+
+
+<!--------------------------------------- Footer section ------------------------------------------->
 <footer>
   <div class="widget-area">
     <div class="widget">
@@ -287,5 +542,12 @@
 </footer>
 
   <script src="js/custom.js"></script>
+
+  <!-- aos plugin -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({duration: 1000, });
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+////////call to action Section
+/////////////////////////////
+
+.cta-section-with-curve{
+    padding-bottom: 20rem;
+    
+    
+    .wrapper{
+        background-image: url(../img/bg-2.png);
+        background-size: cover;
+        height: 110rem;
+        padding-bottom: 20rem;
+        @media (max-width:$md){
+            height: 100rem;
+        }
+        @media (max-width:$sm){
+            height: 80rem;
+        }
+    
+    }
+    
+    .bordered-div{
+        border: 1.8rem solid white;
+        position: relative;
+        top: 55%;
+        width: 65%;
+        height: 50%;
+        padding: 6rem 0;
+        margin: 0 auto;
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        @media (max-width:$lg){
+            padding: 5rem; 
+        }
+        @media (max-width:$md){
+            top: 8rem;
+            padding: 3rem;
+        }
+        
+        @media (max-width:$sm){
+            padding: 0;
+        }
+
+        .flex-item-1{
+            display: flex;
+            flex: 45%;
+            max-width: 45%;
+            @media (max-width:$md){
+                text-align: center;
+            }
+
+            
+            img{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 35%;
+                @media (max-width:$md){
+                    position: static;
+                    width: 60%;
+                    text-align: center;
+                }
+                @media (max-width:$sm){
+                    top: 30rem;
+                    width: 60%;
+                    text-align: center;
+                }
+            }
+            
+        }
+        .flex-item-2{
+            
+            flex: 55%;
+            max-width: 55%;
+            // margin: 0 auto;
+            @media screen and (max-width: $md) {
+                flex: 100%;
+                max-width: 100%;
+                text-align: center;
+                padding: 2rem;
+            }
+            
+        }
+        h1{
+            font-size: 7rem;
+            color: $white-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1;
+
+            @media (max-width:$lg){
+                font-size: 4rem;
+            }
+            @media (max-width:$md){
+                font-size: 3.3rem;
+
+            }
+            @media (max-width:$sm){
+                font-size: 2.8rem;
+                margin: 1.5rem 0
+            }
+        }
+
+        h2{
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 3rem;
+            margin-right: 5rem;
+            
+            @media (max-width:$lg){
+                font-size: 2.5rem;
+                margin: 1.8rem 0;
+            }
+            @media (max-width:$md){
+                font-size: 1.8rem;
+
+            }
+            @media (max-width:$sm){
+                font-size: 1.5rem;
+                margin: 1.5rem 0
+            }
+        }
+        button{
+            background-color: $black-color;
+
+        }
+        
+    }
+}
