@@ -28,6 +28,14 @@
 // }
 
 
+function showMobileNav(){
+  document.getElementById('mobile-navigation').classList.add("show");
+}
+
+function hideMobileNav(){
+  document.getElementById('mobile-navigation').classList.add('hide');
+}
+
 window.onscroll = function() {stickNav()};
 
 // Get the navbar
@@ -55,11 +63,51 @@ function showDropDown(){
   }
 }
 
-// document.getElementById('bar-icon').addEventListener('click', function(){
+//Slider container
+var sliderSection = document.getElementById('slider-section');
 
-//   document.getElementById('mobile-navigation').classList.add('show');
-// });
+//inner slider section
+var sliderImages = document.getElementsByClassName('slider-image');
 
-function showMobileNav(){
-  document.getElementById('mobile-navigation').classList.add('show');
-}
+//Buttons
+var prviousBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+
+var counter = 1;
+const size = sliderImages[0].clientWidth;
+
+
+sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
+
+//Button Listeners
+
+
+nextBtn.addEventListener('click', ()=>{
+
+  if(counter >= sliderImages.length -1 ) return;
+
+  sliderSection.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
+});
+
+prviousBtn.addEventListener('click', ()=>{
+  if(counter <= 0) return;
+
+  sliderSection.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
+});
+
+sliderSection.addEventListener('transitionend', ()=>{
+  if(sliderImages[counter].id === 'last-clone'){
+    sliderSection.style.transition = 'none';
+    counter = sliderImages.length - 2;
+    sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
+  }
+  if(sliderImages[counter].id === 'first-clone'){
+    sliderSection.style.transition = 'none';
+    counter = sliderImages.length - counter;
+    sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
+  }
+})

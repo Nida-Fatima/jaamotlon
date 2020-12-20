@@ -19,40 +19,40 @@
 /////////////////////////////
 
 
-.cta-btn{
-    background-color: $primary-color;
-    color: $white-color;
-    font-size: 2rem;
-    min-width: 65%;
-    height: 6rem;
-    text-align: center;
-    margin-top: 5rem;
-    padding: 1rem;
+// .cta-btn{
+//     background-color: $primary-color;
+//     color: $white-color;
+//     font-size: 2rem;
+//     min-width: 65%;
+//     height: 6rem;
+//     text-align: center;
+//     margin-top: 5rem;
+//     padding: 1rem;
 
-    @media (max-width:$lg){
-        min-width: 90%;
-    }
-    @media (max-width:$md){
-        margin-top: 2.5rem;
-        min-width: 65%;
+//     @media (max-width:$lg){
+//         min-width: 90%;
+//     }
+//     @media (max-width:$md){
+//         margin-top: 2.5rem;
+//         min-width: 65%;
 
-    }
-    @media (max-width:$sm){
-        font-size: 1.6rem;
-        min-width: 90%;
-        margin-top: 1.8rem;
-    }
-    button:hover{
-        transform: scale(0.9);
-        transition: all 0.5s ease-in-out;
-    }
+//     }
+//     @media (max-width:$sm){
+//         font-size: 1.6rem;
+//         min-width: 60%;
+//         margin-top: 1.8rem;
+//     }
+//     button:hover{
+//         transform: scale(0.9);
+//         transition: all 0.5s ease-in-out;
+//     }
 
-}
+// }
 .cta-btn{
     background-color: $primary-color;
     color: $white-color;
     font-size: 1.6rem;
-    min-width: 65%;
+    min-width: 80%;
     height: 6rem;
     text-align: center;
     margin-top: 5rem;
@@ -63,12 +63,12 @@
     }
     @media (max-width:$md){
         margin-top: 2.5rem;
-        min-width: 65%;
+        
 
     }
     @media (max-width:$sm){
         font-size: 1.6rem;
-        min-width: 90%;
+        min-width: 60%;
         margin-top: 1.8rem;
     }
 
