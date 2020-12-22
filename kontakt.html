@@ -19,9 +19,9 @@
 <body>
 
   <!------------------------------------------------------------------------------>
-<!---------------------------- Navigation section ------------------------------------>
+<!---------------------------- Navigation section start ------------------------------------>
 <!------------------------------------------------------------------------------>
-  <!-- Navigation -->
+  <!-- top Navigation -->
   <div id="top-nav">
     <div class="top-nav-wrapper">
       <ul>
@@ -32,12 +32,18 @@
     </div>
   </div>
    
-
+<!-- main Navigation -->
   <div id="navbar" class="nav-wrapper">
-    <div class="hamburger-div">
-      <a aria-hidden="true" class = "hamburger-icon" href="">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="mobile-navbar">
+      <div class="hamburger-div">
+        <input type="checkbox" id="checkIcon">
+        <label class="hamburger-icon" for="checkIcon"><i class="fa fa-bars"></i></label>
+      </div>
+      <div class="logo-div">
+        <a href="index.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
     </div>
     <nav id="main-nav">
       <div class="left-nav">
@@ -65,8 +71,8 @@
       </div>
       <div class="right-nav">
         <ul>
-          <li class="active hover-effect"><a href="studio.html">STUDIO</a></li>
-          <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
+          <li class="hover-effect"><a href="studio.html">STUDIO</a></li>
+          <li class="active hover-effect"><a href="kontakt.html">KONTAKT</a></li>
           <li class="hover-effect">
             <button class="btn">PROBETRAINING</button>
           </li>
@@ -74,69 +80,93 @@
       </div>
     </nav>
   </div>
-   
+
+<!--------Mobile Navigation-------->
+  
+  <div id="mobile-navigation" class="mobile-nav-wrapper" >
+    <div class="close">
+        <input type="checkbox" id="closeIcon">
+        <label class="close-icon" for="closeIcon"><i class="fa fa-times"></i></label>
+    </div>
+    <div class="link-section">
+      <ul>
+        <li class=" active hover-effect"> <a href="index.html"> Start </a></li>
+        <li onclick="showDropDown()" class="drop-down"><a class="hover-effect" href="">Leistungen<i class="fa fa-caret-down"></i></a>
+        </ul>  
+        <div style="display: none;" id="drop-down-list" >
+          <ul class="mobile-dropdown-content">
+            <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
+            <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
+            <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
+            <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
+            <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
+            <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
+          </ul>
+        </div>
+        <ul> 
+          <li class="hover-effect"><a href="Kursplan.html">Kursplan</a></li>
+          <li class="hover-effect"><a href="studio.html">Studio</a></li>
+          <li class="hover-effect"> <a href="news.html"> News </a></li>
+          <li class="hover-effect"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="mobile-img-section">
+      <img src="img/mobile/frau-sport.jpg" alt="">
+      <h2>Starte noch heute!</h2>
+      <button class="btn">Probetraining vereinbaren</button>
+    </div>
+  </div>
+
 <!------------------------------------------------------------------------------>
 <!---------------------------- Navigation section End ------------------------------------>
 <!------------------------------------------------------------------------------>
 
+<div class="main-container">  <!-----Main Container------>
 
 
-<!-----------------------------Contact Form section Start------------------------------->
+  <!-----------------------------Contact Form section Start------------------------------->
 
-<section id="contact-section">
-    <div class="contact-wrapper">
-        <div class="form-block">
-            <h3>Vereinbaren Sie jetzt Ihre kostenlosen Termin</h3>
-            <div class="form-wrapper">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="number" placeholder="Telefon">
-                <button class="btn">Absenden</button>
-            </div>
+  <section id="contact-section">
+      <div class="contact-wrapper">
+          <div class="form-block">
+              <h3>Vereinbaren Sie jetzt Ihre kostenlosen Termin</h3>
+              <div class="form-wrapper">
+                  <input type="text" placeholder="Name">
+                  <input type="email" placeholder="Email">
+                  <input type="number" placeholder="Telefon">
+                  <button class="btn">Absenden</button>
+              </div>
 
-        </div>
-        <div class="address-block">
-        <div class="content-wrapper">
-            <div class="content-block">
-                <div id="block1" class="inner-content-wrapper">
-                <div class="content">
-                    <h3>Address</h3>
-                    <p>Gesundheitszentrum Workout 24
-                        Schaubingenstraße 3
-                        79713 Bad Säckingen <br><br>
-                        
-                        +49 (0) 7761 1338</p>
-                        <a href="">info@workout-24.de</a>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-row"></div>
+          </div>
+          <div class="address-block">
+          <div class="content-wrapper">
+              <div class="content-block">
+                  <div id="block1" class="inner-content-wrapper">
+                  <div class="content">
+                      <h3>Address</h3>
+                      <p>Gesundheitszentrum Workout 24
+                          Schaubingenstraße 3
+                          79713 Bad Säckingen <br><br>
+                          
+                          +49 (0) 7761 1338</p>
+                          <a href="">info@workout-24.de</a>
+                  </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="bottom-row"></div>
 
-</section>
-
-
-
-<!-----------------------------Contact Form section End------------------------------->
+  </section>
 
 
 
+  <!-----------------------------Contact Form section End------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
+</div>
 <!------------------------------------------------------------------------------>
-<!----------------------------Footer section------------------------------------>
+<!----------------------------Footer section start------------------------------------>
 <!------------------------------------------------------------------------------>
 
 <footer>

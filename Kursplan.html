@@ -21,8 +21,8 @@
   <!------------------------------------------------------------------------------>
 <!---------------------------- Navigation section ------------------------------------>
 <!------------------------------------------------------------------------------>
-   <!-- Navigation -->
-   <div id="top-nav">
+  <!-- top Navigation -->
+  <div id="top-nav">
     <div class="top-nav-wrapper">
       <ul>
         <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
@@ -32,12 +32,18 @@
     </div>
   </div>
    
-
+  <!-- Main Navigation -->
   <div id="navbar" class="nav-wrapper">
-    <div class="hamburger-div">
-      <a aria-hidden="true" class = "hamburger-icon" href="">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="mobile-navbar">
+      <div class="hamburger-div">
+        <input type="checkbox" id="checkIcon">
+        <label class="hamburger-icon" for="checkIcon"><i class="fa fa-bars"></i></label>
+      </div>
+      <div class="logo-div">
+        <a href="index.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
     </div>
     <nav id="main-nav">
       <div class="left-nav">
@@ -55,7 +61,7 @@
               </ul>
             </div>
           </li>
-          <li class="hover-effect"><a href="Kursplan.html">KURSPLAN</a></li>
+          <li class="active hover-effect"><a href="Kursplan.html">KURSPLAN</a></li>
         </ul>
       </div>
       <div class="logo-div">
@@ -65,7 +71,7 @@
       </div>
       <div class="right-nav">
         <ul>
-          <li class="active hover-effect"><a href="studio.html">STUDIO</a></li>
+          <li class="hover-effect"><a href="studio.html">STUDIO</a></li>
           <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
           <li class="hover-effect">
             <button class="btn">PROBETRAINING</button>
@@ -74,184 +80,392 @@
       </div>
     </nav>
   </div>
-   
+
+  <!------Mobile Navigation------>
+  
+  <div id="mobile-navigation" class="mobile-nav-wrapper" >
+    <div class="close">
+        <input type="checkbox" id="closeIcon">
+        <label class="close-icon" for="closeIcon"><i class="fa fa-times"></i></label>
+    </div>
+    <div class="link-section">
+      <ul>
+        <li class=" active hover-effect"> <a href="index.html"> Start </a></li>
+        <li onclick="showDropDown()" class="drop-down"><a class="hover-effect" href="">Leistungen<i class="fa fa-caret-down"></i></a>
+        </ul>  
+        <div style="display: none;" id="drop-down-list" >
+          <ul class="mobile-dropdown-content">
+            <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
+            <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
+            <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
+            <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
+            <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
+            <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
+          </ul>
+        </div>
+        <ul> 
+          <li class="active hover-effect"><a href="Kursplan.html">Kursplan</a></li>
+          <li class="hover-effect"><a href="studio.html">Studio</a></li>
+          <li class="hover-effect"> <a href="news.html"> News </a></li>
+          <li class="hover-effect"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="mobile-img-section">
+      <img src="img/mobile/frau-sport.jpg" alt="">
+      <h2>Starte noch heute!</h2>
+      <button class="btn">Probetraining vereinbaren</button>
+    </div>
+  </div>
+
 <!------------------------------------------------------------------------------>
 <!---------------------------- Navigation section End ------------------------------------>
 <!------------------------------------------------------------------------------>
 
+<div class="main-container">  <!-----Main Container------>
 
 
-<!---------------------------- Hero section Start ------------------------------------>
+  <!---------------------------- Hero section Start ------------------------------------>
 
 
-<section class="container">
-    <div id="kursplan-hero-section">
-      <div class="bordered-div">
-        <div id="hero-text">
+  <section class="container">
+      <div id="kursplan-hero-section" class="hero-banner-section">
+        <div class="bordered-div">
+          <div id="hero-text" data-aos="fade-up-left" data-aos-duration="3s" data-aos-delay="5000">
+            <h3>Unsere Auswahl an</h3>
+            <h2> Kursen</h2>
+            <div class="green-border"></div>
+            <p>Bei Workout24 ist für jeden etwas dabei! <br> 
+              Schauen Sie sich unseren Kursplan and und kommen Sie zu dem Training, der zu Ihnen passt.</p>
+          </div>
+        </div> 
+        <div class="hero-text-mobile" data-aos="fade-up-left" data-aos-duration="3s" data-aos-delay="5000">
           <h3>Unsere Auswahl an</h3>
           <h2> Kursen</h2>
           <div class="green-border"></div>
           <p>Bei Workout24 ist für jeden etwas dabei! <br> 
             Schauen Sie sich unseren Kursplan and und kommen Sie zu dem Training, der zu Ihnen passt.</p>
         </div>
-      </div> 
-    </div>
-  </section> 
-
-  
-<!---------------------------- Hero section End ------------------------------------>
-
-
-<!---------------------------- Time Table section Start------------------------------------>
-
-<section id="time-table">
-    <div class="time-table-wrapper">
-      <div class="btn-wrapper">
-        <button class="table-btn">Rheo-Fit-(KK)</button>
-        <button class="table-btn">Rheo-Fit-(KK)</button>
-        <button class="table-btn">Rheo-Fit-(KK)</button>
-        <button class="table-btn">Rheo-Fit-(KK)</button>
       </div>
-        <table>
-            <thead>
-                <th></th>
-                <th>Montag</th>
-                <th>Dienstag</th>
-                <th>Mittwoch</th>
-                <th>Donnerstag</th>
-                <th>Freitag</th>
-            </thead>
-            <tbody>
-                <tr class="odd-row">
-                    <td class="odd first">8:30 Uhr</td>
-                    <td class="even"></td>
-                    <td class="odd">Rhea-Fit-(KK)</td>
-                    <td class="even"></td>
-                    <td class="odd"></td>
-                    <td class="even"></td>
-                </tr>
-                <tr class="even-row">
-                    <td class="odd first">9:00 Uhr</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd">Kraftausdauer-Zirkeltraining</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                </tr>
-                <tr class="odd-row">
-                    <td class="odd first">9:15 Uhr</td>
-                    <td class="even"></td>
-                    <td class="odd">Rhea-Fit-(KK)</td>
-                    <td class="even"></td>
-                    <td class="odd"></td>
-                    <td class="even"></td>
-                </tr>
-                <tr class="even-row">
-                    <td class="odd first">9:30 Uhr</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd">Kraftausdauer-Zirkeltraining</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                </tr>
-                <tr class="odd-row">
-                    <td class="odd first">10:00 Uhr</td>
-                    <td class="even"></td>
-                    <td class="odd">Rhea-Fit-(KK)</td>
-                    <td class="even"></td>
-                    <td class="odd"></td>
-                    <td class="even"></td>
-                </tr>
-                <tr class="even-row">
-                    <td class="odd first">10:30 Uhr</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd">Kraftausdauer-Zirkeltraining</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                </tr>
-                <tr class="odd-row">
-                    <td class="odd first"> </td>
-                    <td class="even"></td>
-                    <td class="odd">Rhea-Fit-(KK)</td>
-                    <td class="even"></td>
-                    <td class="odd"></td>
-                    <td class="even"></td>
-                </tr>
-                <tr class="even-row">
-                    <td class="odd first">16:00 Uhr</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd">Kraftausdauer-Zirkeltraining</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                </tr>
-                <tr class="odd-row">
-                    <td class="odd first"> 17:00 uhr </td>
-                    <td class="even"></td>
-                    <td class="odd">Rhea-Fit-(KK)</td>
-                    <td class="even"></td>
-                    <td class="odd"></td>
-                    <td class="even"></td>
-                </tr>
-                <tr class="even-row">
-                    <td class="odd first"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd">Kraftausdauer-Zirkeltraining</td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                    <td class="odd"></td>
-                    <td class="even">Kraftausdauer-Zirkeltraining</td>
-                </tr>
-                <tr class="odd-row">
-                  <td class="odd first">18:00</td>
-                  <td class="even"></td>
-                  <td class="odd">Rhea-Fit-(KK)</td>
-                  <td class="even"></td>
-                  <td class="odd"></td>
-                  <td class="even"></td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
+    </section> 
+
     
-    </div>
-</section>
+  <!---------------------------- Hero section End ------------------------------------>
 
 
-<!---------------------------- Time Table section End ------------------------------------>
+  <!---------------------------- Time Table section Start------------------------------------>
 
-
-
-
-
-<!---------------------------- Offer section Start------------------------------------>
-<section id="kursen-offer-section">
-    <div class="content-wrapper">
-      <div class="content-block">
-        <div id="block1" class="inner-content-wrapper">
-          <div class="content">
-            <h2>WORAUF WARTEN SIE NOCH?</h2>
-            <button class="btn cta-btn">Jetzt Online-kurs buchen</button>
-           
-          </div>
-          
-          
+  <section id="time-table">
+      <div class="time-table-wrapper">
+        <div class="btn-wrapper">
+          <button class="table-btn">Rheo-Fit-(KK)</button>
+          <button class="table-btn">Rheo-Fit-(KK)</button>
+          <button class="table-btn">Rheo-Fit-(KK)</button>
+          <button class="table-btn">Rheo-Fit-(KK)</button>
         </div>
-      </div> <!-- First row of content block -->
+          <table class="desktop-table">
+              <thead>
+                  <th></th>
+                  <th>Montag</th>
+                  <th>Dienstag</th>
+                  <th>Mittwoch</th>
+                  <th>Donnerstag</th>
+                  <th>Freitag</th>
+              </thead>
+              <tbody>
+                  <tr class="odd-row">
+                      <td class="odd first time">8:30 Uhr</td>
+                      <td class="even"></td>
+                      <td class="odd">Rhea-Fit-(KK)</td>
+                      <td class="even"></td>
+                      <td class="odd"></td>
+                      <td class="even"></td>
+                  </tr>
+                  <tr class="even-row">
+                      <td class="odd first time">9:00 Uhr</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd">Kraftausdauer-Zirkeltraining</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                  </tr>
+                  <tr class="odd-row">
+                      <td class="odd first time">9:15 Uhr</td>
+                      <td class="even"></td>
+                      <td class="odd">Rhea-Fit-(KK)</td>
+                      <td class="even"></td>
+                      <td class="odd"></td>
+                      <td class="even"></td>
+                  </tr>
+                  <tr class="even-row">
+                      <td class="odd first time">9:30 Uhr</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd">Kraftausdauer-Zirkeltraining</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                  </tr>
+                  <tr class="odd-row">
+                      <td class="odd first time">10:00 Uhr</td>
+                      <td class="even"></td>
+                      <td class="odd">Rhea-Fit-(KK)</td>
+                      <td class="even"></td>
+                      <td class="odd"></td>
+                      <td class="even"></td>
+                  </tr>
+                  <tr class="even-row">
+                      <td class="odd first time">10:30 Uhr</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd">Kraftausdauer-Zirkeltraining</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                  </tr>
+                  <tr class="odd-row">
+                      <td class="odd first"> </td>
+                      <td class="even"></td>
+                      <td class="odd">Rhea-Fit-(KK)</td>
+                      <td class="even"></td>
+                      <td class="odd"></td>
+                      <td class="even"></td>
+                  </tr>
+                  <tr class="even-row">
+                      <td class="odd first time">16:00 Uhr</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd">Kraftausdauer-Zirkeltraining</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                  </tr>
+                  <tr class="odd-row">
+                      <td class="odd first time"> 17:00 uhr </td>
+                      <td class="even"></td>
+                      <td class="odd">Rhea-Fit-(KK)</td>
+                      <td class="even"></td>
+                      <td class="odd"></td>
+                      <td class="even"></td>
+                  </tr>
+                  <tr class="even-row">
+                      <td class="odd first"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd">Kraftausdauer-Zirkeltraining</td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                      <td class="odd"></td>
+                      <td class="even">Kraftausdauer-Zirkeltraining</td>
+                  </tr>
+                  <tr class="odd-row">
+                    <td class="odd first time">18:00</td>
+                    <td class="even"></td>
+                    <td class="odd">Rhea-Fit-(KK)</td>
+                    <td class="even"></td>
+                    <td class="odd"></td>
+                    <td class="even"></td>
+                </tr>
+              </tbody>
+          </table>
+
+        <div class="mobile-table-section">   
+            <table class="mobile-table montag">
+                <tr>
+                  <th colspan="2">Montag</th>
+                </tr>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="odd first time">8:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">9:15 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">10:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">10:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mobile-table montag">
+                <tr>
+                  <th colspan="2">Dienstag</th>
+                </tr>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="odd first time">8:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">9:15 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">10:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">10:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mobile-table montag">
+                <tr>
+                  <th colspan="2">Mittwoch</th>
+                </tr>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="odd first time">8:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">9:15 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">10:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">10:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mobile-table montag">
+                <tr>
+                  <th colspan="2">Donnerstag</th>
+                </tr>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="odd first time">8:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">9:15 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">10:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">10:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mobile-table montag">
+                <tr>
+                  <th colspan="2">Freitag</th>
+                </tr>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="odd first time">8:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">9:15 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">9:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                    <tr class="odd-row">
+                        <td class="odd first time">10:00 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                    </tr>
+                    <tr class="even-row">
+                        <td class="odd first time">10:30 Uhr</td>
+                        <td class="even">Kraftausdauer-Zirkeltraining</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+      </div>
       
-  
-    </div> <!-- Content Wrapper -->
   </section>
-  
-  <!---------------------------- Offer section End------------------------------------>
 
 
+  <!---------------------------- Time Table section End ------------------------------------>
 
 
+  <!---------------------------- Offer section Start------------------------------------>
+  <section id="kursen-offer-section">
+      <div class="content-wrapper" data-aos="fade" data-aos-duration="5s">
+        <div class="content-block">
+          <div id="block1" class="inner-content-wrapper">
+            <div class="content">
+              <h2>WORAUF WARTEN SIE NOCH?</h2>
+              <button class="btn cta-btn">Jetzt Online-kurs buchen</button>
+            
+            </div>
+            
+            
+          </div>
+        </div> <!-- First row of content block -->
+        
+    
+      </div> <!-- Content Wrapper -->
+    </section>
+    
+    <!---------------------------- Offer section End------------------------------------>
 
 
-
-
+</div>
 
 <!------------------------------------------------------------------------------>
 <!----------------------------Footer section------------------------------------>

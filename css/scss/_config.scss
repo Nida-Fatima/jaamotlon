@@ -9,6 +9,7 @@ $xs: 320px;
 
 
 
+
 *{
     font-family: poppins;
     margin: 0;
@@ -37,4 +38,9 @@ body{
 }
 p{
     font-size: 2rem;
+}
+
+.main-container{
+    max-width: 2000px;
+    margin: auto;
 }

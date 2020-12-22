@@ -47,7 +47,7 @@
 //////////////////////////////////////////////////////
 //////////////// 1st SECTION STYLING /////////////////
 //////////////////////////////////////////////////////
-
+.main-container{
 #hero-section{
     display: flex;
     position: relative;
@@ -166,12 +166,11 @@
     #slider-section{
         display: flex;
         width: 100%;
-        // height: 80vh;
         .image-box{
-            
             position: relative;
             flex: 50%;
             max-width: 50%;
+            max-height: 90vh;
             @media (max-width:$sm){
                 flex: 100%;
                 max-width: 100%;
@@ -180,9 +179,9 @@
                 position: absolute;
                 width: 80%;
                 height: 70%;
-                top: 0;
+                top: 50%;
                 left: 50%;
-                transform: translate(-50%);
+                transform: translate(-50%,-40%);
                 border: 1rem solid white;
                 display: flex;
                 flex-direction: column;
@@ -230,8 +229,6 @@
         cursor: pointer;
     }
 }
-
-
 
 //////////////////////////////////////////////////////
 //////////////// 2ND SECTION STYLING /////////////////
@@ -794,26 +791,10 @@
 #cta{
 
     .starseite-cta-img{
-        position: absolute;
-        bottom: 0;
+        width: 65%;
         left: -10rem;
-        width: 60%;
-        // @media (max-width:$md){
-        //     left: -10rem;
-        //     width: 60%;
-        // }
-    }
-    .flex-item-1{
-        flex: 55%;
-        max-width: 55%;
-    } 
-    @media (max-width:$sm){
-        display: none;
     }
 }
-
-
-
 
 //////////////////////////////////////////////////////
 //////////////// 7TH SECTION STYLING /////////////////
@@ -824,6 +805,8 @@
     margin-bottom: 20rem;
     .faq-wrapper{
         padding: 5rem 8rem;
+        width: 90%;
+        margin: auto;
         margin-top: 10rem;
         @media (max-width:$md){
             padding: 2rem;
@@ -859,7 +842,7 @@
                 display: flex;
                 position: relative;
                 h6{
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     font-weight: bold;
                     @media (max-width:$lg){
                         font-size: 1.5rem;
@@ -883,7 +866,7 @@
                         right: -1.3rem;
                     }
                     i{
-                        font-size: 5rem;
+                        font-size: 4rem;
                         color: $primary-color;
                         @media (max-width:$lg){
                             font-size: 4rem;
@@ -948,4 +931,6 @@
         border-left: 2px solid white ;
         border-right: 2px solid white ;
     }
+}
+
 }

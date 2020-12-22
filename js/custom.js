@@ -28,13 +28,16 @@
 // }
 
 
-function showMobileNav(){
-  document.getElementById('mobile-navigation').classList.add("show");
-}
+var ele = document.getElementById('checkIcon');
+ele.addEventListener('change',()=>{
+  document.getElementById('mobile-navigation').style.left = 0;
+});
 
-function hideMobileNav(){
-  document.getElementById('mobile-navigation').classList.add('hide');
-}
+var ele = document.getElementById('closeIcon');
+ele.addEventListener('change',()=>{
+  document.getElementById('mobile-navigation').style.left = -100+'%';
+});
+
 
 window.onscroll = function() {stickNav()};
 

@@ -26,12 +26,19 @@
             font-size: 3.8rem;
             // display: inline;
         }
+        #checkIcon{
+            display: none;
+        }
     }
     @media (max-width:$md){
         display: flex;
     }
 }
 
+#checkIcon:checked ~ .mobile-nav-wrapper{
+    left: 0;
+    
+}
 
 
 //////// Moile Navigation
@@ -43,10 +50,10 @@
     height: 100vh;
     background-color: white;
     padding: 2rem 0 5rem 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
-    z-index: 10;
+    z-index: 21;
     transition: all 0.5s ease-in;
     // @media (max-width:$md){
     //     width: 50%;
@@ -57,6 +64,9 @@
         font-size: 3rem;
         i{
             color: $primary-color;
+        }
+        #closeIcon{
+            display: none;
         }
         
     }
@@ -91,7 +101,6 @@
         width: 100%;
         background-color: $primary-color;
         ul{
-            // display: none;
             background-color: $primary-color;
             width: 100%;
             .active{
@@ -138,17 +147,6 @@
     }
 
 }
-.show{
-    position: absolute;
-    left: 0;
-    transition: all 0.3s;
-}
-.hide{
-    // position: absolute;
-    left: -100%;
-    transition: all 0.3s;
-}
-
 
 
 
@@ -168,7 +166,7 @@
         display: none;
     }
     .top-nav-wrapper{
-        width: 80%;
+        width: 65%;
         margin: 0 auto;
         ul{
             list-style: none;
@@ -177,7 +175,7 @@
             li{
                 text-align: left;
                 font-family: 'poppins';
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 font-weight: normal;
                 letter-spacing: 0.03rem;
                 color: #FFFFFF;
@@ -208,7 +206,7 @@
 .logo-div{
     width: 20%;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     position: relative;
     #logo-list-item{
         position: relative;
@@ -236,7 +234,7 @@
         background-color: white;
         box-shadow: 0 10px 10px -6px #a5a5a5;
         border-radius: 100%;
-        padding: 5.5rem 3rem;
+        padding: 4.5rem 3rem;
         left: 50%;
         transform: translate(-50%);
         z-index: -1;
@@ -262,6 +260,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 80%;
+    margin: auto;
     .left-nav{
         width: 36%;
     }

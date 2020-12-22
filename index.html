@@ -20,7 +20,6 @@
 <body>
 
 
-  
   <!-- Navigation -->
   <div id="top-nav">
     <div class="top-nav-wrapper">
@@ -36,9 +35,8 @@
   <div id="navbar" class="nav-wrapper">
     <div class="mobile-navbar">
       <div class="hamburger-div">
-        <a id="bar-icon" onclick="showMobileNav()" aria-hidden="true" class = "hamburger-icon" href="" >
-          <i class="fa fa-bars"></i>
-        </a>
+        <input type="checkbox" id="checkIcon">
+        <label class="hamburger-icon" for="checkIcon"><i class="fa fa-bars"></i></label>
       </div>
       <div class="logo-div">
         <a href="index.html" id="logo-list-item">
@@ -88,7 +86,8 @@
   
   <div id="mobile-navigation" class="mobile-nav-wrapper" >
     <div class="close">
-      <a onclick="hideMobileNav()" href=""><i class="fa fa-times"></i></a>
+        <input type="checkbox" id="closeIcon">
+        <label class="close-icon" for="closeIcon"><i class="fa fa-times"></i></label>
     </div>
     <div class="link-section">
       <ul>
@@ -118,6 +117,10 @@
       <button class="btn">Probetraining vereinbaren</button>
     </div>
   </div>
+
+
+  <div class="main-container">  <!-----Main Container------>
+
 
 <!---------------------------------------  Hero section ------------------------------------------->
 
@@ -565,10 +568,10 @@
         <h2 data-aos="fade-up" data-aos-duration="3s">Lassen sie uns starten</h2>
       </div>
       
-      <img class="starseite-cta-img" data-aos="zoom-in" data-aos-duration="5s" data-aos-delay="500" src="img/startseite-imgs/Workout24_Homepage_Probetraininge.png" alt="">
-      <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
+      <img style="width: 100%;" class="starseite-cta-img" data-aos="zoom-in" data-aos-duration="5s" data-aos-delay="500" src="img/startseite-imgs/Workout24_Homepage_Probetraininge.png" alt="">
+      
     </div> 
-    
+    <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
   </div>  
   </section> <!--Mobile Call to action section-->
 
@@ -664,7 +667,7 @@
   </a>
   <a href=""><i class="fa fa-envelope"></i></a>
 </div>
-
+</div>  <!------Main Container End--->
 
 
 <!--------------------------------------- Footer section ------------------------------------------->
@@ -711,13 +714,13 @@
   </div>
 </footer>
 
-  <script src="js/custom.js"></script>
+ 
 
   <!-- aos plugin -->
   <script src="js/aos.js"></script>
   <script>
     AOS.init({duration: 1000, });
-
   </script>
+   <script src="js/custom.js"></script>
 </body>
 </html>

@@ -21,8 +21,8 @@
   <!------------------------------------------------------------------------------>
 <!---------------------------- Navigation section ------------------------------------>
 <!------------------------------------------------------------------------------>
-   <!-- Navigation -->
-   <div id="top-nav">
+  <!-- Top Navigation -->
+  <div id="top-nav">
     <div class="top-nav-wrapper">
       <ul>
         <li><i class="fa fa-phone"></i> +49 (0) 7761 1338</li>
@@ -34,10 +34,16 @@
    
 
   <div id="navbar" class="nav-wrapper">
-    <div class="hamburger-div">
-      <a aria-hidden="true" class = "hamburger-icon" href="">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="mobile-navbar">
+      <div class="hamburger-div">
+        <input type="checkbox" id="checkIcon">
+        <label class="hamburger-icon" for="checkIcon"><i class="fa fa-bars"></i></label>
+      </div>
+      <div class="logo-div">
+        <a href="index.html" id="logo-list-item">
+          <img id="logo" src="img/NoPath - Kopie.png" alt="logo">
+        </a>
+      </div>
     </div>
     <nav id="main-nav">
       <div class="left-nav">
@@ -65,7 +71,7 @@
       </div>
       <div class="right-nav">
         <ul>
-          <li class="active hover-effect"><a href="studio.html">STUDIO</a></li>
+          <li class="hover-effect"><a href="studio.html">STUDIO</a></li>
           <li class="hover-effect"><a href="kontakt.html">KONTAKT</a></li>
           <li class="hover-effect">
             <button class="btn">PROBETRAINING</button>
@@ -74,121 +80,156 @@
       </div>
     </nav>
   </div>
-   
-<!------------------------------------------------------------------------------>
-<!---------------------------- Navigation section End ------------------------------------>
-<!------------------------------------------------------------------------------>
 
-
-
-<!---------------------------- Hero section Start ------------------------------------>
-
-
-<section class="container">
-    <div id="fitness-hero-section">
-      <div class="bordered-div">
-        <div id="hero-text">
-          <h3>Jetzt Muskeln aufbauen & </h3>
-          <h2>fit werden!</h2>
-          <div class="green-border"></div>
-          <p>Mit unserem professionellen Equipment und unserer individuellen Beratung zeigen wir Ihnen, 
-            wie Sie Schritt für Schritt Ihre Traumfigur erreichen. <br> <br>
-            Machen Sie sich ihr eigenes Bild und absolvieren Sie ein kostenloses und unverbindliches Probetraining.</p>
-        </div>
-      </div> 
-    </div>
-  </section> 
-
+  <!----Mobile Navigation------>
   
-<!---------------------------- Hero section End ------------------------------------>
-
-<!---------------------------- 1st service section Start ------------------------------------>
-
-<section class="detailed-service-section">
-    <div class="service-wrapper right-content-service">
-        <div class="flex-service-item service-img">
-            <img src="img/fitness/Workout24_Fitness_Cardio_Training.jpg" alt="">
-        </div>
-        
-        <div class="flex-service-item service-description">
-            <h3>Cardio Training</h3>
-            <p>Sie wollen sich fitter machen, Stress abbauen oder Ihre Leistung steigern? 
-                Dann ist Cardiotraining genau das richtige für Sie. Cardiotraining auch als 
-                Herz-Kreislauf-Training bekannt, ist eine der Hauptsäulen für die Gesunderhaltung des 
-                Menschen. Dabei werden das Herz und die Blutgefäße gestärkt. Die Leistungsbereitschaft 
-                des Herzens nimmt zu. Der Blutdruck und Cholesterinspiegel sinken. Unsere Trainer werden 
-                Ihnen dabei helfen, Ihren optimalen Puls zu ermitteln um Ihre Ziele zu erreichen. <br> 
-                Entscheiden Sie selber ob Sie Fahrrad, Crosstrainer oder Laufband für Ihre Trainingsziele 
-                in Anspruch nehmen.</p>
-        </div>
+  
+  <div id="mobile-navigation" class="mobile-nav-wrapper" >
+    <div class="close">
+        <input type="checkbox" id="closeIcon">
+        <label class="close-icon" for="closeIcon"><i class="fa fa-times"></i></label>
     </div>
-
-    <div class="service-wrapper left-content-service">
-        <div class="flex-service-item service-img">
-            <img src="img/fitness/Workout24_Fitness_Muskel_Training.jpg" alt="">
+    <div class="link-section">
+      <ul>
+        <li class=" active hover-effect"> <a href="index.html"> Start </a></li>
+        <li onclick="showDropDown()" class="drop-down"><a class="hover-effect" href="">Leistungen<i class="fa fa-caret-down"></i></a>
+        </ul>  
+        <div style="display: none;" id="drop-down-list" >
+          <ul class="mobile-dropdown-content">
+            <li class="black-hover"><a  href="Abnehmen und Ernährung.html">Abnehmen und Ernährung</a></li>
+            <li class="black-hover" ><a href="Rücken und Gelenke.html">Rücken und Gelenke</a></li>
+            <li class="black-hover"> <a  href="fitness.html">Fitness</a></li>
+            <li class="black-hover"> <a  href="Arbeitgeber.html">Betriebliches Gesundheitsmanagement Arbeitgeber</a></li>
+            <li class="black-hover"> <a  href="Arbeitnehmer.html">Betriebliches Gesundheitsmanagement Arbeitnehmer</a></li>
+            <li class="black-hover"><a  href="Betriebliches Gesundheitsmanagement.html">Betriebliches <br> Gesundheitsmanagement</a></li>
+          </ul>
         </div>
-        
-        <div class="flex-service-item service-description">
-            <h3>Muskelaufabu</h3>
-            <p>Schritt für Schritt zur Traumfigur. Modellieren Sie Ihren Körper 
-                so wie Sie es brauchen. Was bringt Ihnen Muskelaufbau? <br> 
-                – Einen gesunden Rücken <br> 
-                – strahlendes Aussehen <br> 
-                – gute Figur <br> 
-                – mehr Grundumsatz <br> 
-                – dauerhaft verbesserte Fettverbrennung <br> 
-                – Schutz der Gelenke <br> 
-                – Fit bis ins hohe Alter <br> 
-                Mit dem richtigen Equipment und unsere individuellen Beratung zeigen wir Ihnen 
-                wie Sie Schritt für Schritt zur Traumfigur kommen. Einfach einen Termin zu den 
-                regulären Öffnungszeiten vereinbaren. <br> 
-                Wir freuen uns Sie bei uns betreuen zu dürfen. <br><br> 
-                Tipp: Achte auf eiweißreiche Ernährung, denn die ist notwendig für gezielten Muskelaufbau.</p>
-        </div>
+        <ul> 
+          <li class="hover-effect"><a href="Kursplan.html">Kursplan</a></li>
+          <li class="hover-effect"><a href="studio.html">Studio</a></li>
+          <li class="hover-effect"> <a href="news.html"> News </a></li>
+          <li class="hover-effect"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </div>
-</section>
+    <div class="mobile-img-section">
+      <img src="img/mobile/frau-sport.jpg" alt="">
+      <h2>Starte noch heute!</h2>
+      <button class="btn">Probetraining vereinbaren</button>
+    </div>
+  </div>
+   
 
-<!---------------------------- 1st service section End ------------------------------------>
+<!---------------------------- Navigation section End -------------------------->
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
 
-<!---------------------------- 1st ‏Middle section Start ------------------------------------>
+<div class="main-container">  <!-----Main Container------>
 
-<section id="personal-training" class="middle-section">
-    <div class="middle-content">
-        <h3>Personal Training </h3>
-        <p>Speziell auf Ihre individuelle Wünsche und Ziele, sorgen wir mit dem 
-            Personaltraining dafür, das Beste aus Deinem Training herauszuholen. Unsere 
-            erfahrenen Personal-Trainer beraten, unterstützen und motivieren Dich.</p>
+  <!---------------------------- Hero section Start ------------------------------------>
+
+
+  <section class="container">
+      <div id="fitness-hero-section">
+        <div class="bordered-div">
+          <div id="hero-text">
+            <h3>Jetzt Muskeln aufbauen & </h3>
+            <h2>fit werden!</h2>
+            <div class="green-border"></div>
+            <p>Mit unserem professionellen Equipment und unserer individuellen Beratung zeigen wir Ihnen, 
+              wie Sie Schritt für Schritt Ihre Traumfigur erreichen. <br> <br>
+              Machen Sie sich ihr eigenes Bild und absolvieren Sie ein kostenloses und unverbindliches Probetraining.</p>
+          </div>
+        </div> 
+      </div>
+    </section> 
+
+    
+  <!---------------------------- Hero section End ------------------------------------>
+
+  <!---------------------------- 1st service section Start ------------------------------------>
+
+  <section class="detailed-service-section">
+      <div class="service-wrapper right-content-service">
+          <div class="flex-service-item service-img">
+              <img src="img/fitness/Workout24_Fitness_Cardio_Training.jpg" alt="">
+          </div>
+          
+          <div class="flex-service-item service-description">
+              <h3>Cardio Training</h3>
+              <p>Sie wollen sich fitter machen, Stress abbauen oder Ihre Leistung steigern? 
+                  Dann ist Cardiotraining genau das richtige für Sie. Cardiotraining auch als 
+                  Herz-Kreislauf-Training bekannt, ist eine der Hauptsäulen für die Gesunderhaltung des 
+                  Menschen. Dabei werden das Herz und die Blutgefäße gestärkt. Die Leistungsbereitschaft 
+                  des Herzens nimmt zu. Der Blutdruck und Cholesterinspiegel sinken. Unsere Trainer werden 
+                  Ihnen dabei helfen, Ihren optimalen Puls zu ermitteln um Ihre Ziele zu erreichen. <br> 
+                  Entscheiden Sie selber ob Sie Fahrrad, Crosstrainer oder Laufband für Ihre Trainingsziele 
+                  in Anspruch nehmen.</p>
+          </div>
       </div>
 
-</section>
+      <div class="service-wrapper left-content-service">
+          <div class="flex-service-item service-img">
+              <img src="img/fitness/Workout24_Fitness_Muskel_Training.jpg" alt="">
+          </div>
+          
+          <div class="flex-service-item service-description">
+              <h3>Muskelaufabu</h3>
+              <p>Schritt für Schritt zur Traumfigur. Modellieren Sie Ihren Körper 
+                  so wie Sie es brauchen. Was bringt Ihnen Muskelaufbau? <br> 
+                  – Einen gesunden Rücken <br> 
+                  – strahlendes Aussehen <br> 
+                  – gute Figur <br> 
+                  – mehr Grundumsatz <br> 
+                  – dauerhaft verbesserte Fettverbrennung <br> 
+                  – Schutz der Gelenke <br> 
+                  – Fit bis ins hohe Alter <br> 
+                  Mit dem richtigen Equipment und unsere individuellen Beratung zeigen wir Ihnen 
+                  wie Sie Schritt für Schritt zur Traumfigur kommen. Einfach einen Termin zu den 
+                  regulären Öffnungszeiten vereinbaren. <br> 
+                  Wir freuen uns Sie bei uns betreuen zu dürfen. <br><br> 
+                  Tipp: Achte auf eiweißreiche Ernährung, denn die ist notwendig für gezielten Muskelaufbau.</p>
+          </div>
+      </div>
+  </section>
 
-<!---------------------------- 1st Middle section End ------------------------------------>
+  <!---------------------------- 1st service section End ------------------------------------>
+
+  <!---------------------------- 1st ‏Middle section Start ------------------------------------>
+
+  <section id="personal-training" class="middle-section">
+      <div class="middle-content">
+          <h3>Personal Training </h3>
+          <p>Speziell auf Ihre individuelle Wünsche und Ziele, sorgen wir mit dem 
+              Personaltraining dafür, das Beste aus Deinem Training herauszuholen. Unsere 
+              erfahrenen Personal-Trainer beraten, unterstützen und motivieren Dich.</p>
+        </div>
+
+  </section>
+
+  <!---------------------------- 1st Middle section End ------------------------------------>
 
 
 
-<!---------------------------- CTA section Start ------------------------------------>
+  <!---------------------------- CTA section Start ------------------------------------>
 
-<section id="fitness-cta" class="cta-section">
-<div class="wrapper">
-  <div class="fitness-bordered-div">
-    <div class="flex-item-1">
-      <img src="img/fitness/Workout24_Fitness_Probetraining.png" alt="">
-    </div>
-    <div class="flex-item-2">
-      <h1>werden sie <br> wieder fit</h1>
-      <h2>mit unserem fitness-training</h2>
-      <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
-    </div>
-  </div> 
-</div>  
-</section>
+  <section id="fitness-cta" class="cta-section">
+  <div class="wrapper">
+    <div class="fitness-bordered-div">
+      <div class="flex-item-1">
+        <img src="img/fitness/Workout24_Fitness_Probetraining.png" alt="">
+      </div>
+      <div class="flex-item-2">
+        <h1>werden sie <br> wieder fit</h1>
+        <h2>mit unserem fitness-training</h2>
+        <button class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
+      </div>
+    </div> 
+  </div>  
+  </section>
 
-<!---------------------------- CTA section End ------------------------------------>
+  <!---------------------------- CTA section End ------------------------------------>
 
-
-
-
-
+</div>
 
 
 
@@ -239,8 +280,8 @@
   </div>
 </footer>
 
+<!----------------------------Footer section End-------------------------------->
 <!------------------------------------------------------------------------------>
-<!----------------------------Footer section End------------------------------------>
 <!------------------------------------------------------------------------------>
 
   <script src="js/custom.js"></script>
