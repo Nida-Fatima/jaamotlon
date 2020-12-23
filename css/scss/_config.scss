@@ -8,7 +8,9 @@ $sm: 576px;
 $xs: 320px;
 
 
-
+:root{
+    // font-size: 58.5%;
+}
 
 *{
     font-family: poppins;
@@ -26,6 +28,9 @@ html{
     @media (max-width:$md) {
         font-size: 40%;
     }
+    @media (max-width:$xs) {
+        font-size: 35%;
+    }
 }
 
 body{
@@ -35,9 +40,6 @@ body{
     margin: 0rem;
     padding: 0;
 
-}
-p{
-    font-size: 2rem;
 }
 
 .main-container{

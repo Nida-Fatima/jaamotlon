@@ -6,15 +6,21 @@
     position: relative;
     z-index: -1;
     @media (max-width:$md){
-        height: 40vh;
-        margin-bottom: 40rem;
+        height: 35vh;
+        margin-bottom: 50rem;
     }
-    @media (max-width:$lg){
+    @media (max-width:$sm){
         height: 50vh;
+       
+    }
+    @media screen and (min-width: 1024px) and (min-height: 1320px) {
+        /* iPad Pro */
+        height: 35vh;
     }
 
     .bordered-div{
         border: 1.8rem solid white;
+        box-shadow: 1px 1px 20px rgb(49, 49, 49);
         position: relative;
         top: 50%;
         width: 70%;
@@ -28,11 +34,15 @@
             height: 65%;
         }
         @media (max-width:$sm){
-          height: 80%;
-          width: 90%;
+          height: 50%;
+          width: 70%;
+          top: 60%;
         }
         #hero-text{
 
+            animation-name: fadeInLeft;
+            animation-duration: 2s;
+            box-shadow: 1px 1px 20px rgb(97, 97, 97);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -42,25 +52,25 @@
             background-color: white;
             position: relative;
             left: -15rem;
-            @media (max-width:$lg){
-                width: 80%;
+            @media screen and (min-width: 1024px) and (min-height: 1320px) {
+                /* iPad Pro */
+               width: 60%;
             }
             @media (max-width:$md){
                 display: none;
             }
             h3{
-                font-size: 2.8rem;
+                font-size: 2.5rem;
                 font-weight: lighter;
-                @media (max-width:$md){
-                    font-size: 2.5rem;
-                }
-                @media (max-width:$sm){
-                    font-size: 2rem;
-                }
+                  font-size: 2rem;
             }
             h2{
-                font-size: 4.6rem;
+                font-size: 4.3rem;
                 font-weight: bold;
+                @media screen and (min-width: 1024px) and (min-height: 1320px) {
+                    /* iPad Pro */
+                    font-size: 3.3rem;
+                }
                 @media (max-width:$md){
                     font-size: 4.5rem;
                 }
@@ -74,6 +84,10 @@
                 margin-top: 3rem;
                 color: $black-color;
                 line-height: 1.3;
+                @media screen and (min-width: 1024px) and (min-height: 1320px) {
+                    /* iPad Pro */
+                    font-size: 1.3rem;
+                }
                 @media (max-width:$md){
                     font-size: 1.5rem;
                     line-height: 1.3 ;
@@ -108,32 +122,41 @@
         
         @media (max-width:$sm){
             width: 90%;
-            bottom: -45%;
-            height: 50%;
+            bottom: -60%;
+            height: 35vh;
         }
 
         h3{
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: bold;
             @media (max-width:$sm){
                 font-size: 2.5rem;
             }
+            @media (max-width:$xs){
+                font-size: 2rem;
+            }
         }
         h2{
-            font-size: 6.6rem;
+            font-size: 5.5rem;
             font-weight: bold;
             @media (max-width:$sm){
-                font-size: 4.6rem;
+                font-size: 4rem;
+            }
+            @media (max-width:$xs){
+                font-size: 3.8rem;
             }
         }
         p{
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             font-weight: lighter;
             margin-top: 3rem;
             color: $black-color;
             line-height: 1.3;
             @media (max-width:$sm){
-                font-size: 1.8rem;
+                font-size: 1.6rem;
+            }
+            @media (max-width:$xs){
+                font-size: 1.5rem;
             }
         }
         .green-border{

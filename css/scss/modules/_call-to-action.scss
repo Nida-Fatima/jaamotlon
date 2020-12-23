@@ -88,11 +88,120 @@
 }
 
 
+.cta-without-curve{
+  
+    @media (max-width:$sm){
+        display: none;
+    }
+    .wrapper{
+        margin: 30rem 0;
+    }
+    .bordered-div{
+        border: 1.5rem solid #dbdbdb;
+        position: relative;
+        height: auto;
+        width: 80%;
+        padding: 7rem 0 10rem 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @media (max-width:$lg){
+            padding: 5rem; 
+        }
+        @media (max-width:$md){
+            width: 90%;
+        }
+        
+        @media (max-width:$sm){
+            padding: 0;
+        }
+
+        .flex-item-1{
+            flex: 45%;
+            max-width: 45%;
+            @media (max-width:$md){
+                text-align: center;
+            }
+            
+            img{
+                position: absolute;
+                left: 5rem;
+                bottom: 0;
+                width: 40%;
+                @media (max-width:$md){
+                    // position: static;
+                    position: absolute;
+                    margin-top: -15rem;
+                    bottom: 0;
+                    width: 40%;
+                }
+                @media (max-width:$sm){
+                    width: 80%;
+                    
+                }
+            }
+        
+            /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: $sm) {
+                flex: 100%;
+                max-width: 100%;
+                
+            }
+        }
+        .flex-item-2{
+            flex: 55%;
+            max-width: 55%;
+            margin: 0 auto;
+            
+        }
+        h1{
+            font-size: 5rem;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1;
+
+            @media (max-width:$md){
+                font-size: 5rem;
+
+            }
+            @media (max-width:$sm){
+                font-size: 3.2rem;
+                margin: 1.5rem 0
+            }
+        }
+
+        h2{
+            font-size: 3.5rem;
+            color: $black-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 3rem;
+            margin-right: 5rem;
+            
+            @media (max-width:$lg){
+                font-size: 2.5rem;
+                margin: 1.8rem 0;
+            }
+            @media (max-width:$md){
+                font-size: 3rem;
+
+            }
+        
+        } 
+        
+    }
+}
+
 
 
 .mobile-cta{
     position: relative;
     display: none;
+    @media (max-width:$sm){
+        display: block;
+    }
     .wrapper{
         height: 150rem;
         margin-top: -10rem;
@@ -143,7 +252,26 @@
         transform: translateX(-50%);
         width: 75%;
     }
-    @media (max-width:$sm){
-        display: block;
+    
+}
+
+.mobile-cta-witout-curve{
+    .wrapper{
+        margin-top: -60rem;
     }
+    .bordered-div{
+        height: 50%;
+        border: 1.5rem solid #dbdbdb;
+        h1{
+            color: $primary-color;
+        }
+        img{
+            width: 80%;
+        }
+    }
+    button{
+        background-color: $primary-color;
+        bottom: 5rem;
+    }
+    
 }

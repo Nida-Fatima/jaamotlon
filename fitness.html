@@ -3,14 +3,18 @@
 
 <head>
   <title>Workout-24</title>
+  <link rel="icon" type="image/png" href="img/favicon.ico"/>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="css/animate.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/aos.css" rel="stylesheet" media="screen">
   <!-- <link href="color/default.css" rel="stylesheet" media="screen"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -129,7 +133,7 @@
 
 
   <section class="container">
-      <div id="fitness-hero-section">
+      <div id="fitness-hero-section" class="hero-banner-section animate__animated animate__fadeIn">
         <div class="bordered-div">
           <div id="hero-text">
             <h3>Jetzt Muskeln aufbauen & </h3>
@@ -140,6 +144,14 @@
               Machen Sie sich ihr eigenes Bild und absolvieren Sie ein kostenloses und unverbindliches Probetraining.</p>
           </div>
         </div> 
+        <div class="hero-text-mobile">
+          <h3>Jetzt Muskeln aufbauen & </h3>
+          <h2>fit werden!</h2>
+          <div class="green-border"></div>
+          <p>Mit unserem professionellen Equipment und unserer individuellen Beratung zeigen wir Ihnen, 
+            wie Sie Schritt für Schritt Ihre Traumfigur erreichen. <br> <br>
+            Machen Sie sich ihr eigenes Bild und absolvieren Sie ein kostenloses und unverbindliches Probetraining.</p>
+        </div>
       </div>
     </section> 
 
@@ -151,7 +163,7 @@
   <section class="detailed-service-section">
       <div class="service-wrapper right-content-service">
           <div class="flex-service-item service-img">
-              <img src="img/fitness/Workout24_Fitness_Cardio_Training.jpg" alt="">
+              <img  src="img/fitness/Workout24_Fitness_Cardio_Training.jpg" alt="" data-aos = "fade-up" data-aos-duration = "3s">
           </div>
           
           <div class="flex-service-item service-description">
@@ -169,7 +181,7 @@
 
       <div class="service-wrapper left-content-service">
           <div class="flex-service-item service-img">
-              <img src="img/fitness/Workout24_Fitness_Muskel_Training.jpg" alt="">
+              <img src="img/fitness/Workout24_Fitness_Muskel_Training.jpg" alt="" data-aos = "fade-up" data-aos-duration = "3s">
           </div>
           
           <div class="flex-service-item service-description">
@@ -196,7 +208,7 @@
 
   <!---------------------------- 1st ‏Middle section Start ------------------------------------>
 
-  <section id="personal-training" class="middle-section">
+  <section id="personal-training" class="middle-section-f">
       <div class="middle-content">
           <h3>Personal Training </h3>
           <p>Speziell auf Ihre individuelle Wünsche und Ziele, sorgen wir mit dem 
@@ -212,9 +224,9 @@
 
   <!---------------------------- CTA section Start ------------------------------------>
 
-  <section id="fitness-cta" class="cta-section">
+  <section id="fitness-cta" class="cta-without-curve">
   <div class="wrapper">
-    <div class="fitness-bordered-div">
+    <div class="bordered-div">
       <div class="flex-item-1">
         <img src="img/fitness/Workout24_Fitness_Probetraining.png" alt="">
       </div>
@@ -225,10 +237,31 @@
       </div>
     </div> 
   </div>  
-  </section>
+  </section> <!-----desktop Call to action end-->
 
+  <section class="mobile-cta mobile-cta-witout-curve">
+    <div class="wrapper">
+      <div class="bordered-div">
+        <div class="content" >
+          <h1 >werden sie <br> wieder fit</h1>
+          <h2 >mit unserem fitness-training</h2>
+        </div>
+          <img src="img/fitness/Workout24_Fitness_Probetraining.png" alt="">
+      </div> 
+      <button  class="btn cta-btn">Jetzt Probetraining vereinbaren</button>
+    </div>  
+    </section> <!-----Mobile Call to action end-->
   <!---------------------------- CTA section End ------------------------------------>
 
+  <!---------------------------------------  Mobile bottom bar------------------------------------------->
+
+ <div class="bottom-bar">
+  <a href="#"><i class="fas fa-phone-volume"></i></a>
+  <a id="middle-link">
+    <span><i class="fa fa-clock"></i>Öffnungszeiten</span>
+  </a>
+  <a href=""><i class="fa fa-envelope"></i></a>
+</div>
 </div>
 
 
@@ -283,7 +316,11 @@
 <!----------------------------Footer section End-------------------------------->
 <!------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------>
-
+  <!-- aos plugin -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({duration: 1000, });
+  </script>
   <script src="js/custom.js"></script>
 </body>
 </html>

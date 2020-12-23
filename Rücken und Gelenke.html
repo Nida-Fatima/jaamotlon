@@ -3,14 +3,18 @@
 
 <head>
   <title>Workout-24</title>
+  <link rel="icon" type="image/png" href="img/favicon.ico"/>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="css/animate.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/aos.css" rel="stylesheet" media="screen">
   <!-- <link href="color/default.css" rel="stylesheet" media="screen"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -130,7 +134,7 @@
 <!---------------------------- Hero section Start ------------------------------------>
 
 <section class="container">
-    <div id="rucken-hero-section">
+    <div id="rucken-hero-section" class="hero-banner-section">
       <div class="bordered-div">
         <div id="hero-text">
           <h3>Gesund und schmerzlos  </h3>
@@ -143,6 +147,16 @@
               und sich schmerzfrei bewegen.</p>
         </div>
       </div> 
+      <div class="hero-text-mobile">
+        <h3>Gesund und schmerzlos  </h3>
+        <h2> Rücken & Gelenke</h2>
+        <div class="green-border"></div>
+        <p>Rückenbeschwerden treten heutzutage immer häufiger auf. 
+            Durch Bewegungsmangel wie z.B. am Arbeitsplatz, kommt es 
+            zu Verspannungen und Verklebungen der Muskulatur. Mit gezielten 
+            Training bei Workout24 können Sie Ihren Beschwerden entgegen wirken 
+            und sich schmerzfrei bewegen.</p>
+      </div>
     </div>
   </section> 
   
@@ -153,10 +167,10 @@
 <section class="detailed-service-section">
     <div class="service-wrapper right-content-service">
         <div class="flex-service-item service-img">
-            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE.jpg" alt="">
+            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE.jpg" alt="" data-aos="fade-up" data-aos-duration="5s" >
         </div>
         
-        <div class="flex-service-item service-description">
+        <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="5s" data-aos-delay="500">
             <h3>FIVE</h3>
             <p>• Fördert aktiv die Beweglichkeit richtet den Körper• <br> 
                 wieder auf bringt Muskelfunktionen wieder in <br> 
@@ -170,10 +184,10 @@
 
     <div class="service-wrapper left-content-service">
         <div class="flex-service-item service-img">
-            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Mensch_Wandel.jpg" alt="">
+            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Mensch_Wandel.jpg" alt="" data-aos="fade-up" data-aos-duration="5s">
         </div>
         
-        <div class="flex-service-item service-description">
+        <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="5s" data-aos-delay="500">
             <h3>FIVE - <br> DER MENSCH IM WANDEL</h3>
             <p>Wir möchten nicht zurück zur Steinzeit, obwohl wir von unserem 
                 Bewegungsapparat her immer noch Jäger und Sammler sind. Doch wegen den 
@@ -184,10 +198,10 @@
 
     <div class="service-wrapper right-content-service">
         <div class="flex-service-item service-img">
-            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Folgen.jpg" alt="">
+            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Folgen.jpg" alt="" data-aos="fade-up" data-aos-duration="5s">
         </div>
         
-        <div class="flex-service-item service-description">
+        <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="5s" data-aos-delay="500">
             <h3>FIVE - <br> Die Folgen</h3>
             <p>Durch die einseitigen Bewegungen im Alltag werden immer die 
                 gleichen Muskelketten stark verkürzt. Dadurch kann es zu massiven 
@@ -199,10 +213,10 @@
 
     <div class="service-wrapper left-content-service">
         <div class="flex-service-item service-img">
-            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Loesung.jpg" alt="">
+            <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_Loesung.jpg" alt="" data-aos="fade-up" data-aos-duration="5s">
         </div>
         
-        <div class="flex-service-item service-description">
+        <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="5s" data-aos-delay="500">
             <h3>FIVE - <br> Die Lösung</h3>
             <p>Unser Ziel ist es, die im Alltag verkürzte Muskelketten mit einem 
                 speziellen Trainings-Programm wieder auf ihre ursprüngliche Länge 
@@ -222,14 +236,14 @@
 <div class="quote-div">
     <h4>„Five ist anders, ungewöhnlich und revolutionär. <br> Man muss es erleben, um es wirklich zu verstehen.“</h4>
 </div>
-<section id="Rückenvermessung-div" class="middle-section">
-    <div class="middle-content">
+<section id="Rückenvermessung-div" class="middle-section-r">
+    <div class="middle-content-r" data-aos="fade-right" data-aos-duration="5s">
         <h3>Strahlenfreie Rückenvermessung</h3>
       </div>
 </section>
 <div class="quote-div">
   <h5>Beugen Sie Rückenbeschwerden vor</h5>
-  <p>Lernen Sie Ihren Rücken kennen und lassen Sie sich in unserem Rücken und 
+  <p data-aos="fade-down" data-aos-duration="3s">Lernen Sie Ihren Rücken kennen und lassen Sie sich in unserem Rücken und 
     Gelenke Zentrum checken. Die Untersuchung ist strahlenfrei und erfasst Haltung, 
     Beweglichkeit und Stabilität des Rückens. Die Analyse liefert wertvolle Informationen 
     und Empfehlung zur Therapie und Trainingsplanung.</p>
@@ -242,10 +256,10 @@
 <section class="detailed-service-section">
   <div class="service-wrapper right-content-service">
       <div class="flex-service-item service-img">
-          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Werkzeug_Analyse.jpg" alt="">
+          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Werkzeug_Analyse.jpg" alt="" data-aos="fade-up" data-aos-duration="5s">
       </div>
       
-      <div class="flex-service-item service-description">
+      <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="3s" data-aos-delay="500">
           <h3>Das Werkzeug zur Analyse <br> Ihres Rückens</h3>
           <p>Die Idiag M360 erfasst strahlenfrei Haltung, Beweglichkeit und Stabilität 
             des Rückens. Die Analyse liefert wertvolle Informationen und Empfehlungen zur 
@@ -257,10 +271,10 @@
 
   <div class="service-wrapper left-content-service">
       <div class="flex-service-item service-img">
-          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Auswertung.jpg" alt="">
+          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Auswertung.jpg" alt=""  data-aos="fade-up" data-aos-duration="5s">
       </div>
       
-      <div class="flex-service-item service-description">
+      <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="3s" data-aos-delay="500">
           <h3>Ihre persönliche Auswertung</h3>
           <p>Als Resultat erhalten Sie eine persönliche Auswertung, 
             welcher den allgemeinen Zustand Ihres Rückens betreffend Haltung, Beweglichkeit 
@@ -278,10 +292,12 @@
 <section class="detailed-service-section">
   <div class="service-wrapper right-content-service">
       <div class="flex-service-item service-img">
-          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_SpineCore.jpg" alt="Ruecken Gelenke FIVE SpineCore">
+          <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_FIVE_SpineCore.jpg" 
+          alt="Ruecken Gelenke FIVE SpineCore"  data-aos="fade-up" data-aos-duration="5s">
       </div>
       
-      <div class="flex-service-item service-description">
+      <div class="flex-service-item service-description" data-aos="fade-up" data-aos-duration="3s" 
+      data-aos-delay="500">
           <h3>Individuelle Beratung</h3>
           <p>Basierend auf der Analyse mit der Idiag M360, kann Sie Ihr Idiag 
             Center beraten, wie Sie allfällige Risiko- und Problemzonen gezielt 
@@ -295,23 +311,48 @@
 
 <!---------------------------- CTA section Start ------------------------------------>
 
-<section id="rucken-cta">
+<section id="rucken-cta" class="cta-without-curve">
 <div class="wrapper">
-  <div class="rucken-bordered-div">
+  <div class="bordered-div">
     <div class="flex-item-1">
-      <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Probetraining-1.png" alt="">
+      <img data-aos = "zoom-in" data-aos-duration="5s" src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Probetraining-1.png" alt="">
     </div>
-    <div class="flex-item-2">
-      <h1>individuelle <br> beratung</h1>
-      <h2>für die besten ergebnisse</h2>
-      <button class="btn cta-btn">Jetzt Beratungstermin vereinbaren</button>
+    <div class="flex-item-2" >
+      <h1 data-aos="fade-down" data-aos="10s">individuelle <br> beratung</h1>
+      <h2 data-aos="fade-down" data-aos="3s" data-aos-delay="300">für die besten ergebnisse</h2>
+      <button data-aos="fade-up" data-aos="10s" class="btn cta-btn">Jetzt Beratungstermin vereinbaren</button>
     </div>
   </div> 
 </div>  
 </section>
 
+<section class="mobile-cta mobile-cta-witout-curve">
+  <div class="wrapper">
+    <div class="bordered-div">
+      <div class="content" >
+        <h1 >Individuelle <br> beratung</h1>
+        <h2 >Für die besten ergebnisse</h2>
+      </div>
+      
+        <img src="img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke_Probetraining-1.png" alt="">
+      
+      
+    </div> 
+    <button  class="btn cta-btn">Jetzt Beratungstermin vereinbaren</button>
+  </div>  
+  </section> <!-----Mobile Call to action-->
+
 <!---------------------------- CTA section End ------------------------------------>
 
+ <!---------------------------------------  Mobile bottom bar------------------------------------------->
+
+ <div class="bottom-bar">
+  <a href="#"><i class="fas fa-phone-volume"></i></a>
+  <a id="middle-link">
+    <span><i class="fa fa-clock"></i>Öffnungszeiten</span>
+  </a>
+  <a href=""><i class="fa fa-envelope"></i></a>
+</div>
 
 </div> <!-----Main container End-->
 
@@ -367,6 +408,14 @@
 <!----------------------------Footer section End------------------------------------>
 <!------------------------------------------------------------------------------>
 
+   <!-- aos plugin -->
+   <script src="js/aos.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+          AOS.init({duration: 1000, });
+      });
+    </script>
   <script src="js/custom.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 footer{
+  
     .bordered-div{
         border-top: 1.2px solid $primary-shade3;
         // margin: 0 18rem 5rem 20rem;
@@ -41,8 +42,10 @@ footer{
             padding: 1rem;
             margin-bottom: 3rem;
             h5{
+                font-family: 'Anton', 'sans-serif';
+                letter-spacing: 0.1rem;
                 font-size: 2rem;
-                font-weight: bold;
+                // font-weight: bold;
                 position: relative;
                 display: inline; 
                 i{

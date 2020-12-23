@@ -3,14 +3,19 @@
 
 <head>
   <title>Workout-24</title>
+  <link rel="icon" type="image/png" href="img/favicon.ico"/>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="css/animate.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/aos.css" rel="stylesheet" media="screen">
+
   <!-- <link href="color/default.css" rel="stylesheet" media="screen"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -130,7 +135,7 @@
   <section class="container">
       <div id="kursplan-hero-section" class="hero-banner-section">
         <div class="bordered-div">
-          <div id="hero-text" data-aos="fade-up-left" data-aos-duration="3s" data-aos-delay="5000">
+          <div id="hero-text" class="animate__animated animate__fadeInLeft">
             <h3>Unsere Auswahl an</h3>
             <h2> Kursen</h2>
             <div class="green-border"></div>
@@ -464,6 +469,15 @@
     
     <!---------------------------- Offer section End------------------------------------>
 
+    <!---------------------------------------  Mobile bottom bar------------------------------------------->
+
+ <div class="bottom-bar">
+  <a href="#"><i class="fas fa-phone-volume"></i></a>
+  <a id="middle-link">
+    <span><i class="fa fa-clock"></i>Öffnungszeiten</span>
+  </a>
+  <a href=""><i class="fa fa-envelope"></i></a>
+</div>
 
 </div>
 
@@ -517,7 +531,11 @@
 <!------------------------------------------------------------------------------>
 <!----------------------------Footer section End------------------------------------>
 <!------------------------------------------------------------------------------>
-
+   <!-- aos plugin -->
+   <script src="js/aos.js"></script>
+   <script>
+     AOS.init({duration: 1000, });
+   </script>
   <script src="js/custom.js"></script>
 </body>
 </html>

@@ -3,6 +3,12 @@
 
 #kursplan-hero-section{
     background-image: url('../../../img/kursplan/Workout24_Kursplan_Header.png');
+    background-size: cover;
+
+    .hero-text{
+        animation: fadeInLeft;
+        animation-duration: 3s;
+    }
     
 }
 
@@ -53,8 +59,7 @@
             }
             th{
                 color: $primary-color;
-                font-size: 2rem;
-                border-right: 0.3rem solid #7B7B7B;
+                font-size: 2.2rem;
                 padding: 1rem 3rem;
                 @media (max-width:$md){
                     border: none;
@@ -66,7 +71,6 @@
             }
             td{
                 
-                border-right: 0.3rem solid #7B7B7B;
                 height: 5rem;
                 font-size: 1.6rem;
                 text-align: center;
@@ -84,6 +88,20 @@
            
            
         }  
+
+        .mobile-table-section{
+            .mobile-table{
+                th{
+                    height: 10rem;
+                    font-size: 3.5rem;
+                }
+                td{
+                    font-size: 2.2rem;
+                    padding: 2rem;
+                }
+            }
+        }
+       
 
       
     }

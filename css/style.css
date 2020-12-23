@@ -23,16 +23,18 @@ html {
   }
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 35%;
+  }
+}
+
 body {
   font-family: 'Poppins' sans-serif;
   font-weight: normal;
   font-size: 1.4rem;
   margin: 0rem;
   padding: 0;
-}
-
-p {
-  font-size: 2rem;
 }
 
 .main-container {
@@ -56,19 +58,28 @@ p {
 
 @media (max-width: 768px) {
   .hero-banner-section {
-    height: 40vh;
-    margin-bottom: 40rem;
+    height: 35vh;
+    margin-bottom: 50rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 576px) {
   .hero-banner-section {
     height: 50vh;
   }
 }
 
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  .hero-banner-section {
+    /* iPad Pro */
+    height: 35vh;
+  }
+}
+
 .hero-banner-section .bordered-div {
   border: 1.8rem solid white;
+  -webkit-box-shadow: 1px 1px 20px #313131;
+          box-shadow: 1px 1px 20px #313131;
   position: relative;
   top: 50%;
   width: 70%;
@@ -93,12 +104,19 @@ p {
 
 @media (max-width: 576px) {
   .hero-banner-section .bordered-div {
-    height: 80%;
-    width: 90%;
+    height: 50%;
+    width: 70%;
+    top: 60%;
   }
 }
 
 .hero-banner-section .bordered-div #hero-text {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-box-shadow: 1px 1px 20px #616161;
+          box-shadow: 1px 1px 20px #616161;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,9 +135,10 @@ p {
   left: -15rem;
 }
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
   .hero-banner-section .bordered-div #hero-text {
-    width: 80%;
+    /* iPad Pro */
+    width: 60%;
   }
 }
 
@@ -130,25 +149,21 @@ p {
 }
 
 .hero-banner-section .bordered-div #hero-text h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: lighter;
-}
-
-@media (max-width: 768px) {
-  .hero-banner-section .bordered-div #hero-text h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-banner-section .bordered-div #hero-text h3 {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 
 .hero-banner-section .bordered-div #hero-text h2 {
-  font-size: 4.6rem;
+  font-size: 4.3rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  .hero-banner-section .bordered-div #hero-text h2 {
+    /* iPad Pro */
+    font-size: 3.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -169,6 +184,13 @@ p {
   margin-top: 3rem;
   color: #000;
   line-height: 1.3;
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  .hero-banner-section .bordered-div #hero-text p {
+    /* iPad Pro */
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -219,13 +241,13 @@ p {
 @media (max-width: 576px) {
   .hero-banner-section .hero-text-mobile {
     width: 90%;
-    bottom: -45%;
-    height: 50%;
+    bottom: -60%;
+    height: 35vh;
   }
 }
 
 .hero-banner-section .hero-text-mobile h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -235,19 +257,31 @@ p {
   }
 }
 
+@media (max-width: 320px) {
+  .hero-banner-section .hero-text-mobile h3 {
+    font-size: 2rem;
+  }
+}
+
 .hero-banner-section .hero-text-mobile h2 {
-  font-size: 6.6rem;
+  font-size: 5.5rem;
   font-weight: bold;
 }
 
 @media (max-width: 576px) {
   .hero-banner-section .hero-text-mobile h2 {
-    font-size: 4.6rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-banner-section .hero-text-mobile h2 {
+    font-size: 3.8rem;
   }
 }
 
 .hero-banner-section .hero-text-mobile p {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: lighter;
   margin-top: 3rem;
   color: #000;
@@ -256,7 +290,13 @@ p {
 
 @media (max-width: 576px) {
   .hero-banner-section .hero-text-mobile p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-banner-section .hero-text-mobile p {
+    font-size: 1.5rem;
   }
 }
 
@@ -274,7 +314,7 @@ p {
   opacity: 1;
   border: solid 2px #8EC125;
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 500;
   color: white;
   letter-spacing: 0.1rem;
 }
@@ -282,24 +322,28 @@ p {
 .cta-btn {
   background-color: #8EC125;
   color: #ffffff;
-  font-size: 2rem;
-  min-width: 80%;
-  height: 6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  min-width: 65%;
+  height: 5rem;
   text-align: center;
   margin-top: 5rem;
   padding: 1rem;
   border: none;
 }
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
   .cta-btn {
-    min-width: 90%;
+    /* iPad Pro */
+    min-width: 100%;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .cta-btn {
     margin-top: 2.5rem;
+    width: 90%;
   }
 }
 
@@ -841,9 +885,156 @@ p {
   background-color: #000;
 }
 
+@media (max-width: 576px) {
+  .cta-without-curve {
+    display: none;
+  }
+}
+
+.cta-without-curve .wrapper {
+  margin: 30rem 0;
+}
+
+.cta-without-curve .bordered-div {
+  border: 1.5rem solid #dbdbdb;
+  position: relative;
+  height: auto;
+  width: 80%;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .cta-without-curve .bordered-div {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-without-curve .bordered-div {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-without-curve .bordered-div {
+    padding: 0;
+  }
+}
+
+.cta-without-curve .bordered-div .flex-item-1 {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  max-width: 45%;
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+}
+
+@media (max-width: 768px) {
+  .cta-without-curve .bordered-div .flex-item-1 {
+    text-align: center;
+  }
+}
+
+.cta-without-curve .bordered-div .flex-item-1 img {
+  position: absolute;
+  left: 5rem;
+  bottom: 0;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .cta-without-curve .bordered-div .flex-item-1 img {
+    position: absolute;
+    margin-top: -15rem;
+    bottom: 0;
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-without-curve .bordered-div .flex-item-1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cta-without-curve .bordered-div .flex-item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.cta-without-curve .bordered-div .flex-item-2 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.cta-without-curve .bordered-div h1 {
+  font-size: 5rem;
+  color: #8EC125;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .cta-without-curve .bordered-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-without-curve .bordered-div h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.cta-without-curve .bordered-div h2 {
+  font-size: 3.5rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .cta-without-curve .bordered-div h2 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-without-curve .bordered-div h2 {
+    font-size: 3rem;
+  }
+}
+
 .mobile-cta {
   position: relative;
   display: none;
+}
+
+@media (max-width: 576px) {
+  .mobile-cta {
+    display: block;
+  }
 }
 
 .mobile-cta .wrapper {
@@ -908,10 +1099,26 @@ p {
   width: 75%;
 }
 
-@media (max-width: 576px) {
-  .mobile-cta {
-    display: block;
-  }
+.mobile-cta-witout-curve .wrapper {
+  margin-top: -60rem;
+}
+
+.mobile-cta-witout-curve .bordered-div {
+  height: 50%;
+  border: 1.5rem solid #dbdbdb;
+}
+
+.mobile-cta-witout-curve .bordered-div h1 {
+  color: #8EC125;
+}
+
+.mobile-cta-witout-curve .bordered-div img {
+  width: 80%;
+}
+
+.mobile-cta-witout-curve button {
+  background-color: #8EC125;
+  bottom: 5rem;
 }
 
 footer .bordered-div {
@@ -980,8 +1187,9 @@ footer .widget-area .square {
 }
 
 footer .widget-area .square h5 {
+  font-family: 'Anton', 'sans-serif';
+  letter-spacing: 0.1rem;
   font-size: 2rem;
-  font-weight: bold;
   position: relative;
   display: inline;
 }
@@ -2354,10 +2562,8 @@ footer .copyright p {
 }
 
 #abnehmen-hero-section {
-  background-image: url(../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png);
-  background-repeat: no-repeat;
+  background: url(../img/abhenmend/Workout24_Abnehmen_Ernährung_Header.png) no-repeat center center;
   background-size: cover;
-  background-position: center;
 }
 
 .detailed-service-section .service-wrapper {
@@ -2377,12 +2583,14 @@ footer .copyright p {
 @media (max-width: 768px) {
   .detailed-service-section .service-wrapper {
     width: 85%;
+    margin: 80rem;
   }
 }
 
 @media (max-width: 576px) {
   .detailed-service-section .service-wrapper {
     width: 85%;
+    margin: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -2405,11 +2613,11 @@ footer .copyright p {
 }
 
 .detailed-service-section .service-wrapper .service-description h3 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .detailed-service-section .service-wrapper .service-description p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   margin-top: 3rem;
 }
@@ -2456,34 +2664,14 @@ footer .copyright p {
   background-position: center;
 }
 
-#Individueller-styler .middle-styler-content {
-  padding: 5rem;
-  width: 40%;
-}
-
-@media (max-width: 576px) {
-  #Individueller-styler .middle-styler-content {
-    width: 60%;
-    padding: 2rem;
-  }
-}
-
-#Individueller-styler h3 {
-  font-size: 3.5rem;
-}
-
-#Individueller-styler p {
-  margin-top: 3rem;
-}
-
 .middle-section {
-  padding: 8rem 0;
-  margin: 10rem 0;
   min-height: 65rem;
   position: relative;
 }
 
 .middle-section .middle-styler-content {
+  -webkit-box-shadow: 1px 1px 20px #616161;
+          box-shadow: 1px 1px 20px #616161;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2498,45 +2686,20 @@ footer .copyright p {
   padding: 2.2rem 7rem 2.2rem 4rem;
   background-color: white;
   position: absolute;
-  right: 15rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-@media (max-width: 1024px) {
-  .middle-section .middle-styler-content {
-    width: 55vw;
-    height: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  .middle-section .middle-styler-content {
-    width: 60vw;
-  }
+  top: 25%;
+  left: 50%;
 }
 
 @media (max-width: 576px) {
   .middle-section .middle-styler-content {
-    width: 60%;
-    height: 60%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    padding: 4rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .middle-section .middle-styler-content {
-    width: 80%;
+    width: 70%;
+    left: 25%;
+    top: 20%;
   }
 }
 
 .middle-section .middle-styler-content h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
 }
 
@@ -2553,7 +2716,7 @@ footer .copyright p {
 }
 
 .middle-section .middle-styler-content p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: #000;
   line-height: 1.3;
@@ -2566,302 +2729,9 @@ footer .copyright p {
   }
 }
 
-#abnehmen-cta .wrapper {
-  margin: 30rem 0;
-}
-
-#abnehmen-cta .abnehmen-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #abnehmen-cta .abnehmen-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #abnehmen-cta .abnehmen-bordered-div {
-    padding: 0;
-  }
-}
-
-#abnehmen-cta .abnehmen-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#abnehmen-cta .abnehmen-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#abnehmen-cta .abnehmen-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#abnehmen-cta .abnehmen-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #abnehmen-cta .abnehmen-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #abnehmen-cta .abnehmen-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#abnehmen-cta .abnehmen-bordered-div h2 {
-  font-size: 4.5rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #abnehmen-cta .abnehmen-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #abnehmen-cta .abnehmen-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #abnehmen-cta .abnehmen-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
 #rucken-hero-section {
   background: url(../img/ruecken-gelenke-imgs/Workout24_Ruecken_Gelenke.png) no-repeat center center;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 87rem;
-  z-index: -1;
-  margin-bottom: 30rem;
-}
-
-#rucken-hero-section .bordered-div {
-  border: 2rem solid white;
-  position: relative;
-  top: 15rem;
-  width: 75%;
-  height: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 576px) {
-  #rucken-hero-section .bordered-div {
-    top: 15rem;
-    width: 100%;
-  }
-}
-
-#rucken-hero-section .bordered-div #hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40vw;
-  height: 75%;
-  padding: 4rem 10rem;
-  background-color: white;
-  position: relative;
-  left: -15rem;
-}
-
-@media (max-width: 1024px) {
-  #rucken-hero-section .bordered-div #hero-text {
-    width: 55vw;
-    height: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  #rucken-hero-section .bordered-div #hero-text {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-hero-section .bordered-div #hero-text {
-    width: 90%;
-    left: 0;
-    margin: 0 auto;
-    padding: 5rem;
-  }
-}
-
-#rucken-hero-section .bordered-div #hero-text h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  #rucken-hero-section .bordered-div #hero-text h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-hero-section .bordered-div #hero-text h3 {
-    font-size: 2rem;
-  }
-}
-
-#rucken-hero-section .bordered-div #hero-text h2 {
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  #rucken-hero-section .bordered-div #hero-text h2 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-hero-section .bordered-div #hero-text h2 {
-    font-size: 3rem;
-  }
-}
-
-#rucken-hero-section .bordered-div #hero-text p {
-  font-size: 1.8rem;
-  font-weight: lighter;
-  margin-top: 3rem;
-  color: #000;
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  #rucken-hero-section .bordered-div #hero-text p {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-}
-
-#rucken-hero-section .bordered-div #hero-text .green-border {
-  width: 11.9rem;
-  border-top: solid 0.6rem #99C73A;
-  margin: 1rem 0;
+  background-size: cover;
 }
 
 .detailed-service-section .service-wrapper {
@@ -2869,7 +2739,7 @@ footer .copyright p {
   display: -ms-flexbox;
   display: flex;
   width: 65%;
-  margin: 30rem auto;
+  margin: 15rem auto;
 }
 
 @media (max-width: 1024px) {
@@ -2909,11 +2779,11 @@ footer .copyright p {
 }
 
 .detailed-service-section .service-wrapper .service-description h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .detailed-service-section .service-wrapper .service-description p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   margin-top: 2rem;
 }
@@ -2950,7 +2820,7 @@ footer .copyright p {
 }
 
 .quote-div h4 {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
 }
 
 @media (max-width: 576px) {
@@ -2960,11 +2830,11 @@ footer .copyright p {
 }
 
 .quote-div h5 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
 }
 
 .quote-div p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   max-width: 70%;
   margin: 3rem auto;
 }
@@ -2975,358 +2845,62 @@ footer .copyright p {
   background-size: cover;
 }
 
-.middle-section {
+.middle-section-r {
   padding: 8rem 0;
   margin: 10rem 0;
   min-height: 65rem;
   position: relative;
 }
 
-.middle-section .middle-content {
-  width: 70%;
-  padding: 2.8rem 3.8rem;
+.middle-section-r .middle-content-r {
+  width: 60%;
+  margin: auto;
+  margin-top: 15rem;
+  padding: 2rem 3rem;
   background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
-@media (max-width: 576px) {
-  .middle-section .middle-content {
+@media (max-width: 768px) {
+  .middle-section-r .middle-content-r {
     width: 80%;
   }
 }
 
-.middle-section .middle-content h3 {
-  font-size: 5.5rem;
+.middle-section-r .middle-content-r h3 {
+  font-size: 4rem;
   font-weight: bolder;
   text-align: center;
 }
 
 @media (max-width: 576px) {
-  .middle-section .middle-content h3 {
-    font-size: 4.3rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .middle-section .middle-content h3 {
+  .middle-section-r .middle-content-r h3 {
     font-size: 3rem;
   }
 }
 
-.middle-section .middle-content p {
-  font-size: 1.8rem;
+@media (max-width: 320px) {
+  .middle-section-r .middle-content-r h3 {
+    font-size: 3rem;
+  }
+}
+
+.middle-section-r .middle-content-r p {
+  font-size: 1.6rem;
   font-weight: lighter;
   color: #000;
   line-height: 1.3;
 }
 
 @media (max-width: 768px) {
-  .middle-section .middle-content p {
+  .middle-section-r .middle-content-r p {
     font-size: 1.5rem;
     line-height: 1.3;
-  }
-}
-
-#rucken-cta .wrapper {
-  margin: 30rem 0;
-}
-
-#rucken-cta .rucken-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #rucken-cta .rucken-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-cta .rucken-bordered-div {
-    padding: 0;
-  }
-}
-
-#rucken-cta .rucken-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#rucken-cta .rucken-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-cta .rucken-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #rucken-cta .rucken-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#rucken-cta .rucken-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#rucken-cta .rucken-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #rucken-cta .rucken-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-cta .rucken-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#rucken-cta .rucken-bordered-div h2 {
-  font-size: 4.5rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #rucken-cta .rucken-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #rucken-cta .rucken-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #rucken-cta .rucken-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
   }
 }
 
 #fitness-hero-section {
   background: url(../img/fitness/Workout24_fit_werden.png) no-repeat center center;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 87rem;
-  z-index: -1;
-  margin-bottom: 30rem;
-}
-
-#fitness-hero-section .bordered-div {
-  border: 2rem solid white;
-  position: relative;
-  top: 15rem;
-  width: 75%;
-  height: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 576px) {
-  #fitness-hero-section .bordered-div {
-    top: 15rem;
-    width: 100%;
-  }
-}
-
-#fitness-hero-section .bordered-div #hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 35vw;
-  height: 75%;
-  padding: 4rem 6rem;
-  background-color: white;
-  position: relative;
-  left: -15rem;
-}
-
-@media (max-width: 1024px) {
-  #fitness-hero-section .bordered-div #hero-text {
-    width: 55vw;
-    height: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  #fitness-hero-section .bordered-div #hero-text {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-hero-section .bordered-div #hero-text {
-    width: 90%;
-    left: 0;
-    margin: 0 auto;
-  }
-}
-
-#fitness-hero-section .bordered-div #hero-text h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  #fitness-hero-section .bordered-div #hero-text h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-hero-section .bordered-div #hero-text h3 {
-    font-size: 2rem;
-  }
-}
-
-#fitness-hero-section .bordered-div #hero-text h2 {
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  #fitness-hero-section .bordered-div #hero-text h2 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-hero-section .bordered-div #hero-text h2 {
-    font-size: 3rem;
-  }
-}
-
-#fitness-hero-section .bordered-div #hero-text p {
-  font-size: 1.8rem;
-  font-weight: lighter;
-  margin-top: 3rem;
-  color: #000;
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  #fitness-hero-section .bordered-div #hero-text p {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-}
-
-#fitness-hero-section .bordered-div #hero-text .green-border {
-  width: 11.9rem;
-  border-top: solid 0.6rem #99C73A;
-  margin: 1rem 0;
 }
 
 #personal-training {
@@ -3334,14 +2908,14 @@ footer .copyright p {
   background-position: center;
 }
 
-.middle-section {
+.middle-section-f {
   padding: 8rem 0;
   margin: 10rem 0;
   min-height: 65rem;
   position: relative;
 }
 
-.middle-section .middle-content {
+.middle-section-f .middle-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3363,20 +2937,20 @@ footer .copyright p {
 }
 
 @media (max-width: 1024px) {
-  .middle-section .middle-content {
+  .middle-section-f .middle-content {
     width: 55vw;
     height: 75%;
   }
 }
 
 @media (max-width: 768px) {
-  .middle-section .middle-content {
+  .middle-section-f .middle-content {
     width: 60vw;
   }
 }
 
 @media (max-width: 576px) {
-  .middle-section .middle-content {
+  .middle-section-f .middle-content {
     width: 60%;
     height: 60%;
     top: 50%;
@@ -3388,30 +2962,30 @@ footer .copyright p {
 }
 
 @media (max-width: 320px) {
-  .middle-section .middle-content {
+  .middle-section-f .middle-content {
     width: 80%;
   }
 }
 
-.middle-section .middle-content h3 {
+.middle-section-f .middle-content h3 {
   font-size: 4rem;
   font-weight: bolder;
   text-align: left;
 }
 
 @media (max-width: 768px) {
-  .middle-section .middle-content h3 {
+  .middle-section-f .middle-content h3 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .middle-section .middle-content h3 {
+  .middle-section-f .middle-content h3 {
     font-size: 2rem;
   }
 }
 
-.middle-section .middle-content p {
+.middle-section-f .middle-content p {
   font-size: 1.8rem;
   font-weight: lighter;
   color: #000;
@@ -3420,487 +2994,24 @@ footer .copyright p {
 }
 
 @media (max-width: 768px) {
-  .middle-section .middle-content p {
+  .middle-section-f .middle-content p {
     font-size: 1.5rem;
     line-height: 1.3;
-  }
-}
-
-#fitness-cta .wrapper {
-  margin: 50rem 0 30rem 0;
-}
-
-#fitness-cta .fitness-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #fitness-cta .fitness-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-cta .fitness-bordered-div {
-    padding: 0;
-  }
-}
-
-#fitness-cta .fitness-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#fitness-cta .fitness-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-cta .fitness-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #fitness-cta .fitness-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#fitness-cta .fitness-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#fitness-cta .fitness-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #fitness-cta .fitness-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-cta .fitness-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#fitness-cta .fitness-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #fitness-cta .fitness-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #fitness-cta .fitness-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #fitness-cta .fitness-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
   }
 }
 
 #betriebliches-hero-section {
   background: url(../img/betriebliches/Workout24_Firmenfitness_Arbeitgeber_Header.png) no-repeat center center;
   background-size: cover;
-  position: relative;
-  width: 100%;
-  height: 87rem;
-  z-index: -1;
-  margin-bottom: 30rem;
-}
-
-#betriebliches-hero-section .bordered-div {
-  border: 2rem solid white;
-  position: relative;
-  top: 15rem;
-  width: 75%;
-  height: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 576px) {
-  #betriebliches-hero-section .bordered-div {
-    top: 15rem;
-    width: 100%;
-  }
-}
-
-#betriebliches-hero-section .bordered-div #hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 35vw;
-  height: 75%;
-  padding: 4rem 6rem;
-  background-color: white;
-  position: relative;
-  left: -15rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-hero-section .bordered-div #hero-text {
-    width: 55vw;
-    height: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-hero-section .bordered-div #hero-text {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-hero-section .bordered-div #hero-text {
-    width: 90%;
-    left: 0;
-    margin: 0 auto;
-  }
-}
-
-#betriebliches-hero-section .bordered-div #hero-text h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-hero-section .bordered-div #hero-text h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-hero-section .bordered-div #hero-text h3 {
-    font-size: 2rem;
-  }
-}
-
-#betriebliches-hero-section .bordered-div #hero-text h2 {
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-hero-section .bordered-div #hero-text h2 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-hero-section .bordered-div #hero-text h2 {
-    font-size: 3rem;
-  }
-}
-
-#betriebliches-hero-section .bordered-div #hero-text p {
-  font-size: 1.8rem;
-  font-weight: lighter;
-  margin-top: 3rem;
-  color: #000;
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-hero-section .bordered-div #hero-text p {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-}
-
-#betriebliches-hero-section .bordered-div #hero-text .green-border {
-  width: 11.9rem;
-  border-top: solid 0.6rem #99C73A;
-  margin: 1rem 0;
-}
-
-#betriebliches-cta .wrapper {
-  margin: 50rem 0 30rem 0;
-}
-
-#betriebliches-cta .betriebliches-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .betriebliches-btn {
-  min-width: 80%;
 }
 
 #Firmenfitness-content .content-wrapper {
   text-align: center;
+  margin-top: 6rem;
 }
 
 #Firmenfitness-content .content-wrapper h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 1rem 0;
 }
 
@@ -3912,7 +3023,7 @@ footer .copyright p {
 #Firmenfitness-content .content-wrapper p {
   width: 60%;
   margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #Firmenfitness-content .content-wrapper .btn-container {
@@ -3939,7 +3050,7 @@ footer .copyright p {
   width: 30%;
   color: white;
   height: 5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: 5rem;
 }
 
@@ -3955,8 +3066,8 @@ footer .copyright p {
         -ms-flex: 100%;
             flex: 100%;
     font-size: 2.2rem;
-    margin: 2rem 10rem;
-    height: 8rem;
+    margin: 2rem 0;
+    height: 7rem;
   }
 }
 
@@ -3971,355 +3082,9 @@ footer .copyright p {
   margin: 20rem 0;
 }
 
-#betriebliches-cta .betriebliches-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div button {
-  font-size: 2.2rem;
-}
-
 #arbeitgeber-hero-section {
-  background-image: url("../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Header.png");
+  background: url("../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Header.png") no-repeat center center;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 87rem;
-  z-index: -1;
-  margin-bottom: 30rem;
-}
-
-#betriebliches-cta .wrapper {
-  margin: 50rem 0 30rem 0;
-}
-
-#betriebliches-cta .betriebliches-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .betriebliches-btn {
-  min-width: 80%;
 }
 
 #arbeitgeber-content .content-wrapper {
@@ -4328,8 +3093,8 @@ footer .copyright p {
 }
 
 #arbeitgeber-content .content-wrapper h3 {
-  font-size: 4rem;
-  margin: 1rem 0;
+  font-size: 3rem;
+  margin: 4rem 0;
 }
 
 #arbeitgeber-content .content-wrapper .green-border {
@@ -4344,7 +3109,7 @@ footer .copyright p {
 #arbeitgeber-content .content-wrapper p {
   width: 45%;
   margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #arbeitgeber-content .content-wrapper .p-container {
@@ -4377,16 +3142,16 @@ footer .copyright p {
 }
 
 #graph-section {
-  margin-top: 30rem;
+  margin-top: 15rem;
 }
 
 #graph-section .heading-wrapper {
   text-align: center;
-  margin: 4rem 4rem 20rem 4rem;
+  margin: 4rem 4rem 10rem 4rem;
 }
 
 #graph-section .heading-wrapper h4 {
-  font-size: 3.8rem;
+  font-size: 3.2rem;
 }
 
 @media (max-width: 768px) {
@@ -4397,7 +3162,7 @@ footer .copyright p {
 }
 
 #graph-section .heading-wrapper h5 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 500;
 }
 
@@ -4428,9 +3193,22 @@ footer .copyright p {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  #graph-section .graph-wrapper .graph-row {
+    width: 95%;
+  }
+}
+
 #graph-section .graph-wrapper .graph-row .span-container {
   position: absolute;
   left: 40%;
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  #graph-section .graph-wrapper .graph-row .span-container {
+    /* iPad Pro */
+    left: 30%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4441,7 +3219,8 @@ footer .copyright p {
 }
 
 #graph-section .graph-wrapper .graph-row .span-container span {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin-left: 3.5rem;
 }
 
@@ -4461,7 +3240,7 @@ footer .copyright p {
 #graph-section .graph-wrapper .graph-row .graph-bar {
   background-color: white;
   width: 40%;
-  height: 3.3rem;
+  height: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4473,21 +3252,28 @@ footer .copyright p {
   left: 50%;
 }
 
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  #graph-section .graph-wrapper .graph-row .graph-bar {
+    /* iPad Pro */
+    height: 2.1rem;
+  }
+}
+
 #graph-section .graph-wrapper .graph-row .graph-bar span {
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #99C73A;
 }
 
 @media (max-width: 768px) {
   #graph-section .graph-wrapper .graph-row .graph-bar span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
 #graph-section .graph-wrapper .graph-row p {
   color: black;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-right: 3rem;
   text-align: right;
   position: absolute;
@@ -4496,11 +3282,18 @@ footer .copyright p {
 
 #graph-section .graph-wrapper .graph-row .last-row-content {
   color: black;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   margin-right: 3rem;
   text-align: right;
   position: absolute;
   right: 40%;
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  #graph-section .graph-wrapper .graph-row .last-row-content {
+    /* iPad Pro */
+    right: 30%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4516,7 +3309,7 @@ footer .copyright p {
   text-align: center;
   padding: 20rem 15rem;
   margin: 10rem 0;
-  background: url("../../../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Saeulen.png") no-repeat center;
+  background: url("../img/arbitgeber/Workout24_Firmenfitness_Arbeitgeber_Saeulen.png") no-repeat center;
   background-size: cover;
 }
 
@@ -4533,7 +3326,7 @@ footer .copyright p {
 }
 
 #pillar-section h3 {
-  font-size: 3.6rem;
+  font-size: 3.3rem;
   text-shadow: 0 2px 5px black;
   color: white;
   letter-spacing: 0.2rem;
@@ -4703,47 +3496,18 @@ footer .copyright p {
           transform: translateY(-50%);
 }
 
-#advantage-section {
-  padding: 0 10rem;
-  margin: 10rem 0;
-}
-
-@media (max-width: 768px) {
-  #advantage-section {
-    padding: 10rem 0;
-    margin: 10rem 0;
-  }
-}
-
 #advantage-section .advantage-wrapper {
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 576px) {
   #advantage-section .advantage-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  #advantage-section .advantage-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4752,42 +3516,26 @@ footer .copyright p {
 }
 
 #advantage-section .advantage-wrapper .advantage-block {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   max-width: 50%;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 7rem 0;
+  margin-bottom: 5rem;
 }
 
-@media (max-width: 1024px) {
-  #advantage-section .advantage-wrapper .advantage-block {
-    width: 60%;
-  }
-}
-
-@media (max-width: 576px) {
-  #advantage-section .advantage-wrapper .advantage-block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-#advantage-section .advantage-wrapper .advantage-block .img {
-  margin-right: 10rem;
-}
-
-@media (max-width: 576px) {
-  #advantage-section .advantage-wrapper .advantage-block .img {
-    margin-bottom: 1rem;
-  }
+#advantage-section .advantage-wrapper .advantage-block img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 5rem;
 }
 
 #advantage-section .advantage-wrapper .advantage-block h2 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 #advantage-section .advantage-wrapper .advantage-block .list-container {
@@ -4798,12 +3546,13 @@ footer .copyright p {
 
 #advantage-section .advantage-wrapper .advantage-block .list-container i {
   margin-right: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #8EC125;
 }
 
 #advantage-section .advantage-wrapper .advantage-block .list-container p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
 
 #simple-content {
@@ -4817,314 +3566,9 @@ footer .copyright p {
   margin: 0 auto;
 }
 
-#betriebliches-cta .wrapper {
-  margin: 20rem 0;
-}
-
-#betriebliches-cta .betriebliches-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div button {
-  font-size: 2.2rem;
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div button {
-    font-size: 1.8rem;
-    width: 100%;
-  }
-}
-
 #arbeitnehmer-hero-section {
-  background-image: url("../img/Arbeitnehmer/firmenfitness_arbeitnehmer.png");
-  background-repeat: no-repeat;
+  background: url("../img/Arbeitnehmer/firmenfitness_arbeitnehmer.png") no-repeat center center;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 87rem;
-  z-index: -1;
-  margin-bottom: 30rem;
-}
-
-#arbeitnehmer-hero-section .bordered-div {
-  border: 2rem solid white;
-  position: relative;
-  top: 15rem;
-  width: 75%;
-  height: 70%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 576px) {
-  #arbeitnehmer-hero-section .bordered-div {
-    top: 15rem;
-    width: 100%;
-  }
-}
-
-#arbeitnehmer-hero-section .bordered-div #hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 35vw;
-  height: 75%;
-  padding: 4rem 6rem;
-  background-color: white;
-  position: relative;
-  left: -15rem;
-}
-
-@media (max-width: 1024px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text {
-    width: 55vw;
-    height: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text {
-    width: 60vw;
-  }
-}
-
-@media (max-width: 576px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text {
-    width: 90%;
-    left: 0;
-    margin: 0 auto;
-  }
-}
-
-#arbeitnehmer-hero-section .bordered-div #hero-text h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text h3 {
-    font-size: 2rem;
-  }
-}
-
-#arbeitnehmer-hero-section .bordered-div #hero-text h2 {
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text h2 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text h2 {
-    font-size: 3rem;
-  }
-}
-
-#arbeitnehmer-hero-section .bordered-div #hero-text p {
-  font-size: 1.8rem;
-  font-weight: lighter;
-  margin-top: 3rem;
-  color: #000;
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  #arbeitnehmer-hero-section .bordered-div #hero-text p {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-}
-
-#arbeitnehmer-hero-section .bordered-div #hero-text .green-border {
-  width: 11.9rem;
-  border-top: solid 0.6rem #99C73A;
-  margin: 1rem 0;
 }
 
 #simple-content {
@@ -5134,7 +3578,6 @@ footer .copyright p {
 #simple-content .content-container {
   width: 50%;
   text-align: center;
-  font-size: 1.8rem;
   margin: 0 auto;
 }
 
@@ -5146,6 +3589,8 @@ footer .copyright p {
 
 #simple-content .content-container p {
   margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 #simple-content .content-container .green-border {
@@ -5153,190 +3598,19 @@ footer .copyright p {
 }
 
 #simple-content .content-container h2 {
-  font-size: 3.4rem;
-}
-
-#betriebliches-cta .wrapper {
-  margin: 20rem 0;
-}
-
-#betriebliches-cta .betriebliches-bordered-div {
-  border: 2rem solid #F5F5F5;
-  position: relative;
-  height: auto;
-  width: 80%;
-  padding: 7rem 0 10rem 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    top: 8rem;
-    padding: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div {
-    padding: 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  max-width: 45%;
-  /* Responsive layout - makes a one column-layout instead of two columns */
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    text-align: center;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-  position: absolute;
-  left: -6rem;
-  bottom: 0;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    position: static;
-    margin-top: -15rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 img {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-  -webkit-box-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-  max-width: 55%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div .flex-item-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h1 {
-  font-size: 9rem;
-  color: #8EC125;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h1 {
-    font-size: 3.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div h2 {
-  font-size: 4rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-right: 5rem;
-}
-
-@media (max-width: 1024px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.8rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div h2 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-  }
-}
-
-#betriebliches-cta .betriebliches-bordered-div button {
-  font-size: 2.2rem;
-}
-
-@media (max-width: 576px) {
-  #betriebliches-cta .betriebliches-bordered-div button {
-    font-size: 1.8rem;
-    width: 100%;
-  }
+  font-size: 3rem;
 }
 
 #kursplan-hero-section {
   background-image: url("../../../img/kursplan/Workout24_Kursplan_Header.png");
+  background-size: cover;
+}
+
+#kursplan-hero-section .hero-text {
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 #time-table .time-table-wrapper {
@@ -5405,8 +3679,7 @@ footer .copyright p {
 
 #time-table .time-table-wrapper table th {
   color: #8EC125;
-  font-size: 2rem;
-  border-right: 0.3rem solid #7B7B7B;
+  font-size: 2.2rem;
   padding: 1rem 3rem;
 }
 
@@ -5421,7 +3694,6 @@ footer .copyright p {
 }
 
 #time-table .time-table-wrapper table td {
-  border-right: 0.3rem solid #7B7B7B;
   height: 5rem;
   font-size: 1.6rem;
   text-align: center;
@@ -5438,6 +3710,16 @@ footer .copyright p {
 
 #time-table .time-table-wrapper table .odd-row {
   background-color: #EFEFEF;
+}
+
+#time-table .time-table-wrapper .mobile-table-section .mobile-table th {
+  height: 10rem;
+  font-size: 3.5rem;
+}
+
+#time-table .time-table-wrapper .mobile-table-section .mobile-table td {
+  font-size: 2.2rem;
+  padding: 2rem;
 }
 
 .mobile-table-section {
@@ -5569,7 +3851,7 @@ footer .copyright p {
   background-image: url("../img/snazzy-image.png");
   background-size: cover;
   background-position: center;
-  height: 100rem;
+  height: 80vh;
   position: relative;
   z-index: -1;
 }
@@ -5601,10 +3883,14 @@ footer .copyright p {
 
 #contact-section .contact-wrapper h3 {
   color: #8EC125;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 #contact-section .contact-wrapper .form-wrapper {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  max-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
