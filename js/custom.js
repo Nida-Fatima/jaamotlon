@@ -45,15 +45,6 @@ function stickNav() {
     navbar.classList.remove("sticky");
   }
 }
-// function showDropDown(){
-//   var drop_down = document.getElementById('drop-down-list');
-//   if (drop_down.style.display === 'none'){
-//     drop_down.style.display = 'block';
-//   }
-//   else if(drop_down.style.display === 'block'){
-//     drop_down.style.display = 'none';
-//   }
-// }
 
 //Slider container
 var sliderSection = document.getElementById('slider-section');
