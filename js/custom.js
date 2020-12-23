@@ -18,6 +18,16 @@ ele.addEventListener('change',()=>{
   document.getElementById('mobile-navigation').style.left = -100+'%';
 });
 
+var drop_ele = document.getElementById('mobile-drop');
+drop_ele.addEventListener('click', ()=>{
+  var drop_list = document.getElementById('drop-down-list');
+  if(drop_list.style.display === 'none'){
+    drop_list.style.display = 'block';
+  }
+  else{
+    drop_list.style.display = 'none';
+  }
+});
 
 window.onscroll = function() {stickNav()};
 
@@ -35,16 +45,15 @@ function stickNav() {
     navbar.classList.remove("sticky");
   }
 }
-
-function showDropDown(){
-  var drop_down = document.getElementById('drop-down-list');
-  if (drop_down.style.display === 'none'){
-    drop_down.style.display = 'block';
-  }
-  else if(drop_down.style.display === 'block'){
-    drop_down.style.display = 'none';
-  }
-}
+// function showDropDown(){
+//   var drop_down = document.getElementById('drop-down-list');
+//   if (drop_down.style.display === 'none'){
+//     drop_down.style.display = 'block';
+//   }
+//   else if(drop_down.style.display === 'block'){
+//     drop_down.style.display = 'none';
+//   }
+// }
 
 //Slider container
 var sliderSection = document.getElementById('slider-section');

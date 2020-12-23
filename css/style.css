@@ -448,8 +448,8 @@ body {
 .mobile-nav-wrapper ul li a {
   color: black;
   font-family: poppins;
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: 600;
+  font-size: 2.5rem;
   line-height: 4.5rem;
   letter-spacing: 0.4px;
   text-decoration: none;
@@ -460,9 +460,6 @@ body {
 }
 
 .mobile-nav-wrapper .mobile-dropdown-content {
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 10;
   padding: 0;
   width: 100%;
@@ -701,6 +698,10 @@ body {
   width: 100%;
 }
 
+#main-nav ul li {
+  cursor: pointer;
+}
+
 #main-nav ul li a {
   font-family: 'poppins';
   font-weight: bold;
@@ -758,6 +759,15 @@ body {
           flex-direction: column;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#main-nav ul .drop-down:hover .dropdown-content ul li {
+  cursor: pointer;
+}
+
+#main-nav ul .drop-down:hover .dropdown-content ul li a {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 #main-nav ul .hover-effect:hover {

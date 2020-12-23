@@ -77,8 +77,8 @@
             a{
                 color: black;
                 font-family: poppins;
-                font-weight: bold;
-                font-size: 3rem;
+                font-weight: 600;
+                font-size: 2.5rem;
                 line-height: 4.5rem;
                 letter-spacing: 0.4px;
                 text-decoration: none;
@@ -92,10 +92,6 @@
         }  
     }
     .mobile-dropdown-content {
-      
-        position: absolute;
-        top: 0;
-        left: 0;
         z-index: 10;
         padding: 0;
         width: 100%;
@@ -276,6 +272,7 @@
         justify-content: space-between;
         width: 100%;
         li{
+            cursor: pointer;
             a{
                 font-family:  'poppins';
                 font-weight: bold;
@@ -327,6 +324,12 @@
                     display: flex;
                     flex-direction: column;
                     transition: all 0.5s;
+                    li{
+                        cursor: pointer;
+                        a{
+                            font-size: 1.6rem;font-weight: 500;
+                        }
+                    }
                 }
             }
         }
