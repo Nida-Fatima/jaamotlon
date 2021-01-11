@@ -16,7 +16,7 @@
         }
     }
     p{
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $text-color;
         text-align: center;
         margin: 2rem 0;
@@ -51,7 +51,7 @@
 #hero-section{
     display: flex;
     position: relative;
-    z-index: -1;
+   // z-index: -1;
     height: 80vh;
 
     #last-box{
@@ -88,49 +88,59 @@
             height: 100%;
         }
         .bordered-div{
-            height: 80%;
+            height: 90%;
             width: 85%;
             border: 0.9rem solid white;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            z-index: 100;
-            h1{
-                color: white;
-                font-size: 3.8rem;
-                line-height: 1.3;
-                letter-spacing: 0.5rem;
-                text-align: center;
-                text-shadow: 1px 1px 5px gray;
-                position: absolute;
-                bottom: 15rem;
-                // @media (max-width:$md){
-                //     font-size: 2rem;
-                // }
-                @media (max-width:$lg){
-                    font-size: 2rem;
-                    bottom: 10rem;
-                }
-            }
-            button{
-                position: absolute;
-                bottom: -2rem;
-                left: 50%;
-                transform: translateX(-50%);
-                color: white;
-                font-size: 1.8rem;
-                width: 70%;
-                @media (max-width:$sm){
-                    font-size: 1rem; 
-                }
-            }
+            // z-index: 100;
             
-        }
-        .bordered-div:hover{
-            height: 90%;;
+           
             transition: all 0.5s;
         }
+        .bordered-div:hover{
+            height: 100%;
+            
+        }
+
+        .hover-div:hover{
+            height: 100%;;
+            //transition: height 0.5s;
+        }
+        h1{
+            color: white;
+            font-size: 3.8rem;
+            line-height: 1.3;
+            letter-spacing: 0.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 5px gray;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 15rem;
+            // @media (max-width:$md){
+            //     font-size: 2rem;
+            // }
+            @media (max-width:$lg){
+                font-size: 2rem;
+                bottom: 10rem;
+            }
+        }
+
+        button{
+            position: absolute;
+            bottom: 2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.8rem;
+            width: 70%;
+            @media (max-width:$sm){
+                font-size: 1rem; 
+            }
+        } 
     }
     // .hero-image-box::before{
     //     content: "";
@@ -237,9 +247,11 @@
 
 #services{
     h1{
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         text-align: center;
         margin-top: 10%;
+        color: #555555 ;
+        font-weight: 600;
        
         @media (max-width:$md){
             font-size: 4.1rem;
@@ -804,8 +816,8 @@
    
     margin-bottom: 20rem;
     .faq-wrapper{
-        padding: 5rem 8rem;
-        width: 90%;
+       // padding: 5rem 8rem;
+        width: 70%;
         margin: auto;
         margin-top: 10rem;
         @media (max-width:$md){
@@ -827,7 +839,7 @@
                 @media (max-width:$md){
                     max-height: 12rem;
                     padding: 1.5rem;
-                    border: 0.6rem solid $primary-color;
+                    border: 0.4rem solid $primary-color;
                 }
                 @media (max-width:$sm){
                     flex: 100%;
@@ -836,8 +848,8 @@
                     padding: 1rem;
                 }
                 max-height: 11rem;
-                border: 0.8rem solid $primary-color;
-                padding: 3rem 2rem;
+                border: 0.4rem solid $primary-color;
+                padding: 2rem 2rem;
                 margin-bottom: 3rem;
                 display: flex;
                 position: relative;
@@ -856,8 +868,8 @@
                     height: 75%;
                     border: none;
                     position: absolute;
-                    top: 50%;
-                    right: -2rem;
+                    top: 60%;
+                    right: -1.3rem;
                     transform: translateY(-50%);
                     @media (max-width:$lg){
                         right: -1.5rem;
@@ -866,7 +878,7 @@
                         right: -1.3rem;
                     }
                     i{
-                        font-size: 4rem;
+                        font-size: 3rem;
                         color: $primary-color;
                         @media (max-width:$lg){
                             font-size: 4rem;

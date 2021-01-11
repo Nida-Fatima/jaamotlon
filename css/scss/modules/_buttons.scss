@@ -13,6 +13,7 @@
     font-weight:500;
     color: white;
     letter-spacing: 0.1rem;
+    
 }
 
 //////// Call to action Button style
@@ -44,9 +45,9 @@
         min-width: 60%;
         margin-top: 1.8rem;
     }
-
+    transition: all 0.5s ease-in-out;
 }
 .cta-btn:hover{
     transform: scale(0.9);
-    transition: all 0.5s ease-in-out;
+    
 }

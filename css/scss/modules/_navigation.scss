@@ -282,6 +282,7 @@
                 color: black;
             } 
             .dropdown-content {
+                transition: all 0.5s;
                 ul{
                     display: none;
                     position: absolute;
@@ -304,6 +305,7 @@
                             font-size: 1.3rem;
                         
                         }
+                        transition: all 0.5s;
                     } 
                     .black-hover:hover{
                         background-color: black;
@@ -337,6 +339,7 @@
             transition: all 0.5s;
             transform: scale(1.2);
         }  
+        transition: all 0.5s;
     }
     @media (max-width:$md){
         display: none;
