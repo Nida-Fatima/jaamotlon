@@ -98,7 +98,7 @@
             // z-index: 100;
             
            
-            transition: all 0.5s;
+            transition: all 0.2s;
         }
         .bordered-div:hover{
             height: 100%;
@@ -142,18 +142,7 @@
             }
         } 
     }
-    // .hero-image-box::before{
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: black;
-    //     // border-top: 5rem solid black;
-        
-    //     opacity: 0.1;
-    // }
+  
    @media (max-width:$md){
        display: none;
    }
@@ -191,7 +180,7 @@
                 height: 70%;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-40%);
+                transform: translate(-50%,-50%);
                 border: 1rem solid white;
                 display: flex;
                 flex-direction: column;
@@ -199,7 +188,7 @@
                 justify-content: flex-end;
                 padding-bottom: 10rem;
                 h1{
-                    font-size: 5rem;
+                    font-size: 4.5rem;
                     color: white;
                     text-shadow: 5px 5px 10px rgb(82, 81, 81);
                     margin-bottom: 10rem;
@@ -208,7 +197,7 @@
                 button{
                     width: 70%;
                     height: 5rem;
-                    font-size: 2.8rem;
+                    font-size: 2rem;
                 }
             }
             
@@ -219,7 +208,7 @@
         position: absolute;
         top: 50%;
         right: 5%;
-        z-index: 20;
+        z-index: 8;
         font-size: 7rem;
         font-weight: 600;
         color: $primary-color;
@@ -231,7 +220,7 @@
         position: absolute;
         top: 50%;
         left: 5%;
-        z-index: 20;
+        z-index: 8;
         font-size: 7rem;
         font-weight: 600;
         color: $primary-color;
@@ -257,7 +246,7 @@
             font-size: 4.1rem;
         }
         @media (max-width:$sm){
-            font-size: 3.3rem;
+            font-size: 3rem;
         }
     }
     .service-wrapper{
@@ -597,6 +586,7 @@
                 top: -6rem;
                 left: 8%;
                 margin-bottom: 10rem;
+                
             }
             .star-rating{
                 margin: 3rem 0;
@@ -647,91 +637,81 @@
 //////////////////////////////////////////////////////
 //////////////// Mobile testimonial Slider SECTION STYLING /////////////////
 //////////////////////////////////////////////////////
-// .test-slider-container{
-//     display: none;
-//     @media (max-width:$md){
-//         display: block;
-//     }
-//     width: 100%;
-//     margin: auto;
-//     overflow: hidden;
-//     position: relative;
-//     border: 5px solid yellow;
-//     .test-slider-section{
-//         display: flex;
-//         width: 50%;
-//         margin: auto;
-//         border:  5px solid red;
-//         .testimonial-block{
-//             flex: 50%;
-//             max-width: 50%;
-//             border: 5px solid blue;
-//             flex: 30%;
-//             max-width: 30%;
-//             position: relative;
-//             border: 0.3rem solid #707070;
-//             border-radius: 1rem;
-//             padding: 2.8rem 2rem;
-//             margin-top: 10rem;
-            
-//             @media (max-width:$md){
-//                 flex: 100%;
-//                 max-width: 100%;
-//                 margin-right: 0;
-//                 justify-content: center;
-//             }
-//             .avatar{
-//                 position: absolute;
-//                 top: -6rem;
-//                 left: 8%;
-//                 margin-bottom: 10rem;
-//             }
-//             .star-rating{
-//                 margin: 3rem 0;
-//                 i{
-//                     color: #FFD500;
-//                     font-size: 1.5rem;
-//                 }
-//             }
-//             p{
-//                 font-size: 1.5rem;
-//                 color: $text-color;
-//                 margin-bottom: 3rem;
-//             }
-//             .name{
-//                 font-size: 1.8rem;
-//             }
-//             .designation{
-//                 font-size: 1.6rem;
-//                 color: $text-color;
-//                 font-weight: 500;
-//             }
-//         }
-//     }
-//     #nextBtn{
-//         position: absolute;
-//         top: 50%;
-//         right: 5%;
-//         z-index: 20;
-//         font-size: 7rem;
-//         font-weight: 600;
-//         color: $primary-color;
-//         opacity: 0.8;
-//         cursor: pointer;
-        
-//     }
-//     #prevBtn{
-//         position: absolute;
-//         top: 50%;
-//         left: 5%;
-//         z-index: 20;
-//         font-size: 7rem;
-//         font-weight: 600;
-//         color: $primary-color;
-//         opacity: 0.8;
-//         cursor: pointer;
-//     }
-// }
+
+button.owl-prev:focus, button.owl-next:focus{
+    outline: none;
+}
+
+.testimonial-block{
+    
+  
+    position: relative;
+    border: 0.3rem solid #707070;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin-top: 10rem;
+   
+   
+    @media (max-width:$md){
+        flex: 0 0 50%;
+        justify-content: center;
+    }
+    .avatar{
+        position: absolute;
+        top: -6rem;
+        left: 8%;
+        margin-bottom: 20rem;
+        width: 25%;
+    }
+    .star-rating{
+        margin: 3rem 0;
+        i{
+            color: #FFD500;
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        color: $text-color;
+        margin-bottom: 3rem;
+    }
+    .name{
+        font-size: 1.8rem;
+    }
+    .designation{
+        font-size: 1.6rem;
+        color: $text-color;
+        font-weight: 500;
+    }
+}
+
+.test-slider-section{
+    justify-content: space-evenly;
+    width: 80%;
+    @media (max-width:$md){
+        width: 90%;
+    }
+    margin: 0 auto;
+
+}
+.owl-nav{
+    text-align: end !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: white;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#testprevBtn, #testnextBtn{
+    color: $primary-color;
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+
+
+
+
 
 //////////////////////////////////////////////////////
 //////////////// 5TH SECTION STYLING /////////////////
@@ -817,45 +797,49 @@
     margin-bottom: 20rem;
     .faq-wrapper{
        // padding: 5rem 8rem;
+        display: flex;
+       justify-content: space-evenly;
         width: 70%;
         margin: auto;
         margin-top: 10rem;
         @media (max-width:$md){
-            padding: 2rem;
+            
+            width: 98%;
         }
         .faq-block-container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+           
+            flex: 45%;
+            max-width: 45%;
 
             .faq-block{
-                flex: 45%;
-                max-width: 45%;
+              
                 @media (max-width:$lg){
-                    max-height: 10rem;
+                   
                     padding: 1.3rem;
                     // border: 0.6rem solid $primary-color;
                 }
                 @media (max-width:$md){
-                    max-height: 12rem;
+                   
                     padding: 1.5rem;
                     border: 0.4rem solid $primary-color;
                 }
                 @media (max-width:$sm){
-                    flex: 100%;
-                    max-width: 100%;
-                    max-height: 10rem;
+                  
+                    
                     padding: 1rem;
                 }
-                max-height: 11rem;
                 border: 0.4rem solid $primary-color;
                 padding: 2rem 2rem;
                 margin-bottom: 3rem;
                 display: flex;
+                flex-direction: column;
                 position: relative;
-                h6{
+                label{
                     font-size: 1.6rem;
                     font-weight: bold;
+                    display: block;
+                    cursor: pointer;
+                    position: relative ;
                     @media (max-width:$lg){
                         font-size: 1.5rem;
                     }
@@ -863,56 +847,51 @@
                         font-size: 1.8rem;
                     }
                 }
-                button{
-                    background-color: white;
-                    height: 75%;
-                    border: none;
+                label::after{
+                    content: "\f078";
+                    font-family: 'Font Awesome 5 Free';
                     position: absolute;
-                    top: 60%;
-                    right: -1.3rem;
-                    transform: translateY(-50%);
-                    @media (max-width:$lg){
-                        right: -1.5rem;
-                    }
-                    @media (max-width:$md){
-                        right: -1.3rem;
-                    }
-                    i{
-                        font-size: 3rem;
-                        color: $primary-color;
-                        @media (max-width:$lg){
-                            font-size: 4rem;
-                        }
-                        @media (max-width:$md){
-                            font-size: 3rem;
-                        }
+                    right: -3rem;
+                    top: -1rem;
+                    background-color: white;
+                    padding: 1.5rem 0;
+                    color: $primary-color;
+                    font-size: 2rem;
+                    transition: transform 0.5s;
+                }
+                .accordian-toggle:checked ~ label::after{
+                    transform: rotate(180deg);
+                }
+
+                .accordian-content{
+                    max-height: 0;
+                    transition: all 0.8s;
+                    overflow: hidden;
+                    p{
+                        color: $text-color;
+                        font-size: 1.7rem;
+                        margin-top: 3rem;
                     }
                 }
-                button:active{
-                    border: none;
+
+                .accordian-toggle:checked ~ .accordian-content{
+                    max-height: 100vh;
+                    transition: all 0.8s;
+
+                }
+
+                .accordian-toggle{
+                    display: none;
                 }
 
             }
-            .active-faq{
-                flex-direction: column;
-                max-height: 25rem;
-                p{
-                    font-weight: lighter;
-                    font-size: 1.8rem;
-                    margin-top: 3rem;
-                    @media (max-width:$md){
-                        font-size: 1.8rem;
-                    }
-                }
-                button{
-                    top: 30%;
-                    height: 50%;
-                }
-            }
+                
+        }
+
         }
     }
 
-}
+
 
 
 .bottom-bar{

@@ -46,6 +46,10 @@ function stickNav() {
   }
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// Slider code ////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //Slider container
 var sliderSection = document.getElementById('slider-section');
 
@@ -94,3 +98,105 @@ sliderSection.addEventListener('transitionend', ()=>{
     sliderSection.style.transform = 'translateX('+(-(sliderImages[0].clientWidth) * counter) + 'px)';
   }
 })
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////Testimonial Slider code ////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  navText:['<i id="testprevBtn" class="fa fa-angle-left"></i>','<i id="testnextBtn" class="fa fa-angle-right"></i>'],
+  dots:false,
+  autoplay:true,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:3,
+          nav:true
+          
+      },
+      1000:{
+          items:3,
+          nav:true
+         
+    
+      }
+  }
+})
+
+
+/** 
+//Slider container
+var sliderSectionTest = document.getElementById('test-slider-section');
+
+//inner slider section
+var sliderImagesTest = document.getElementsByClassName('testimonial-block');
+
+//Buttons
+var testprviousBtn = document.getElementById('testprevBtn');
+var testnextBtn = document.getElementById('testnextBtn');
+
+var counterTest = 1;
+var sizeTest = sliderImagesTest[0].clientWidth;
+
+sizeTest += 48;
+console.log(sizeTest);
+
+
+
+
+//sliderSectionTest.style.transform = 'translateX('+(-(sliderImagesTest[0].clientWidth) * counterTest) + 'px)';
+
+//Button Listeners
+
+
+testnextBtn.addEventListener('click', ()=>{
+
+  if(counterTest >= sliderImagesTest.length -1 ) return;
+
+  sliderSectionTest.style.transition = "transform 0.4s ease-in-out";
+ 
+  sliderSectionTest.style.transform = 'translateX('+(-(sizeTest) * counterTest) + 'px)';
+  counterTest++;
+  //sliderSectionTest.style.transform = 'translateX('+(-(sliderImagesTest[0].clientWidth) * counterTest) + 'px)';
+  
+});
+
+testprviousBtn.addEventListener('click', ()=>{
+  if(counterTest <= 0) return;
+
+  sliderSectionTest.style.transition = "transform 0.4s ease-in-out";
+  counterTest--;
+  sliderSectionTest.style.transform = 'translateX('+(-(sizeTest) * counterTest)   + 'px)';
+  
+  
+});
+
+sliderSectionTest.addEventListener('transitionend', ()=>{
+  if(sliderImagesTest[counterTest].id === 'last-clone'){
+    sliderSectionTest.style.transition = 'none';
+    counterTest = sliderImagesTest.length - 2;
+    sliderSectionTest.style.transform = 'translateX('+ (-(sizeTest) * counterTest) + 'px)';
+  }
+  if(sliderImagesTest[counterTest+1].id === 'first-clone' ){
+    sliderSectionTest.style.transition = 'none';
+
+    /**   if ( sliderImagesTest[counterTest+1].id === 'first-clone')
+      counterTest = sliderImagesTest.length - (counterTest +1); 
+    else  */
+    /*    counterTest = sliderImagesTest.length - (counterTest+2);
+    sliderSectionTest.style.transform = 'translateX('+((sizeTest) * counterTest) + 'px)';
+  }
+})
+
+*/
+

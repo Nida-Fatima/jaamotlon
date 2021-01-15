@@ -30,7 +30,7 @@
             display: none;
         }
     }
-    @media (max-width:$md){
+    @media (max-width:$lg){
         display: flex;
     }
 }
@@ -78,7 +78,7 @@
                 color: black;
                 font-family: poppins;
                 font-weight: 600;
-                font-size: 2.5rem;
+                font-size: 1.8rem;
                 line-height: 4.5rem;
                 letter-spacing: 0.4px;
                 text-decoration: none;
@@ -108,7 +108,7 @@
                 width: 100%;
                 a{
                     color: white;
-                    font-size: 2.5rem;
+                    font-size: 1.8rem;
                 }
             } 
             .black-hover:hover{
@@ -133,7 +133,7 @@
             margin-bottom: 1rem;
         }
         button{
-            width: 50%;
+            width: 60%;
             background-color: black;
             border: none;
             height: 5rem;
@@ -164,6 +164,9 @@
     .top-nav-wrapper{
         width: 65%;
         margin: 0 auto;
+        @media (max-width:$md){
+            width: 70%;
+        }
         ul{
             list-style: none;
             display: flex;
@@ -211,7 +214,7 @@
             width: 25%;
 
             @media (max-width:$lg){
-                width: 45%;
+                width: 70%;
             }
             @media (max-width:$sm){
                 width: 80%;
@@ -341,7 +344,7 @@
         }  
         transition: all 0.5s;
     }
-    @media (max-width:$md){
+    @media (max-width:$lg){
         display: none;
     }
 }
