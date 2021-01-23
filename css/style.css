@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 50.5%;
+  font-size: 10px;
   /* @media (max-width: $lg){
         font-size: 55%;
     }
@@ -304,7 +304,7 @@ body {
   border-radius: 25px;
   opacity: 1;
   border: solid 2px #8EC125;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: white;
   letter-spacing: 0.1rem;
@@ -357,11 +357,10 @@ body {
   display: none;
   position: relative;
   width: 100%;
-  height: 10rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3rem;
+  padding: 2rem 2rem 5rem 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 @media (max-width: 576px) {
@@ -376,14 +375,29 @@ body {
   }
 }
 
-.mobile-navbar .logo-div {
-  position: absolute;
-  left: 36%;
-  margin-top: 0;
+.mobile-navbar .small-logo-div {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-navbar .small-logo-div .small-logo-list-item {
+  text-align: center;
+}
+
+.mobile-navbar .small-logo-div .small-logo-list-item img {
+  width: 40%;
 }
 
 .mobile-navbar .hamburger-div {
-  width: 20%;
+  width: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mobile-navbar .hamburger-div .hamburger-icon {
@@ -393,6 +407,11 @@ body {
 
 .mobile-navbar .hamburger-div #checkIcon {
   display: none;
+}
+
+.mobile-navbar .empty-div {
+  min-width: 20%;
+  background-color: tomato;
 }
 
 @media (max-width: 1024px) {
@@ -539,14 +558,22 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  #top-nav {
+    height: unset;
+  }
+}
+
 #top-nav .top-nav-wrapper {
   width: 65%;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #top-nav .top-nav-wrapper {
-    width: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
   }
 }
 
@@ -565,20 +592,29 @@ body {
   letter-spacing: 0.03rem;
   color: #FFFFFF;
   opacity: 1;
-  margin-right: 6.1rem;
+  margin-right: 10rem;
 }
 
 #top-nav .top-nav-wrapper ul li i {
-  margin-right: 0.3rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  #top-nav .top-nav-wrapper ul li {
+    margin-right: 3rem;
+  }
 }
 
 .nav-wrapper {
+  background-color: #FFFFFF;
+  background-image: url(https://www.workout-24.de/wp-content/uploads/2020/08/nav_back-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  margin-bottom: -10rem;
   position: relative;
-  background-color: white;
-  padding: 0 5rem 0 14rem;
-  -webkit-box-shadow: 0 10px 25px #4d4c4c;
-          box-shadow: 0 10px 25px #4d4c4c;
-  z-index: 10;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -589,99 +625,18 @@ body {
   }
 }
 
-.logo-div {
-  width: 20%;
-  text-align: center;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.logo-div #logo-list-item {
-  position: relative;
-  z-index: 1;
-}
-
-.logo-div #logo-list-item img {
-  width: 25%;
-}
-
-@media (max-width: 1024px) {
-  .logo-div #logo-list-item img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo-div #logo-list-item img {
-    width: 80%;
-  }
-}
-
-.logo-div #logo-list-item img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.logo-div #logo-list-item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  -webkit-box-shadow: 0 10px 10px -6px #a5a5a5;
-          box-shadow: 0 10px 10px -6px #a5a5a5;
-  border-radius: 100%;
-  padding: 4.5rem 3rem;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  z-index: -1;
-}
-
-@media (max-width: 768px) {
-  .logo-div #logo-list-item::before {
-    padding: 7rem 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo-div #logo-list-item::before {
-    padding: 5rem 2rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .logo-div #logo-list-item::before {
-    padding: 4rem 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo-div #logo-list-item::before {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .logo-div #logo-list-item::before {
-    display: none;
-  }
-}
-
 #main-nav {
-  height: 9rem;
-  padding-bottom: 0;
+  padding-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 68%;
   margin: auto;
 }
 
@@ -691,6 +646,32 @@ body {
 
 #main-nav .right-nav {
   width: 40%;
+}
+
+#main-nav .logo-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+#main-nav .logo-div #logo-list-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+#main-nav .logo-div #logo-list-item img {
+  width: 40%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#main-nav .logo-div #logo-list-item img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #main-nav ul {
@@ -714,9 +695,9 @@ body {
 }
 
 #main-nav ul li a {
-  font-family: 'poppins';
+  font-family: 'poppins' 'sans-serif';
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
   text-decoration: none;
   color: black;
@@ -1367,7 +1348,7 @@ footer .copyright p {
 }
 
 .main-container #hero-section .hero-image-box .bordered-div {
-  height: 90%;
+  height: 80%;
   width: 85%;
   border: 0.9rem solid white;
   position: absolute;
