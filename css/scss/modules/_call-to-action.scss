@@ -16,11 +16,11 @@
         }
     }
     .bordered-div{
-        border: 1.5rem solid white;
+        border: 1rem solid white;
         position: relative;
         top: 55%;
-        width: 60%;
-        height: 53%;
+        width: 75%;
+        height: 45%;
         padding: 6rem 0;
         margin: 0 auto;
         display: flex;
@@ -70,7 +70,7 @@
             font-size: 3.5rem;
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 3rem;
+            margin-top: 1.6rem;
             margin-right: 5rem;
             
             @media (max-width:$md){
@@ -82,6 +82,7 @@
         }
         button{
             background-color: $black-color;
+            margin-top: 2rem;
         }
         
     }

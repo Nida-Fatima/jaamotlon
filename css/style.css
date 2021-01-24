@@ -308,6 +308,8 @@ body {
   font-weight: 500;
   color: white;
   letter-spacing: 0.1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .cta-btn {
@@ -806,11 +808,11 @@ body {
 }
 
 .cta-section-with-curve .bordered-div {
-  border: 1.5rem solid white;
+  border: 1rem solid white;
   position: relative;
   top: 55%;
-  width: 60%;
-  height: 53%;
+  width: 75%;
+  height: 45%;
   padding: 6rem 0;
   margin: 0 auto;
   display: -webkit-box;
@@ -874,7 +876,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 1.6rem;
   margin-right: 5rem;
 }
 
@@ -892,6 +894,7 @@ body {
 
 .cta-section-with-curve .bordered-div button {
   background-color: #000;
+  margin-top: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -1348,7 +1351,7 @@ footer .copyright p {
 }
 
 .main-container #hero-section .hero-image-box .bordered-div {
-  height: 80%;
+  height: 75%;
   width: 85%;
   border: 0.9rem solid white;
   position: absolute;
@@ -1369,15 +1372,16 @@ footer .copyright p {
 }
 
 .main-container #hero-section .hero-image-box h1 {
+  padding: 0 5rem;
   color: white;
   font-size: 3.8rem;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
   line-height: 1;
-  bottom: 15rem;
+  bottom: 25rem;
 }
 
 @media (max-width: 1024px) {
@@ -1389,13 +1393,15 @@ footer .copyright p {
 
 .main-container #hero-section .hero-image-box button {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 9.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: white;
   font-size: 1.8rem;
-  width: 70%;
+  width: 60%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 576px) {
@@ -1516,8 +1522,8 @@ footer .copyright p {
 .main-container #services h1 {
   font-size: 3.3rem;
   text-align: center;
-  margin-top: 10%;
-  color: #555555;
+  margin-top: 5%;
+  color: black;
   font-weight: 600;
 }
 
@@ -1582,7 +1588,7 @@ footer .copyright p {
 }
 
 .main-container #services .service-wrapper .image-section .man-image img {
-  width: 75%;
+  width: 100%;
   position: relative;
 }
 
@@ -2088,7 +2094,7 @@ footer .copyright p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -2108,6 +2114,10 @@ footer .copyright p {
   text-decoration: none;
 }
 
+.main-container .owl-item {
+  width: 45rem;
+}
+
 .main-container #testprevBtn, .main-container #testnextBtn {
   color: #8EC125;
   font-size: 5rem;
@@ -2120,8 +2130,15 @@ footer .copyright p {
 
 .main-container #FAQ .gray-border {
   position: relative;
-  padding: 5rem 0;
-  border: 2rem solid #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  height: 48rem;
+  border: 1rem solid #E4E4E4;
   max-width: 75%;
   margin: 8rem auto;
 }
@@ -2144,10 +2161,12 @@ footer .copyright p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: -9rem;
 }
 
 .main-container #FAQ .gray-border .inner-content img {
-  width: 60%;
+  width: 85%;
 }
 
 @media (max-width: 576px) {
@@ -2158,10 +2177,9 @@ footer .copyright p {
 
 .main-container #FAQ .gray-border .inner-content button {
   position: absolute;
-  bottom: -8.1rem;
+  bottom: -11.1rem;
   width: 40%;
   height: 5rem;
-  margin-top: 5rem;
   color: white;
   font-size: 1.6rem;
   font-weight: 500;
@@ -2183,8 +2201,13 @@ footer .copyright p {
 }
 
 .main-container #cta .starseite-cta-img {
-  width: 65%;
-  left: -10rem;
+  width: 50%;
+  left: 0rem;
+}
+
+.main-container #cta .wrapper {
+  height: 90rem;
+  padding-bottom: 8rem;
 }
 
 .main-container #question-answer {
@@ -2198,7 +2221,7 @@ footer .copyright p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 10rem;
 }

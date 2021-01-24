@@ -94,7 +94,7 @@
             height: 100%;
         }
         .bordered-div{
-            height: 80%;
+            height: 75%;
             width: 85%;
             border: 0.9rem solid white;
             position: absolute;
@@ -117,15 +117,16 @@
         }
         h1{
 
+            padding:0 5rem;
             color: white;
             font-size: 3.8rem;
             font-weight: 600;
             text-transform: uppercase;
             text-align: center;
-            text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
             position: absolute;
             line-height: 1;
-            bottom: 15rem;
+            bottom: 25rem;
             // @media (max-width:$md){
             //     font-size: 2rem;
             // }
@@ -137,12 +138,13 @@
 
         button{
             position: absolute;
-            bottom: 2.5rem;
+            bottom: 9.5rem;
             left: 50%;
             transform: translateX(-50%);
             color: white;
             font-size: 1.8rem;
-            width: 70%;
+            width: 60%;
+            transition: all 0.5s ease-in-out;
             @media (max-width:$sm){
                 font-size: 1rem; 
             }
@@ -244,8 +246,8 @@
     h1{
         font-size: 3.3rem;
         text-align: center;
-        margin-top: 10%;
-        color: #555555 ;
+        margin-top: 5%;
+        color: black ;
         font-weight: 600;
        
         @media (max-width:$md){
@@ -281,7 +283,7 @@
             .man-image{
                 position: relative;
                 img{
-                    width: 75%;
+                    width: 100%;
                     position: relative;
                     @media (max-width:$sm){
                         width: 80%;
@@ -693,7 +695,7 @@ button.owl-prev:focus, button.owl-next:focus{
 
 .test-slider-section{
     justify-content: space-evenly;
-    width: 80%;
+    width: 90%;
     @media (max-width:$md){
         width: 90%;
     }
@@ -708,7 +710,9 @@ button.owl-prev:focus, button.owl-next:focus{
     color: #FFF;
     text-decoration: none;
 }
-
+.owl-item{
+    width: 45rem;
+}
 #testprevBtn, #testnextBtn{
     color: $primary-color;
     font-size: 5rem;
@@ -728,8 +732,11 @@ button.owl-prev:focus, button.owl-next:focus{
     margin: 10rem 0;
     .gray-border{
         position: relative;
-        padding: 5rem 0;
-        border: 2rem solid #F5F5F5;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        height: 48rem;
+        border: 1rem solid #E4E4E4;
         max-width: 75%;
         margin: 8rem auto;
         @media (max-width:$sm){
@@ -742,10 +749,12 @@ button.owl-prev:focus, button.owl-next:focus{
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: absolute;
+            top: -9rem;
 
             
             img{
-                width: 60%;
+                width: 85%;
                 @media (max-width:$sm){
                     
                     width: 100%;
@@ -754,10 +763,10 @@ button.owl-prev:focus, button.owl-next:focus{
             }
             button{
                 position: absolute;
-                bottom: -8.1rem;
+                bottom: -11.1rem;
                 width: 40%;
                 height: 5rem;
-                margin-top: 5rem;
+                
                 color: white;
                 font-size: 1.6rem;
                 font-weight: 500;
@@ -789,8 +798,12 @@ button.owl-prev:focus, button.owl-next:focus{
 #cta{
 
     .starseite-cta-img{
-        width: 65%;
-        left: -10rem;
+        width: 50%;
+        left: 0rem;
+    }
+    .wrapper{
+        height: 90rem;
+        padding-bottom:8rem
     }
 }
 
@@ -805,7 +818,7 @@ button.owl-prev:focus, button.owl-next:focus{
        // padding: 5rem 8rem;
         display: flex;
        justify-content: space-evenly;
-        width: 70%;
+        width: 80%;
         margin: auto;
         margin-top: 10rem;
         @media (max-width:$md){
