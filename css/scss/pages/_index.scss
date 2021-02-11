@@ -20,7 +20,7 @@
         }
     }
     p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         color: $text-color;
         text-align: center;
         margin: 2rem 0;
@@ -56,7 +56,7 @@
     display: flex;
     position: relative;
    // z-index: -1;
-    height: 85vh;
+    height: 82vh;
     @media only screen 
     and (min-width: 1024px) 
     and (max-height: 1366px) 
@@ -69,19 +69,34 @@
     }
     .img-1{
         background-image: url(../img/startseite-imgs/Workou24_Homepage_Fitness_Gesundheit.png); 
-        background-size: cover;  
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 2rem;
+          
     }
     .img-2{
         background-image: url(../img/startseite-imgs/Workout24_Homepage_Abnehmen_Ernaehrung.png);  
-        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
     }
     .img-3{
         background-image: url(../img/startseite-imgs/Workout24_Homepage_Rücken_Gelenke.png);  
-        background-size: cover; 
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 2.3rem;
+       
     }
     .img-4{
         background-image: url(../img/startseite-imgs/Workout24__Homepage_BGM.png); 
-        background-size: cover;  
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 2.3rem;
+       
     }
     .hero-image-box {
         
@@ -98,17 +113,15 @@
             height: 100%;
         }
         .bordered-div{
-            height: 75%;
-            width: 85%;
-            border: 0.9rem solid white;
+            height: 86%;
+            width: 90%;
+            border: 0.8rem solid white;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            // z-index: 100;
-            
-           
-            transition: all 0.2s;
+            transform: translateX(-50%) translateY(-48%);
+            transition: all 0.3s;
+            z-index: 1;
         }
         .bordered-div:hover{
             height: 100%;
@@ -121,7 +134,7 @@
         }
         h1{
 
-            padding:0 5rem;
+            margin:0 7rem;
             color: white;
             font-size: 3.8rem;
             font-weight: 600;
@@ -130,23 +143,25 @@
             text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
             position: absolute;
             line-height: 1;
-            bottom: 25rem;
-            // @media (max-width:$md){
-            //     font-size: 2rem;
-            // }
+            bottom: 20rem;
+             @media (max-width:$md){
+                margin: 0;
+            }
             @media (max-width:$lg){
                 font-size: 2rem;
                 bottom: 10rem;
+                
             }
         }
 
         button{
             position: absolute;
-            bottom: 9.5rem;
+            bottom: 10.5rem;
             left: 50%;
             transform: translateX(-50%);
             color: white;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
+            font-weight: bold;
             width: 60%;
             transition: all 0.5s ease-in-out;
             @media (max-width:$sm){
@@ -154,10 +169,21 @@
             }
         } 
     }
+    
   
    @media (max-width:$md){
        display: none;
    }
+}
+
+#hero-section::before{
+    content: "";
+    background-color: black;
+    opacity: 0.09;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 
@@ -200,7 +226,7 @@
                 justify-content: flex-end;
                 padding-bottom: 10rem;
                 h1{
-                    font-size: 4.5rem;
+                    font-size: 2.5rem;
                     color: white;
                     text-shadow: 5px 5px 10px rgb(82, 81, 81);
                     margin-bottom: 10rem;
@@ -287,7 +313,7 @@
             .man-image{
                 position: relative;
                 img{
-                    width: 100%;
+                    width: 80%;
                     position: relative;
                     @media (max-width:$sm){
                         width: 80%;
@@ -601,7 +627,7 @@
                 
             }
             .star-rating{
-                margin: 3rem 0;
+                margin-top: 3rem;
                 i{
                     color: #FFD500;
                     font-size: 1.5rem;
@@ -631,7 +657,7 @@
         display: flex;
         justify-content: flex-end;
         i{
-            font-size: 5rem;
+            font-size: 1rem;
             margin-left: 8rem;
             color: $primary-color;
             @media (max-width:$md){
@@ -676,7 +702,7 @@ button.owl-prev:focus, button.owl-next:focus{
         width: 25%;
     }
     .star-rating{
-        margin: 3rem 0;
+        margin-top: 3rem
         i{
             color: #FFD500;
             font-size: 1.5rem;
@@ -844,14 +870,14 @@ button.owl-prev:focus, button.owl-next:focus{
                 @media (max-width:$md){
                    
                     padding: 1.5rem;
-                    border: 0.4rem solid $primary-color;
+                    
                 }
                 @media (max-width:$sm){
                   
                     
                     padding: 1rem;
                 }
-                border: 0.4rem solid $primary-color;
+                border: 0.3rem solid $primary-color;
                 padding: 2rem 2rem;
                 margin-bottom: 3rem;
                 display: flex;
@@ -863,6 +889,7 @@ button.owl-prev:focus, button.owl-next:focus{
                     display: block;
                     cursor: pointer;
                     position: relative ;
+                    transition: all 0.5s;
                     @media (max-width:$lg){
                         font-size: 1.5rem;
                     }
@@ -892,7 +919,7 @@ button.owl-prev:focus, button.owl-next:focus{
                     overflow: hidden;
                     p{
                         color: $text-color;
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                         margin-top: 3rem;
                     }
                 }
@@ -934,10 +961,10 @@ button.owl-prev:focus, button.owl-next:focus{
         
         text-decoration: none;
         color: $white-color;
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         font-weight: 300;
         i{
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
     #middle-link{
