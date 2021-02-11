@@ -4,6 +4,10 @@
 
 //////////////// COMMON COMPONENT STYLING /////////////////
 
+.owl-carousel{
+    z-index: 0 !important;
+}
+
 .heading-wrapper{
     animation-duration: 2s;
     margin-bottom: 1rem;
@@ -942,5 +946,6 @@ button.owl-prev:focus, button.owl-next:focus{
         border-right: 2px solid white ;
     }
 }
+
 
 }

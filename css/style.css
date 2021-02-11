@@ -1235,6 +1235,10 @@ footer .copyright p {
   text-align: center;
 }
 
+.owl-carousel {
+  z-index: 0 !important;
+}
+
 .heading-wrapper {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
