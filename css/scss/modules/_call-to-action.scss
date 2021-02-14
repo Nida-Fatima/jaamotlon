@@ -31,7 +31,7 @@
         }
         @media (max-width:$md){
             padding: 3rem;
-            width: 90%;
+            width: 95%;
             height: 60%;
         }
         .flex-item-2{
@@ -62,7 +62,9 @@
             text-transform: uppercase;
             font-weight: bold;
             line-height: 1;
-            
+            @media (max-width:$md){
+               font-size: 5rem;
+             }
             
         }
 
@@ -74,7 +76,8 @@
             margin-right: 5rem;
             
             @media (max-width:$md){
-                font-size: 3.5rem;
+                font-size: 3rem;
+                line-height: 1;
             }
             @media (max-width:$sm){
                 margin-top: 1rem;

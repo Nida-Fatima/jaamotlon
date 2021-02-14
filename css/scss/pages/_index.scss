@@ -225,12 +225,22 @@
                 align-items: center;
                 justify-content: flex-end;
                 padding-bottom: 10rem;
+                
                 h1{
-                    font-size: 2.5rem;
+
+                   
                     color: white;
-                    text-shadow: 5px 5px 10px rgb(82, 81, 81);
-                    margin-bottom: 10rem;
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
                     text-align: center;
+                    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                    position: absolute;
+                    line-height: 1;
+                    bottom: 10rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    margin-bottom: 10rem;
                 }
                 button{
                     width: 70%;
@@ -242,6 +252,7 @@
         }
         
     }
+
     #nextBtn{
         position: absolute;
         top: 50%;
@@ -267,6 +278,17 @@
     }
 }
 
+
+.slider-container::before{
+    content: "";
+    background-color: black;
+    opacity: 0.09;
+    position:absolute;
+    width: 100%;
+    height: 95%;
+    z-index: 1;
+}
+
 //////////////////////////////////////////////////////
 //////////////// 2ND SECTION STYLING /////////////////
 //////////////////////////////////////////////////////
@@ -281,7 +303,7 @@
         font-weight: 600;
        
         @media (max-width:$md){
-            font-size: 4.1rem;
+            font-size: 3.1rem;
         }
         @media (max-width:$sm){
             font-size: 3rem;
@@ -294,6 +316,10 @@
         
         @media (max-width:$lg){
             padding: 5%;
+        }
+        @media (max-width:$lg){
+            padding: 10rem 0 0 0;
+            
         }
         .service-item{
             flex: 50%;
@@ -317,6 +343,9 @@
                     position: relative;
                     @media (max-width:$sm){
                         width: 80%;
+                    }
+                    @media (max-width:$md){
+                        width: 90%;
                     }
                 }
                 
@@ -354,7 +383,7 @@
         .service-section{
             
             @media (max-width:$md){
-                padding: 5rem;
+                padding: 0;
             }
             .about-us{
                 margin-bottom: 4rem;
@@ -429,11 +458,17 @@
 #benefits{
     
     margin-top: 10rem;
+    @media (max-width:$md){
+        margin-top: 5rem;   
+    }
    
     .content-wrapper{
         padding: 5rem 10rem;
         @media (max-width:$lg){
             padding: 5rem 8rem;    
+        }
+        @media (max-width:$md){
+            padding: 5rem 0;    
         }
         @media (max-width:$sm){
             padding: 5rem 0rem;    
@@ -579,7 +614,7 @@
         padding: 0 7rem;
     }
     @media (max-width:$md) {
-        padding: 0 10rem;
+        padding: 0 ;
         
     }
     @media (max-width:$sm){
@@ -746,8 +781,12 @@ button.owl-prev:focus, button.owl-next:focus{
         @media (max-width:$sm){
                     
             max-width: 100%;
-            margin: 0;
-            
+            margin: 0; 
+        }
+        @media (max-width:$md){
+                    
+            max-width: 100%;
+            height: 32rem;
         }
         .inner-content{
             display: flex;
@@ -761,8 +800,10 @@ button.owl-prev:focus, button.owl-next:focus{
                 width: 85%;
                 @media (max-width:$sm){
                     
-                    width: 100%;
-                    
+                    width: 100%; 
+                }
+                @media (max-width:$md){
+                   width: 75%;
                 }
             }
             button{
@@ -807,8 +848,13 @@ button.owl-prev:focus, button.owl-next:focus{
     }
     .wrapper{
         height: 90rem;
-        padding-bottom:8rem
+        padding-bottom:8rem;
+        @media (max-width:$md){
+            height: 70rem;
+            padding-bottom:15rem;
+         }
     }
+   
 }
 
 //////////////////////////////////////////////////////
