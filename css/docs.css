@@ -1,0 +1,44 @@
+#docs {
+  padding-top: 2rem;
+}
+
+#docs .docs-content h2:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#docs h4 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#docs {
+  /* Side Nav */
+}
+
+#docs ul.side-nav {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+#docs ul.side-nav li {
+  margin: 0;
+  padding: .3rem 3rem .3rem 0;
+}
+
+#docs ul.side-nav li:hover a, #docs ul.side-nav li.active a {
+  color: #000;
+  background-color: transparent;
+}
+
+#docs ul.side-nav li.side-nav-head {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0rem 3rem .3rem 0;
+}
+
+#docs ul.side-nav li.side-nav-head:hover {
+  background: transparent;
+}
