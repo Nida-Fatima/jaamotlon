@@ -1,4 +1,7 @@
 
+.active{
+    color: $primary-color !important;
+}
 
 //////// Moile Navigation bar
 /////////////////////////////
@@ -337,9 +340,7 @@
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
                     text-align: center;
-                    .active{
-                        color: $primary-color;
-                    }
+                    
                     li{
                         padding: 2rem 3rem;
                         border-bottom: 0.2rem solid white;

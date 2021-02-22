@@ -357,6 +357,10 @@ body {
           transform: scale(0.9);
 }
 
+.active {
+  color: #8EC125 !important;
+}
+
 .mobile-navbar {
   display: none;
   position: relative;
@@ -758,10 +762,6 @@ body {
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;
-}
-
-#main-nav ul li .dropdown-content ul .active {
-  color: #8EC125;
 }
 
 #main-nav ul li .dropdown-content ul li {
@@ -1185,15 +1185,22 @@ footer {
           box-shadow: 0px -10px 25px #0000001a;
 }
 
+footer .active {
+  color: #8EC125;
+}
+
 footer .bordered-div {
-  border-top: 1.2px solid #99C73A;
-  margin: 0 auto;
-  width: 85%;
+  border-top: 3px solid #99C73A;
+  margin: 2rem auto;
+  width: 70%;
 }
 
 footer .widget-area {
   padding: 7rem 10rem 0 10rem;
   width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,6 +1221,7 @@ footer .widget-area .widget {
           flex: 23%;
   max-width: 23%;
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1247,9 +1255,14 @@ footer .widget-area .widget .footer-link-section ul {
 footer .widget-area .widget .footer-link-section ul li a {
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 
-footer .widget-area .widget .footer-link-section li.active {
+footer .widget-area .widget .footer-link-section ul li a:hover {
+  color: #8EC125;
+}
+
+footer .widget-area .widget .footer-link-section ul .active {
   color: #8EC125;
 }
 
