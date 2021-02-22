@@ -634,6 +634,7 @@ body {
 #top-nav .top-nav-wrapper #top-nav-btn button:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  color: #8EC125;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -1178,6 +1179,12 @@ body {
   bottom: 5rem;
 }
 
+footer {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px -10px 25px #0000001a;
+          box-shadow: 0px -10px 25px #0000001a;
+}
+
 footer .bordered-div {
   border-top: 1.2px solid #99C73A;
   margin: 0 auto;
@@ -1186,9 +1193,8 @@ footer .bordered-div {
 
 footer .widget-area {
   padding: 7rem 10rem 0 10rem;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px -10px 25px #0000001A;
-          box-shadow: 0px -10px 25px #0000001A;
+  width: 80%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,10 +1209,11 @@ footer .widget-area {
 }
 
 footer .widget-area .widget {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  max-width: 25%;
+  -webkit-box-flex: 23%;
+      -ms-flex: 23%;
+          flex: 23%;
+  max-width: 23%;
+  margin-right: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1233,6 +1240,19 @@ footer .widget-area .widget img {
   width: 100%;
 }
 
+footer .widget-area .widget .footer-link-section ul {
+  list-style: none;
+}
+
+footer .widget-area .widget .footer-link-section ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .widget-area .widget .footer-link-section li.active {
+  color: #8EC125;
+}
+
 footer .widget-area ul {
   list-style: none;
   line-height: 3rem;
@@ -1240,7 +1260,6 @@ footer .widget-area ul {
 
 footer .widget-area .square {
   padding: 1rem;
-  margin-bottom: 3rem;
 }
 
 footer .widget-area .square h5 {

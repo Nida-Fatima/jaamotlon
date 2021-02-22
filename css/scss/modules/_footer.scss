@@ -1,4 +1,7 @@
 footer{
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -10px 25px #0000001a;
   
     .bordered-div{
         border-top: 1.2px solid $primary-shade3;
@@ -8,8 +11,8 @@ footer{
     }
     .widget-area{
         padding: 7rem 10rem 0 10rem;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px -10px 25px #0000001A;
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         @media (max-width:$sm){
@@ -17,8 +20,9 @@ footer{
         }
         .widget{
             
-            flex: 25%;
-            max-width: 25%;
+            flex: 23%;
+            max-width: 23%;
+            margin-right: 1rem;
             @media (max-width:$md){
                 margin-top: 3rem;
                 flex: 50%;
@@ -32,15 +36,32 @@ footer{
             img{
                 width: 100%;
             }
+
+
+            .footer-link-section{
+                ul{
+                    list-style: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        } 
+                    }
+                }
+                li.active{
+                    color: $primary-color;
+                }
+            }
         }
         
         ul{
             list-style: none;
             line-height: 3rem;
+           
         }
         .square{
             padding: 1rem;
-            margin-bottom: 3rem;
+           
             h5{
                 font-family: 'Anton', 'sans-serif';
                 letter-spacing: 0.1rem;
